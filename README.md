@@ -1,12 +1,15 @@
-# guessfunc
+# Application to learn Calculum I
 
-> Guess math functions
+> basically you have to guess some math functions
 
 ## Build Setup
 
 ``` bash
 # install dependencies
 npm install
+
+# init electron
+npm start
 
 # serve with hot reload at localhost:8080
 npm run dev
