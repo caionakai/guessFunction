@@ -2,7 +2,7 @@
   <div id="origin">
       <div class="tile is-parent is-4">
         <article class="tile is-child box">
-          <h4 class="title">Line</h4>
+          <h4 class="title">Guess the fuction below!</h4>
           <div ref="seno"></div>
         </article>
       </div>
@@ -46,9 +46,9 @@ export default {
   methods: {
     verify(dado){
       if(dado == 'cosseno'){
-        this.$router.replace({ name: "Certo" });
+        this.$router.replace({ name: "Certo", params:{id: 'cosseno'} });
       }else{
-        this.$router.replace({ name: "Errado" });
+        this.$router.replace({ name: "Errado",  params:{id: 'cosseno'} });
       }
     }
   }

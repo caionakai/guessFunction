@@ -1,12 +1,25 @@
 <template>
   <div id="app">
-    <router-view/>
+    <router-view @updateSomador="updateSomador()" @resetSomador="zeraSomador()" :pontuacao="somador"/>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data: function(){
+    return {
+      somador: 0
+    }
+  },
+  methods:{
+    updateSomador(){
+      this.somador += 1
+    },
+    zeraSomador(){
+      this.somador = 0
+    }
+  }
 }
 
 </script>

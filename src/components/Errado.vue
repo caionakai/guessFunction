@@ -7,7 +7,27 @@
 <script>
 export default {
   name: 'Errado',
+  data:{
+    count: 0
+  },
+  created() {
+    this.count = 2;
+    this.timeOver();
+  },
   methods:{
+    timeOver(){
+      this.count -= 1;
+      if(this.count > 0){
+        setTimeout(this.timeOver, 1000);
+      }else{
+        if(this.$route.params.id === 'seno'){
+          this.$router.replace({name: 'Cosseno'});
+        }
+        if(this.$route.params.id === 'cosseno'){
+          this.$router.replace({name: 'Score'});
+        }
+      }
+    }
   }
 }
 
