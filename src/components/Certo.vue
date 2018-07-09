@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="../assets/V.jpg" id="certo"></img>
+    <img src="../assets/V.jpg" id="certo"/>
   </div>
 </template>
 
@@ -23,15 +23,26 @@ export default {
         setTimeout(this.timeOver, 1000);
       }else{
         if(this.$route.params.id === 'seno'){
-          this.$router.replace({name: 'Cosseno'});
+          this.firstLevelCompletedUpdate();
+          this.$router.replace({name: 'Map'});
         }        
         if(this.$route.params.id === 'cosseno'){
-          this.$router.replace({name: 'Score'});
+          this.secondLevelCompletedUpdate();
+          this.$router.replace({name: 'Map'});
         }
       }
     },
+    // Este método inicia um evento para acrescentar o somador para o Score Final.
     eventUpdate(){
       this.$emit('updateSomador');
+    },
+
+    firstLevelCompletedUpdate(){
+      this.$emit('updateFirstLevel');
+    },
+
+    secondLevelCompletedUpdate(){
+      this.$emit('updateSecondLevel');
     }
   }
 }

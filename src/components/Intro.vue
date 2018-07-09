@@ -9,6 +9,7 @@ export default {
   name: 'Intro',
   created() {
     this.eventUpdate();
+    this.resetAllLevels();
   },
   methods:{
     jogar() {
@@ -16,6 +17,9 @@ export default {
     },   
     eventUpdate(){
       this.$emit('resetSomador');
+    },
+    resetAllLevels(){
+      this.$emit('resetAllLevels');
     }
   }
 }
