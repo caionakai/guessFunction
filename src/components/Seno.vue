@@ -1,6 +1,5 @@
 <template>
   <div id="origin">
-      <button v-on:click="home">Inicio</button>
       <div class="seno">
         <article class="tile is-child box">
           <h4 class="title">{{msg}}</h4>
@@ -58,12 +57,6 @@ export default {
       }else{
         this.$router.replace({ name: "Errado", params:{id: 'seno'} });
       }
-    },
-    beforeMount(){
-      
-    },
-    home(){
-      this.$router.replace({name: "Intro"});
     }
   }
 }

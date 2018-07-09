@@ -7,6 +7,7 @@ import Errado from '@/components/Errado'
 import Certo from '@/components/Certo'
 import Logos from '@/components/Logos'
 import Score from '@/components/Score'
+import Map from '@/components/Map'
 
 Vue.use(Router)
 
@@ -48,6 +49,11 @@ export default new Router({
       path: '/score',
       name: 'Score',
       component: Score
+    },
+    {
+      path: '/map',
+      name: 'Map',
+      component: Map
     }
   ]
 })

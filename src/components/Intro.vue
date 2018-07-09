@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <button id="gameStart" type="button" v-on:click="login()">Play!</button>
+    <button id="gameStart" type="button" v-on:click="jogar()">Play!</button>
   </div>
 </template>
 
@@ -11,8 +11,8 @@ export default {
     this.eventUpdate();
   },
   methods:{
-    login() {
-        this.$router.replace({ name: "Seno" });
+    jogar() {
+        this.$router.replace({ name: "Map" });
     },   
     eventUpdate(){
       this.$emit('resetSomador');
