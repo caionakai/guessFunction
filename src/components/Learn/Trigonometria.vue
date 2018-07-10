@@ -2,7 +2,8 @@
   <div id="learn-topics">
     <div id="content">
         <h1 id="title">Trigonometria</h1>
-
+        <p>A trigonometria é a parte da matemática que estuda as relações existentes entre os lados e os ângulos dos triângulos.
+        Ela é utilizada também em outras áreas de estudo como física, química, biologia, geografia, astronomia, medicina, engenharia, dentre outras.</p>
         <a href="#/topics" id="button">
             <span>Voltar</span>
         </a>
@@ -34,13 +35,7 @@ export default {
 }
 
 #title{
-  font-family: 'Gaegu', cursive;
-}
-
-#listContent{
-    width: 30%;
-    font-family: 'Gaegu', cursive;
-    font-size: 150%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 #button {
@@ -76,7 +71,7 @@ export default {
     -moz-transition: background-color .2s ease-in-out, -moz-transform .1s ease-in-out;
     -o-transition: background-color .2s ease-in-out, -o-transform .1s ease-in-out;
     transition: background-color .2s ease-in-out, transform .1s ease-in-out;
-    font-family: 'Gaegu', cursive;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 #button:hover span {
@@ -94,5 +89,8 @@ export default {
     -moz-transform: translate(0, 4px);
     -o-transform: translate(0, 4px);
     transform: translate(0, 4px);
+}
+p{
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 </style>

@@ -4,7 +4,7 @@
     <div id="content">
       <h1 id="title">Suugaku Tanoshii</h1>
       <div id="panelButton">
-        <a href="#/map" class="button">
+        <a id="buttonJogar" href="#/map" class="button">
             <span>Jogar</span>
         </a>
         <a href="#/topics" class="button">
@@ -42,6 +42,9 @@ export default {
 </script>
 
 <style scoped>
+#buttonJogar{
+  margin-left: 12%;
+}
 #content {
     width: 100%;
     height: 100%;
@@ -61,25 +64,9 @@ export default {
   margin-top: 0%;
 }
 
-.buttonIntro{
-  border-radius: 20px;
-  color: white;
-  background-color: #4CAF50;
-  border-style: outset;
-  padding: 11px 30px;
-  font-family: 'Gaegu', cursive;
-  border-width: 2px;
-  font-size: 30px;
-  outline: none;
-  cursor: pointer;
-  margin-top: 7%;
-}
-.buttonIntro:hover{
-  box-shadow: 0 8px 16px 0 rgba(0,0,1,0.2);
-}
 
 #title{
-  font-family: 'Gaegu', cursive;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 .button {
@@ -115,7 +102,7 @@ export default {
     -moz-transition: background-color .2s ease-in-out, -moz-transform .1s ease-in-out;
     -o-transition: background-color .2s ease-in-out, -o-transform .1s ease-in-out;
     transition: background-color .2s ease-in-out, transform .1s ease-in-out;
-    font-family: 'Gaegu', cursive;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 .button:hover span {

@@ -32,6 +32,6 @@ export default {
 
 <style>
 h1, p, h2, h3, h4{
-  font-family: 'Gaegu', cursive;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 </style>

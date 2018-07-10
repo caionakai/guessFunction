@@ -1,7 +1,7 @@
 <template>
   <div id="learn-topics">
     <div id="content">
-        <h1 id="title">Lista de Conteudo</h1>
+        <h1 id="title">Lista de Conteúdo</h1>
         <div id="listDiv">
             <ol id="listContent">
                 <li><a href="#/trigonometria">Trigonometria</a></li>
@@ -11,7 +11,7 @@
             </ol>
         </div>
         <a href="#/intro" id="button">
-            <span>Inicio</span>
+            <span>Início</span>
         </a>
     </div>
   </div>
@@ -41,12 +41,12 @@ export default {
 }
 
 #title{
-  font-family: 'Gaegu', cursive;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 #listContent{
     width: 30%;
-    font-family: 'Gaegu', cursive;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 150%;
 }
 
@@ -87,7 +87,7 @@ export default {
     -moz-transition: background-color .2s ease-in-out, -moz-transform .1s ease-in-out;
     -o-transition: background-color .2s ease-in-out, -o-transform .1s ease-in-out;
     transition: background-color .2s ease-in-out, transform .1s ease-in-out;
-    font-family: 'Gaegu', cursive;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 #button:hover span {

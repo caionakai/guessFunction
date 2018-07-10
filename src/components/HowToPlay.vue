@@ -11,7 +11,7 @@
            porém cuidado, pois você só possui 3 vidas, ou seja, ao errar 3 questões: GAME OVER!
         </p>
         <a href="#/Intro" id="button">
-            <span>Inicio</span>
+            <span>Início</span>
         </a>
         </div>
     </div>
@@ -77,7 +77,7 @@ p{
     -moz-transition: background-color .2s ease-in-out, -moz-transform .1s ease-in-out;
     -o-transition: background-color .2s ease-in-out, -o-transform .1s ease-in-out;
     transition: background-color .2s ease-in-out, transform .1s ease-in-out;
-    font-family: 'Gaegu', cursive;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 #button:hover span {
@@ -95,5 +95,8 @@ p{
     -moz-transform: translate(0, 4px);
     -o-transform: translate(0, 4px);
     transform: translate(0, 4px);
+}
+p, h1,h3{
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 </style>
