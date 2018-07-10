@@ -44,9 +44,7 @@ export default {
     position: absolute;
     top: 0px;
     left: 0px;
-    /* background-size: cover; idk what this line do*/
     background-position: 50% 50%;
-    /* background-size: 950px 500px; */
 
 }
 #firstLevel{

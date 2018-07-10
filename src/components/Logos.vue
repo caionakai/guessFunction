@@ -30,8 +30,8 @@ export default {
 
 </script>
 
-<style scoped>
-body{
-  background-color: green;
+<style>
+h1, p, h2, h3, h4{
+  font-family: 'Gaegu', cursive;
 }
 </style>

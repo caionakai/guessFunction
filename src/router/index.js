@@ -8,6 +8,12 @@ import Certo from '@/components/Certo'
 import Logos from '@/components/Logos'
 import Score from '@/components/Score'
 import Map from '@/components/Map'
+import Topics from '@/components/Learn/Topics'
+import HowToPlay from '@/components/HowToPlay'
+import Trigonometria from '@/components/Learn/Trigonometria'
+import Limite from '@/components/Learn/Limite'
+import Derivada from '@/components/Learn/Derivada'
+import Integral from '@/components/Learn/Integral'
 
 Vue.use(Router)
 
@@ -54,6 +60,36 @@ export default new Router({
       path: '/map',
       name: 'Map',
       component: Map
+    },
+    {
+      path: '/topics',
+      name: 'Topics',
+      component: Topics
+    },
+    {
+      path: '/howtoplay',
+      name: 'HowToPlay',
+      component: HowToPlay
+    },
+    {
+      path: '/trigonometria',
+      name: 'Trigonometria',
+      component: Trigonometria
+    },
+    {
+      path: '/limite',
+      name: 'Limite',
+      component: Limite
+    },
+    {
+      path: '/derivada',
+      name: 'Derivada',
+      component: Derivada
+    },
+    {
+      path: '/integral',
+      name: 'Integral',
+      component: Integral
     }
   ]
 })
