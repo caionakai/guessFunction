@@ -4,6 +4,8 @@
         <h1 id="title">Trigonometria</h1>
         <p>A trigonometria é a parte da matemática que estuda as relações existentes entre os lados e os ângulos dos triângulos.
         Ela é utilizada também em outras áreas de estudo como física, química, biologia, geografia, astronomia, medicina, engenharia, dentre outras.</p>
+        <p>fonte: https://www.todamateria.com.br/trigonometria/</p>
+        
         <a href="#/topics" id="button">
             <span>Voltar</span>
         </a>

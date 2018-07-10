@@ -2,6 +2,21 @@
   <div id="learn-topics">
     <div id="content">
         <h1 id="title">Integral</h1>
+
+        <p>No cálculo, a integral de uma função foi criada originalmente para determinar a 
+            área sob uma curva no plano cartesiano e também surge naturalmente em dezenas de 
+            problemas da física, como por exemplo na determinação da posição em todos os 
+            instantes de um objeto, se for conhecida a sua velocidade instantânea em todos os 
+            instantes.
+            Diferentemente da noção associada de derivação, existem várias definições para a integração,
+            todas elas visando a resolver alguns problemas conceituais relacionados a limites, 
+            continuidade e existência de certos processos utilizados na definição. Estas 
+            definições diferem porque existem funções que podem ser integradas segundo alguma 
+            definição, mas não podem segundo outra.
+            O processo de se calcular a integral de uma função é chamado de integração. A integral 
+            indefinida também é conhecida como antiderivada.</p>
+        <p>fonte: https://pt.wikipedia.org/wiki/Integral</p>
+
         <a href="#/topics" id="button">
             <span>Voltar</span>
         </a>
@@ -87,6 +102,11 @@ export default {
     -moz-transform: translate(0, 4px);
     -o-transform: translate(0, 4px);
     transform: translate(0, 4px);
+}
+
+p{
+    font-family: "Comic Sans MS", cursive, sans-serif;  
+    text-align: justify;
 }
 
 </style>

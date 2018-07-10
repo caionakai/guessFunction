@@ -2,7 +2,7 @@
   <div id="origin">
       <div class="tile is-parent is-4">
         <article class="tile is-child box">
-          <h4 class="title">Guess the fuction below!</h4>
+          <h4 class="title">Guess the function below!</h4>
           <div ref="seno"></div>
         </article>
       </div>

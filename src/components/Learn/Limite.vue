@@ -2,6 +2,8 @@
   <div id="learn-topics">
     <div id="content">
         <h1 id="title">Limite</h1>
+        <p>Em matemática, o conceito de limite é usado para descrever o comportamento de uma função à medida que o seu argumento se aproxima de um determinado valor, assim como o comportamento de uma sequência de números reais, à medida que o índice (da sequência) vai crescendo, i.e. tende para infinito. Os limites são usados no cálculo diferencial e em outros ramos da análise matemática para definir derivadas e a continuidade de funções.</p>
+        <p>fonte: https://pt.wikipedia.org/wiki/Limite</p>
         <a href="#/topics" id="button">
             <span>Voltar</span>
         </a>
@@ -31,11 +33,6 @@ export default {
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-#listContent{
-    width: 30%;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    font-size: 150%;
-}
 
 #button {
     display: inline-block;
@@ -87,6 +84,9 @@ export default {
     -moz-transform: translate(0, 4px);
     -o-transform: translate(0, 4px);
     transform: translate(0, 4px);
+}
+p{
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 </style>

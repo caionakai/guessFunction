@@ -2,6 +2,15 @@
   <div id="learn-topics">
     <div id="content">
         <h1 id="title">Derivada</h1>
+        <p>No cálculo, a derivada em um ponto de uma função y=f(x) representa a taxa de variação 
+            instantânea de  y em relação a x neste ponto. Um exemplo típico é a função velocidade 
+            que representa a taxa de variação (derivada) da função espaço. Do mesmo modo, a 
+            função aceleração é a derivada da função velocidade. Geometricamente, a derivada no 
+            ponto x=a de y = f(x) representa a inclinação da reta tangente ao gráfico desta 
+            função no ponto (a,~f(a)).[1][2] A função que a cada ponto x associa a derivada neste 
+            ponto de f(x) é chamada de função derivada de f(x).</p>
+
+        <p>fonte: https://pt.wikipedia.org/wiki/Derivada</p>
         <a href="#/topics" id="button">
             <span>Voltar</span>
         </a>
@@ -82,6 +91,9 @@ export default {
     -moz-transform: translate(0, 4px);
     -o-transform: translate(0, 4px);
     transform: translate(0, 4px);
+}
+p{
+    font-family: "Comic Sans MS", cursive, sans-serif;  
 }
 
 </style>
