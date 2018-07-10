@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="../assets/X.png"></img>
+    <img src="../assets/X.png"/>
   </div>
 </template>
 
@@ -14,17 +14,22 @@ export default {
     this.count = 2;
     this.timeOver();
   },
+  props:['life'],
   methods:{
+    decrementLife(){
+      this.$emit('decrementLife');
+    },
     timeOver(){
       this.count -= 1;
       if(this.count > 0){
         setTimeout(this.timeOver, 1000);
       }else{
-        if(this.$route.params.id === 'seno'){
-          this.$router.replace({name: 'Cosseno'});
-        }
-        if(this.$route.params.id === 'cosseno'){
-          this.$router.replace({name: 'Score'});
+        this.life -= 1;
+        this.decrementLife();
+        if(this.life === 0){
+          this.$router.replace({name: 'GameOver'});
+        }else{
+          this.$router.replace({name: 'Map'});
         }
       }
     }

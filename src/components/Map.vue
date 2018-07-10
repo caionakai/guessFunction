@@ -23,7 +23,9 @@
     </div>
 
     <div id="lifeDiv">
-      <img id="lifeImage" src="../assets/3life.png" />
+      <img v-if="life === 3" id="lifeImage" src="../assets/3life.png" />
+      <img v-if="life === 2" id="lifeImage" src="../assets/2life.png" />
+      <img v-if="life === 1" id="lifeImage" src="../assets/1life.png" />
     </div>
   </div>
 </template>
@@ -31,7 +33,7 @@
 <script>
 export default {
   name: 'Mapa',
-  props: ['firstLevelCompleted', 'secondLevelCompleted'],
+  props: ['firstLevelCompleted', 'secondLevelCompleted', 'life'],
 }
 
 </script>

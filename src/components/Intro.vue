@@ -24,22 +24,17 @@ export default {
   created() {
     this.eventUpdate();
     this.resetAllLevels();
+    this.restoreLife();
   },
-  methods:{
-    jogar() {
-        this.$router.replace({ name: "Map" });
-    },   
+  methods:{ 
     eventUpdate(){
       this.$emit('resetSomador');
     },
     resetAllLevels(){
       this.$emit('resetAllLevels');
     },
-    aprender(){
-      this.$router.replace({ name: "Topics" });
-    },
-    howtoPlay(){
-      this.$router.replace({ name: "HowToPlay" });
+    restoreLife(){
+      this.$emit('restoreLife');
     }
   }
 }

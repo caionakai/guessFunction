@@ -1,9 +1,14 @@
 <template>
   <div id="app">
-    <router-view @updateSomador="updateSomador()" @resetSomador="zeraSomador()" 
-    :firstLevelCompleted="firstLevelCompleted" @updateFirstLevel="updateFirstLevel()" 
-    :pontuacao="somador" @resetAllLevels="resetAllLevels()" @updateSecondLevel="updateSecondLevel()"
-    :secondLevelCompleted="secondLevelCompleted" />
+    <!-- Every event and props have to be defined here :-) -->
+    <router-view :pontuacao="somador" :life="life"
+    :firstLevelCompleted="firstLevelCompleted" :secondLevelCompleted="secondLevelCompleted" 
+    @updateFirstLevel="updateFirstLevel()" @updateSomador="updateSomador()" 
+    @resetSomador="zeraSomador()" @resetAllLevels="resetAllLevels()"
+    @updateSecondLevel="updateSecondLevel()" @decrementLife="decrementLife()"
+    @restoreLife="restoreLife()"
+    
+    />
   </div>
 </template>
 
@@ -13,6 +18,7 @@ export default {
   data: function(){
     return {
       somador: 0,
+      life: 3,
       firstLevelCompleted: false,
       secondLevelCompleted: false
     }
@@ -23,6 +29,12 @@ export default {
     },
     zeraSomador(){
       this.somador = 0
+    },
+    decrementLife(){
+      this.life -= 1 
+    },
+    restoreLife(){
+      this.life = 3;
     },
     updateFirstLevel(){
       this.firstLevelCompleted = true

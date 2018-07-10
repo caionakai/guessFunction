@@ -14,6 +14,7 @@ import Trigonometria from '@/components/Learn/Trigonometria'
 import Limite from '@/components/Learn/Limite'
 import Derivada from '@/components/Learn/Derivada'
 import Integral from '@/components/Learn/Integral'
+import GameOver from '@/components/GameOver'
 
 Vue.use(Router)
 
@@ -90,6 +91,11 @@ export default new Router({
       path: '/integral',
       name: 'Integral',
       component: Integral
+    },
+    {
+      path: '/gameover',
+      name: 'GameOver',
+      component: GameOver
     }
   ]
 })
