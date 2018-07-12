@@ -5,6 +5,7 @@
         <area alt="" title="" href="#/seno" shape="poly" coords="69,470,92,475,102,487,98,499,82,504,63,505,43,502,31,482,48,473" />
         <area alt="" title="" href="#/cosseno" shape="poly" coords="209,428,239,435,251,443,245,457,230,460,207,463,186,459,173,453,178,436" />
         <area alt="" title="" href="#/score" shape="poly" coords="898,368,920,369,932,361,948,367,966,367,967,390,934,391,898,389" />
+        <area alt="" title="" href="#/integralsimple" shape="poly" coords="409,412,447,419,454,436,438,445,416,448,392,444,379,436,384,422" />
     </map>
     <div v-if="this.firstLevelCompleted" id="firstDiv">
       <img id="firstLevel" src="../assets/done.png" />

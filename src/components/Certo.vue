@@ -30,6 +30,9 @@ export default {
           this.secondLevelCompletedUpdate();
           this.$router.replace({name: 'Map'});
         }
+        if(this.$route.params.id === 'integralsimple'){
+          this.$router.replace({name: 'Map'});          
+        }
       }
     },
     // Este método inicia um evento para acrescentar o somador para o Score Final.

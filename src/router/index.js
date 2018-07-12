@@ -15,6 +15,7 @@ import Limite from '@/components/Learn/Limite'
 import Derivada from '@/components/Learn/Derivada'
 import Integral from '@/components/Learn/Integral'
 import GameOver from '@/components/GameOver'
+import IntegralSimple from '@/components/Question/Integral/Simple'
 
 Vue.use(Router)
 
@@ -96,6 +97,11 @@ export default new Router({
       path: '/gameover',
       name: 'GameOver',
       component: GameOver
+    },
+    {
+      path: '/integralSimple',
+      name: 'integralSimple',
+      component: IntegralSimple
     }
   ]
 })
