@@ -14,31 +14,31 @@
     </map>
 
 
-    <div v-if="this.firstLevelCompleted" id="level1Done">
+    <div v-if="this.level.firstLevelCompleted" id="level1Done">
       <img src="../assets/done.png" />
     </div>
     
-    <div v-if="this.secondLevelCompleted" id="level2Done">
+    <div v-if="this.level.secondLevelCompleted" id="level2Done">
       <img src="../assets/done.png" />
     </div>
 
-    <div v-if="this.thirdLevelCompleted" id="level3Done">
+    <div v-if="this.level.thirdLevelCompleted" id="level3Done">
       <img src="../assets/done.png" />
     </div>
 
-    <div v-if="this.fourthLevelCompleted" id="level4Done">
+    <div v-if="this.level.fourthLevelCompleted" id="level4Done">
       <img src="../assets/done.png" />
     </div>
     
-    <div v-if="this.fifthLevelCompleted" id="level5Done">
+    <div v-if="this.level.fifthLevelCompleted" id="level5Done">
       <img src="../assets/done.png" />
     </div>
     
-    <div v-if="this.sixthLevelCompleted" id="level6Done">
+    <div v-if="this.level.sixthLevelCompleted" id="level6Done">
       <img src="../assets/done.png" />
     </div>
         
-    <div v-if="this.seventhLevelCompleted" id="level7Done">
+    <div v-if="this.level.seventhLevelCompleted" id="level7Done">
       <img src="../assets/done.png" />
     </div>
     <!-- <div id="arrowWin">
@@ -60,7 +60,7 @@
 <script>
 export default {
   name: 'Mapa',
-  props: ['firstLevelCompleted', 'secondLevelCompleted', 'life'],
+  props: ['firstLevelCompleted', 'secondLevelCompleted', 'life', 'level'],
   mounted(){
     this.windowonload();
   },

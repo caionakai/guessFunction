@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <!-- Every event and props have to be defined here :-) -->
-    <router-view :pontuacao="somador" :life="life"
-    :firstLevelCompleted="firstLevelCompleted" :secondLevelCompleted="secondLevelCompleted" 
+    <router-view :pontuacao="somador" :life="life" :level="level"
     @updateFirstLevel="updateFirstLevel()" @updateSomador="updateSomador()" 
     @resetSomador="zeraSomador()" @resetAllLevels="resetAllLevels()"
     @updateSecondLevel="updateSecondLevel()" @decrementLife="decrementLife()"
-    @restoreLife="restoreLife()"
+    @restoreLife="restoreLife()" @updateThirdLevel="updateThirdLevel()"
+    @updateFourthLevel="updateFourthLevel()" @updateFifthLevel="updateFifthLevel()"
     
     />
   </div>
@@ -19,8 +19,16 @@ export default {
     return {
       somador: 0,
       life: 3,
-      firstLevelCompleted: false,
-      secondLevelCompleted: false
+      level: [{
+        firstLevelCompleted:false,
+        secondLevelCompleted:false,
+        thirdLevelCompleted:false,
+        fourthLevelCompleted:false,
+        fifthLevelCompleted:false,
+        sixthLevelCompleted:false,
+        seventhLevelCompleted:false,
+
+      }]
     }
   },
   methods:{
@@ -36,16 +44,30 @@ export default {
     restoreLife(){
       this.life = 3;
     },
+    // The Update level method is called when the page Certo with the right condition emit some event
     updateFirstLevel(){
-      this.firstLevelCompleted = true
+      this.level.firstLevelCompleted = true
     },
     updateSecondLevel(){
-      this.secondLevelCompleted = true
+      this.level.secondLevelCompleted = true
     },
+    updateThirdLevel(){
+      this.level.thirdLevelCompleted = true
+    },
+    updateFourthLevel(){
+      this.level.fourthLevelCompleted = true
+    },
+    updateFifthLevel(){
+      this.level.fifthLevelCompleted = true
+    },
+    // This method is called when the page Intro is loaded
     resetAllLevels(){
-      this.firstLevelCompleted = false;
-      this.secondLevelCompleted = false;
-    }
+      this.level.firstLevelCompleted = false;
+      this.level.secondLevelCompleted = false;
+      this.level.thirdLevelCompleted = false;
+      this.level.fourthLevelCompleted = false;
+      this.level.fifthLevelCompleted = false;
+    },
   }
 }
 

@@ -1,22 +1,25 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Seno from '@/components/Seno'
-import Cosseno from '@/components/Cosseno'
-import Intro from '@/components/Intro'
-import Errado from '@/components/Errado'
-import Certo from '@/components/Certo'
+
 import Logos from '@/components/Logos'
-import Score from '@/components/Score'
-import Map from '@/components/Map'
-import Topics from '@/components/Learn/Topics'
+import Intro from '@/components/Intro'
 import HowToPlay from '@/components/HowToPlay'
+import Map from '@/components/Map'
+import Certo from '@/components/Certo'
+import Errado from '@/components/Errado'
+import Score from '@/components/Score'
+import GameOver from '@/components/GameOver'
+
+import Seno from '@/components/Question/Trigonometry/Seno'
+import Cosseno from '@/components/Question/Trigonometry/Cosseno'
+import IntegralSimple from '@/components/Question/Integral/Simple'
+import IntegralSimpleRadio from '@/components/Question/Integral/SimpleRadio'
+
+import Topics from '@/components/Learn/Topics'
 import Trigonometria from '@/components/Learn/Trigonometria'
 import Limite from '@/components/Learn/Limite'
 import Derivada from '@/components/Learn/Derivada'
 import Integral from '@/components/Learn/Integral'
-import GameOver from '@/components/GameOver'
-import IntegralSimple from '@/components/Question/Integral/Simple'
-import IntegralSimpleRadio from '@/components/Question/Integral/SimpleRadio'
 
 Vue.use(Router)
 

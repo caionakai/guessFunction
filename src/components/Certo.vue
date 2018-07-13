@@ -31,6 +31,11 @@ export default {
           this.$router.replace({name: 'Map'});
         }
         if(this.$route.params.id === 'integralsimple'){
+          this.thirdLevelCompletedUpdate();
+          this.$router.replace({name: 'Map'});          
+        }        
+        if(this.$route.params.id === 'integralsimpleradio'){
+          this.fourthLevelCompletedUpdate();
           this.$router.replace({name: 'Map'});          
         }
       }
@@ -46,7 +51,16 @@ export default {
 
     secondLevelCompletedUpdate(){
       this.$emit('updateSecondLevel');
+    },
+
+    thirdLevelCompletedUpdate(){
+      this.$emit('updateThirdLevel');
+    },
+
+    fourthLevelCompletedUpdate(){
+      this.$emit('updateFourthLevel');
     }
+
   }
 }
 

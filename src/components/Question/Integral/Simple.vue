@@ -18,9 +18,6 @@
             <label id="resposta" for="integral">Resposta:</label>
             <input type="text" name="integral" v-model="integral">
         </p>
-        
-        <h1 v-if="this.errors === 'ok'"> Acertou!</h1>
-        <h1 v-if="this.errors === 'bad'"> Errou!</h1>
 
         <button @click="checkForm()"> Go!</button>
     </div>
