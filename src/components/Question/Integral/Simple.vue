@@ -19,7 +19,7 @@
             <input type="text" name="integral" v-model="integral">
         </p>
 
-        <button @click="checkForm()"> Go!</button>
+        <button id="button" @click="checkForm()"> Confirmar</button>
     </div>
 </template>
 
@@ -63,5 +63,16 @@ export default {
 }
 #resposta{
     margin-left: -6%;
+}
+#button{
+    display: inline-block;
+    margin-top: 3%;
+    background-color: #3aff47;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #fff;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 </style>

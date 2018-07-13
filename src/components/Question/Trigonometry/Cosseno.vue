@@ -1,16 +1,43 @@
 <template>
   <div id="origin">
       <div class="tile is-parent is-4">
-        <article class="tile is-child box">
-          <h4 class="title">Guess the function below!</h4>
-          <div ref="seno"></div>
-        </article>
+        <h4 class="title">Qual função representa o gráfico a seguir?</h4>
+        <div ref="cosseno"></div>
       </div>
-      <div class="btn-group">
-        <button v-on:click="verify('seno')" class="buttonOption">Seno</button>
-        <button v-on:click="verify('cosseno')" class="buttonOption">Cosseno</button>
-        <button v-on:click="verify('tangente')" class="buttonOption">Tangente</button>
-      </div>
+
+      <p>
+        <label id="a" for="a">a)</label>
+        <input type="radio" name="quest" value="a" v-model="selected">
+        <label>
+          Seno
+        </label>
+      </p>
+      <p>
+        <label id="b" for="b">b)</label>
+        <input type="radio" value="b" name="quest" v-model="selected">
+        <label>
+          Cosseno
+        </label>
+      </p>
+
+
+        <p>
+          <label id="c" for="c">c)</label>
+          <input type="radio" value="c" name="quest" v-model="selected">
+          <label>
+            Tangente
+          </label>
+        </p>
+
+        <p>
+          <label id="d" for="d">d)</label>
+          <input type="radio" value="d" name="quest" v-model="selected">
+          <label>
+            Secante
+          </label>
+        </p>
+        
+        <button id="button" @click="checkForm()"> Confirmar</button>
   </div>
 </template>
 
@@ -29,7 +56,7 @@ export default {
         frames[0].data[0].x[i] = t * Math.PI;
         frames[0].data[0].y[i] = Math.cos(t * Math.PI)
     }
-    Plotly.plot(this.$refs.seno, [{
+    Plotly.plot(this.$refs.cosseno, [{
         x: frames[0].data[0].x,
         y: frames[0].data[0].y
         }], 
@@ -40,7 +67,8 @@ export default {
   },
   data () {
     return {
-      rows: []
+      rows: [],
+      selected: null,
     }
   },
   methods: {
@@ -49,6 +77,13 @@ export default {
         this.$router.replace({ name: "Certo", params:{id: 'cosseno'} });
       }else{
         this.$router.replace({ name: "Errado",  params:{id: 'cosseno'} });
+      }
+    },
+    checkForm(){
+      if(this.selected === 'b'){
+          this.$router.replace({name:'Certo', params:{id:'cosseno'}});
+      }else{
+          this.$router.replace({name:'Errado'});
       }
     }
   }
@@ -59,19 +94,19 @@ export default {
 .js-plotly-plot {
   max-width: 100%;
 }
-.buttonOption{
-    margin-top: 5%;
-    border-radius: 10px;
-    margin-left: 13%;
-    height: 40px;
-    width: 70px;
-    color: #ffffff;
-    background: #436cad;
-    outline: none;
-}
 
-.btn-group{
-    margin-left: 1%;
+#a{
+  margin-left: -2.5%;;
 }
-
+#button{
+    display: inline-block;
+    margin-top: 3%;
+    background-color: #3aff47;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #fff;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
 </style>

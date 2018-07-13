@@ -1,18 +1,44 @@
 <template>
   <div id="origin">
       <div class="seno">
-        <article class="tile is-child box">
-          <h4 class="title">{{msg}}</h4>
-          <div ref="seno"></div>
-        </article>
+        <h4 class="title">{{msg}}</h4>
+        <div id="plot" ref="seno"></div>
       </div>
 
-      <div class="btn-group">
-        <button v-on:click="verify('seno')" class="buttonOption">Seno</button>
-        <button v-on:click="verify('cosseno')" class="buttonOption">Cosseno</button>
-        <button v-on:click="verify('tangente')" class="buttonOption">Tangente</button>
-      </div>
-      <Certo></Certo>
+      <p>
+            <label id="a" for="a">a)</label>
+            <input type="radio" name="quest" value="a" v-model="selected">
+            <label>
+              Seno
+            </label>
+        </p>
+        <p>
+            <label id="b" for="b">b)</label>
+            <input type="radio" value="b" name="quest" v-model="selected">
+            <label>
+              Cosseno
+            </label>
+        </p>
+
+
+        <p>
+            <label id="c" for="c">c)</label>
+            <input type="radio" value="c" name="quest" v-model="selected">
+            <label>
+              Tangente
+            </label>
+        </p>
+
+        <p>
+            <label id="d" for="d">d)</label>
+            <input type="radio" value="d" name="quest" v-model="selected">
+            <label>
+              Secante
+            </label>
+        </p>
+        
+        <button id="button" @click="checkForm()"> Confirmar</button>
+
   </div>
 </template>
 
@@ -39,23 +65,20 @@ export default {
             margin: { t: 0 }
         }
     );
-    // This code below that I want to load after an event click 
-    var frames = [
-        {name: 'sine', data: [{x: [], y: []}]}
-    ];
   },
   data () {
     return {
-      msg: 'Guess the function below!',
+      msg: 'Qual função representa o gráfico a seguir?',
+      selected: null,
 
     }
   },
   methods: {
-    verify(dado){
-      if(dado == 'seno'){
-        this.$router.replace({ name: "Certo", params:{id: 'seno'} });
+    checkForm(){
+      if(this.selected === 'a'){
+          this.$router.replace({name:'Certo', params:{id:'seno'}});
       }else{
-        this.$router.replace({ name: "Errado", params:{id: 'seno'} });
+          this.$router.replace({name:'Errado'});
       }
     }
   }
@@ -66,19 +89,26 @@ export default {
 .js-plotly-plot {
   max-width: 100%;
 }
-.buttonOption{
-    margin-top: 5%;
-    border-radius: 10px;
-    margin-left: 13%;
-    height: 40px;
-    width: 70px;
-    color: #ffffff;
-    background: #436cad;
-    outline: none;
+
+#a{
+  margin-left: -2.5%;
 }
 
-.btn-group{
-    margin-left: 1%;
+#plot{
+  width: 100%;
+  height: 25%;
+}
+
+#button{
+    display: inline-block;
+    margin-top: 3%;
+    background-color: #3aff47;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #fff;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 </style>

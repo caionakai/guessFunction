@@ -5,15 +5,15 @@
     </div>
     <map name="Map" id="Map">
       <area href="#/seno" shape="poly" coords="67,67,89,74,102,81,108,96,111,111,107,129,99,145,81,155,54,152,38,143,28,127,25,106,27,89,45,74" />
-      <area href="#/cosseno" shape="poly" coords="230,149,255,160,263,171,268,185,266,206,251,222,236,230,211,225,199,207,194,186,204,166,212,154" />
-      <area href="#/integralsimple" shape="poly" coords="277,320,307,333,315,351,319,369,312,378,300,388,279,396,259,392,246,378,241,362,243,346,256,328" />
-      <area href="#/integralsimpleradio" shape="poly" coords="363,460,389,471,401,488,403,510,400,526,388,539,376,545,354,550,335,542,324,527,320,510,320,495,327,478,342,464" />
-      <area href="#" shape="poly" coords="528,348,546,354,554,366,560,378,559,393,551,404,534,411,517,411,504,398,498,383,503,363,513,352" />
-      <area href="#" shape="poly" coords="684,268,704,273,713,282,718,295,717,311,712,319,702,326,690,331,678,329,665,319,661,310,657,302,658,289,667,276" />
-      <area href="#" shape="poly" coords="887,186,909,192,919,201,926,214,931,227,929,244,921,258,911,265,895,267,882,267,868,263,857,253,852,240,851,220,864,197" />
+      <area v-if="this.level.firstLevelCompleted" href="#/cosseno" shape="poly" coords="230,149,255,160,263,171,268,185,266,206,251,222,236,230,211,225,199,207,194,186,204,166,212,154" />
+      <area v-if="this.level.secondLevelCompleted" href="#/integralsimple" shape="poly" coords="277,320,307,333,315,351,319,369,312,378,300,388,279,396,259,392,246,378,241,362,243,346,256,328" />
+      <area v-if="this.level.thirdLevelCompleted" href="#/integralsimpleradio" shape="poly" coords="363,460,389,471,401,488,403,510,400,526,388,539,376,545,354,550,335,542,324,527,320,510,320,495,327,478,342,464" />
+      <area v-if="this.level.fourthLevelCompleted" href="#" shape="poly" coords="528,348,546,354,554,366,560,378,559,393,551,404,534,411,517,411,504,398,498,383,503,363,513,352" />
+      <area v-if="this.level.fifthLevelCompleted" href="#" shape="poly" coords="684,268,704,273,713,282,718,295,717,311,712,319,702,326,690,331,678,329,665,319,661,310,657,302,658,289,667,276" />
+      <area v-if="this.level.sixthLevelCompleted" href="#" shape="poly" coords="887,186,909,192,919,201,926,214,931,227,929,244,921,258,911,265,895,267,882,267,868,263,857,253,852,240,851,220,864,197" />
     </map>
 
-
+    <!-- Change tile color and put an image over it avoiding click -->
     <div v-if="this.level.firstLevelCompleted" id="level1Done">
       <img src="../assets/done.png" />
     </div>
@@ -104,8 +104,8 @@ export default {
   position: absolute;
   width: 10%;
   height: 18%;
-  left: 1.7%;
-  top: 8.9%;
+  left: 2%;
+  top: 9.3%;
 }
 #level2Done{
   position: absolute;
