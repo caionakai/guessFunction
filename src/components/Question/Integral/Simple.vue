@@ -2,23 +2,26 @@
     <div id="main">
         <p>Calcule a integral seguinte utilizando o método de substituição</p>
         <img src="../../../assets/Question/Integral/integralsimple.gif" />
-        
+
         <p>
             <label for="u">u:</label>
             <input type="text" name="u" v-model="u">
         </p>
         <p>
-            <label for="du">du:</label>
+            <label id="teste" for="du">du:</label>
             <input type="text" name="du" v-model="du">
         </p>
+
+        <img src="../../../assets/Question/Integral/integralsimple-1.gif" />
+
         <p>
-            <label for="integral">&#8747;</label>
+            <label id="resposta" for="integral">Resposta:</label>
             <input type="text" name="integral" v-model="integral">
         </p>
         
         <h1 v-if="this.errors === 'ok'"> Acertou!</h1>
         <h1 v-if="this.errors === 'bad'"> Errou!</h1>
-        <p>{{this.u}}</p>
+
         <button @click="checkForm()"> Go!</button>
     </div>
 </template>
@@ -33,7 +36,7 @@ export default {
             integral: null,
             respu: 'x^2',
             respdu: '2xdx', 
-            respintegral:'cos(u)du',
+            respintegral:'sen(x^2)+c',
             errors: 'a',
         }
     },
@@ -58,5 +61,10 @@ export default {
 </script>
 
 <style scoped>
-
+#teste{
+    margin-left: -1%;
+}
+#resposta{
+    margin-left: -6%;
+}
 </style>

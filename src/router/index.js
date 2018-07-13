@@ -16,6 +16,7 @@ import Derivada from '@/components/Learn/Derivada'
 import Integral from '@/components/Learn/Integral'
 import GameOver from '@/components/GameOver'
 import IntegralSimple from '@/components/Question/Integral/Simple'
+import IntegralSimpleRadio from '@/components/Question/Integral/SimpleRadio'
 
 Vue.use(Router)
 
@@ -99,9 +100,14 @@ export default new Router({
       component: GameOver
     },
     {
-      path: '/integralSimple',
+      path: '/integralsimple',
       name: 'integralSimple',
       component: IntegralSimple
+    },
+    {
+      path: '/integralsimpleradio',
+      name: 'integralSimpleRadio',
+      component: IntegralSimpleRadio
     }
   ]
 })
