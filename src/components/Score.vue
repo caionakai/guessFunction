@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>Sua pontuação foi {{pontuacao}}/2</h1>
+    <h1>Sua pontuação foi {{pontuacao}}/7</h1>
     <button @click="goIntro()">Jogar Novamente!</button>
   </div>
 </template>

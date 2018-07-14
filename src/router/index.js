@@ -12,8 +12,11 @@ import GameOver from '@/components/GameOver'
 
 import Seno from '@/components/Question/Trigonometry/Seno'
 import Cosseno from '@/components/Question/Trigonometry/Cosseno'
+import IdentityTrigonometric from '@/components/Question/Trigonometry/IdentityTrigonometric'
 import IntegralSimple from '@/components/Question/Integral/Simple'
 import IntegralSimpleRadio from '@/components/Question/Integral/SimpleRadio'
+import IntegralUndefined from '@/components/Question/Integral/IntegralUndefined'
+import IntegralDefinite from '@/components/Question/Integral/IntegralDefinite'
 
 import Topics from '@/components/Learn/Topics'
 import Trigonometria from '@/components/Learn/Trigonometria'
@@ -111,6 +114,21 @@ export default new Router({
       path: '/integralsimpleradio',
       name: 'integralSimpleRadio',
       component: IntegralSimpleRadio
+    },
+    {
+      path: '/identitytrigonometric',
+      name: 'IdentityTrigonometric',
+      component: IdentityTrigonometric
+    },
+    {
+      path: '/integralundefined',
+      name: 'IntegralUndefined',
+      component: IntegralUndefined
+    },
+    {
+      path: '/integraldefinite',
+      name: 'IntegralDefinite',
+      component: IntegralDefinite
     }
   ]
 })

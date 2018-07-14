@@ -1,22 +1,23 @@
 <template>
   <div id="origin">
       <div class="seno">
-        <h4 class="title">{{msg}}</h4>
-        <div id="plot" ref="seno"></div>
+        <h4 class="title">Qual a integral indefinida de  
+            <img id="prob" src="../../../assets/Question/Integral/question2-prob.png"/>
+        </h4>
       </div>
 
-      <p>
+      <p id="t">
             <label id="a" for="a">a)</label>
             <input type="radio" name="quest" value="a" v-model="selected">
             <label>
-              Seno
+                <img src="../../../assets/Question/Integral/question2-ans.png"/>      
             </label>
         </p>
         <p>
             <label id="b" for="b">b)</label>
             <input type="radio" value="b" name="quest" v-model="selected">
             <label>
-              Cosseno
+                <img src="../../../assets/Question/Integral/question2-x.png"/>      
             </label>
         </p>
 
@@ -25,7 +26,7 @@
             <label id="c" for="c">c)</label>
             <input type="radio" value="c" name="quest" v-model="selected">
             <label>
-              Tangente
+                <img src="../../../assets/Question/Integral/question2-xx.png"/>      
             </label>
         </p>
 
@@ -33,7 +34,7 @@
             <label id="d" for="d">d)</label>
             <input type="radio" value="d" name="quest" v-model="selected">
             <label>
-              Secante
+                <img src="../../../assets/Question/Integral/question2-xxx.png"/>      
             </label>
         </p>
         
@@ -45,38 +46,16 @@
 <script>
 import Plotly from 'plotly.js'
 export default {
-  name: 'Seno',
-  mounted () {
-    var frames = [
-        {name: 'sine', data: [{x: [], y: []}]}
-    ];
-    var n = 100;
-    for (var i = 0; i < n; i++) {
-        var t = i / (n - 1) * 2 - 1;
-        // A sine wave:
-        frames[0].data[0].x[i] = t * Math.PI;
-        frames[0].data[0].y[i] = Math.sin(t * Math.PI)
-    }
-    Plotly.plot(this.$refs.seno, [{
-        x: frames[0].data[0].x,
-        y: frames[0].data[0].y
-        }], 
-        {
-            margin: { t: 0 }
-        }
-    );
-  },
+  name: 'IntegralUndefined',
   data () {
     return {
-      msg: 'Qual função representa o gráfico a seguir?',
       selected: null,
-
     }
   },
   methods: {
     checkForm(){
       if(this.selected === 'a'){
-          this.$router.replace({name:'Certo', params:{id:'seno'}});
+          this.$router.replace({name:'Certo', params:{id:'integralundefined'}});
       }else{
           this.$router.replace({name:'Errado'});
       }
@@ -91,12 +70,17 @@ export default {
 }
 
 #a{
-  margin-left: -2.5%;
+  margin-left: -1.5%;
+  top: 20%;
 }
-
-#plot{
-  width: 100%;
-  height: 25%;
+#d{
+    margin-left: -1.4%;
+}
+#t{
+    margin-top: 5%; 
+}
+#c{
+    margin-left: -1.5%;
 }
 
 #button{

@@ -74,5 +74,6 @@ export default {
     font-size: 20px;
     color: #fff;
     font-family: "Comic Sans MS", cursive, sans-serif;
+    cursor: pointer;
 }
 </style>

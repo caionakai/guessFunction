@@ -20,7 +20,7 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 
-#how to generate equations gif (to follow the pattern)? 
+#how to generate equations image? (to follow the pattern) 
 https://www.codecogs.com/latex/eqneditor.php?lang=pt-br
 ```
 

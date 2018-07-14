@@ -4,6 +4,7 @@
         <div id="imageDiv">
             <img id="image" src="../assets/gameover.png" />
         </div>
+        <h1>Sua pontuação foi {{pontuacao}}/7</h1>
         <a href="#/Intro" id="button">
             <span>Inicio</span>
         </a>
@@ -13,7 +14,8 @@
 
 <script>
 export default {
-  name: 'GameOver'
+  name: 'GameOver',
+  props:['pontuacao'],
 }
 
 </script>

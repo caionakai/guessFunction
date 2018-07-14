@@ -1,53 +1,24 @@
 <template>
   <div id="mapa">
     <div style="width:100%;">
-      <img src="../assets/teste2.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="!this.level.firstLevelCompleted" src="../assets/teste2.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="this.level.firstLevelCompleted && !this.level.secondLevelCompleted" src="../assets/done1.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="this.level.secondLevelCompleted && !this.level.thirdLevelCompleted" src="../assets/done2.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="this.level.thirdLevelCompleted && !this.level.fourthLevelCompleted" src="../assets/done3.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="this.level.fourthLevelCompleted && !this.level.fifthLevelCompleted" src="../assets/done4.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="this.level.fifthLevelCompleted && !this.level.sixthLevelCompleted" src="../assets/done5.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="this.level.sixthLevelCompleted && !this.level.seventhLevelCompleted" src="../assets/done6.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="this.level.seventhLevelCompleted" src="../assets/done7.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
     </div>
     <map name="Map" id="Map">
-      <area href="#/seno" shape="poly" coords="67,67,89,74,102,81,108,96,111,111,107,129,99,145,81,155,54,152,38,143,28,127,25,106,27,89,45,74" />
-      <area v-if="this.level.firstLevelCompleted" href="#/cosseno" shape="poly" coords="230,149,255,160,263,171,268,185,266,206,251,222,236,230,211,225,199,207,194,186,204,166,212,154" />
-      <area v-if="this.level.secondLevelCompleted" href="#/integralsimple" shape="poly" coords="277,320,307,333,315,351,319,369,312,378,300,388,279,396,259,392,246,378,241,362,243,346,256,328" />
-      <area v-if="this.level.thirdLevelCompleted" href="#/integralsimpleradio" shape="poly" coords="363,460,389,471,401,488,403,510,400,526,388,539,376,545,354,550,335,542,324,527,320,510,320,495,327,478,342,464" />
-      <area v-if="this.level.fourthLevelCompleted" href="#" shape="poly" coords="528,348,546,354,554,366,560,378,559,393,551,404,534,411,517,411,504,398,498,383,503,363,513,352" />
-      <area v-if="this.level.fifthLevelCompleted" href="#" shape="poly" coords="684,268,704,273,713,282,718,295,717,311,712,319,702,326,690,331,678,329,665,319,661,310,657,302,658,289,667,276" />
-      <area v-if="this.level.sixthLevelCompleted" href="#" shape="poly" coords="887,186,909,192,919,201,926,214,931,227,929,244,921,258,911,265,895,267,882,267,868,263,857,253,852,240,851,220,864,197" />
+      <area v-if="!this.level.firstLevelCompleted" href="#/seno" shape="poly" coords="67,67,89,74,102,81,108,96,111,111,107,129,99,145,81,155,54,152,38,143,28,127,25,106,27,89,45,74" />
+      <area v-if="this.level.firstLevelCompleted && !this.level.secondLevelCompleted" href="#/cosseno" shape="poly" coords="231,149,244,152,252,158,260,165,266,173,269,186,267,197,264,207,257,221,250,225,241,227,229,227,216,223,206,212,200,204,196,194,199,182,201,171,207,158,216,153" />
+      <area v-if="this.level.secondLevelCompleted && !this.level.thirdLevelCompleted" href="#/integralsimple" shape="poly" coords="278,321,296,324,307,334,314,343,319,357,318,367,314,378,309,388,300,391,289,395,277,395,264,392,253,385,247,375,243,364,242,353,245,344,252,332,261,323" />
+      <area v-if="this.level.thirdLevelCompleted && !this.level.fourthLevelCompleted" href="#/integralsimpleradio" shape="poly" coords="361,459,379,464,395,474,402,485,404,496,405,510,401,523,393,537,379,543,366,547,351,547,339,543,326,534,322,525,319,512,319,497,322,484,329,474,342,463" />
+      <area v-if="this.level.fourthLevelCompleted && !this.level.fifthLevelCompleted" href="#/identitytrigonometric" shape="poly" coords="528,348,546,354,554,366,560,378,559,393,551,404,534,411,517,411,504,398,498,383,503,363,513,352" />
+      <area v-if="this.level.fifthLevelCompleted && !this.level.sixthLevelCompleted" href="#/integralundefined" shape="poly" coords="684,268,704,273,713,282,718,295,717,311,712,319,702,326,690,331,678,329,665,319,661,310,657,302,658,289,667,276" />
+      <area v-if="this.level.sixthLevelCompleted" href="#/integraldefinite" shape="poly" coords="887,186,909,192,919,201,926,214,931,227,929,244,921,258,911,265,895,267,882,267,868,263,857,253,852,240,851,220,864,197" />
     </map>
-
-    <!-- Change tile color and put an image over it avoiding click -->
-    <div v-if="this.level.firstLevelCompleted" id="level1Done">
-      <img src="../assets/done.png" />
-    </div>
-    
-    <div v-if="this.level.secondLevelCompleted" id="level2Done">
-      <img src="../assets/done.png" />
-    </div>
-
-    <div v-if="this.level.thirdLevelCompleted" id="level3Done">
-      <img src="../assets/done.png" />
-    </div>
-
-    <div v-if="this.level.fourthLevelCompleted" id="level4Done">
-      <img src="../assets/done.png" />
-    </div>
-    
-    <div v-if="this.level.fifthLevelCompleted" id="level5Done">
-      <img src="../assets/done.png" />
-    </div>
-    
-    <div v-if="this.level.sixthLevelCompleted" id="level6Done">
-      <img src="../assets/done.png" />
-    </div>
-        
-    <div v-if="this.level.seventhLevelCompleted" id="level7Done">
-      <img src="../assets/done.png" />
-    </div>
-    <!-- <div id="arrowWin">
-      <img id="arrowWinImage" src="../assets/arrow.gif" />
-    </div>
-
-    <div id="treasureDiv">
-      <img id="treasureImage" src="../assets/treasure.png" />
-    </div> -->
 
     <div id="lifeDiv">
       <img v-if="life === 3" id="lifeImage" src="../assets/3life.png" />
@@ -65,13 +36,14 @@ export default {
     this.windowonload();
   },
   methods:{
+    // this method is resposible for recalculate the map image when the screen is resized
     windowonload() {
     var ImageMap = function (map, img) {
             var n,
-                areas = map.getElementsByTagName('area'),
-                len = areas.length,
-                coords = [],
-                previousWidth = 128;
+            areas = map.getElementsByTagName('area'),
+            len = areas.length,
+            coords = [],
+            previousWidth = 987;
             for (n = 0; n < len; n++) {
                 coords[n] = areas[n].coords.split(',');
             }
@@ -90,7 +62,7 @@ export default {
             };
             window.onresize = this.resize;
         },
-        imageMap = new ImageMap(document.getElementById('oi'), document.getElementById('trilha'));
+        imageMap = new ImageMap(document.getElementById('Map'), document.getElementById('trilha'));
     imageMap.resize();
     return;
 }
@@ -100,56 +72,6 @@ export default {
 </script>
 
 <style scoped>
-#level1Done{
-  position: absolute;
-  width: 10%;
-  height: 18%;
-  left: 2%;
-  top: 9.3%;
-}
-#level2Done{
-  position: absolute;
-  width: 9%;
-  height: 14%;
-  left: 18.7%;
-  top: 23.9%;
-}
-#level3Done{
-  position: absolute;
-  width: 1%;
-  height: 1%;
-  left: 23.7%;
-  top: 52.9%;
-}
-#level4Done{
-  position: absolute;
-  width: 1%;
-  height: 1%;
-  left: 32%;
-  top: 76.9%;
-}
-#level5Done{
-  position: absolute;
-  width: -4%;
-  height: -4%;
-  left: 49.1%;
-  top: 55.9%;
-}
-#level6Done{
-  position: absolute;
-  width: -4%;
-  height: -4%;
-  left: 65.1%;
-  top: 42.9%;
-}
-#level7Done{
-  position: absolute;
-  width: -4%;
-  height: -4%;
-  left: 85.5%;
-  top: 29.9%;
-}
-
 
 #trilha{
     width: 100%;

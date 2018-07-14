@@ -1,19 +1,23 @@
 <template>
-    <div id="main">
-        <p>Qual é a integral indefinida de x^2 +7?</p>
+  <div id="origin">
+      <div class="seno">
+        <h4 class="title">Qual a integral definida de  
+            <img id="prob" src="../../../assets/Question/Integral/question3-prob.png"/>
+        </h4>
+      </div>
 
-        <p>
-            <label for="b">a)</label>
+      <p id="t">
+            <label id="a" for="a">a)</label>
             <input type="radio" name="quest" value="a" v-model="selected">
             <label>
-                <img src="../../../assets/Question/Integral/radioA1.gif" />
+                5/6
             </label>
         </p>
         <p>
             <label id="b" for="b">b)</label>
             <input type="radio" value="b" name="quest" v-model="selected">
             <label>
-                <img src="../../../assets/Question/Integral/radioB1.gif" />
+                5/7
             </label>
         </p>
 
@@ -22,7 +26,7 @@
             <label id="c" for="c">c)</label>
             <input type="radio" value="c" name="quest" v-model="selected">
             <label>
-                <img src="../../../assets/Question/Integral/radioC1.gif" />
+                17/12
             </label>
         </p>
 
@@ -30,47 +34,54 @@
             <label id="d" for="d">d)</label>
             <input type="radio" value="d" name="quest" v-model="selected">
             <label>
-                <img src="../../../assets/Question/Integral/radioD1.gif" />
+                4
             </label>
         </p>
-
+        
         <button id="button" @click="checkForm()"> Confirmar</button>
-    </div>
+
+  </div>
 </template>
 
 <script>
+import Plotly from 'plotly.js'
 export default {
-    name: 'IntegralSimpleRadio',
-    data(){
-        return {
-            selected: null
-        }
-    },
-    created(){
-    },
-    methods:{
-        checkForm(){
-            if(this.selected === 'd'){
-                this.$router.replace({name:'Certo', params:{id:'integralsimpleradio'}});
-
-            }else{
-                this.$router.replace({name:'Errado'});
-            }
-        }
+  name: 'IntegralDefinite',
+  data () {
+    return {
+      selected: null,
     }
+  },
+  methods: {
+    checkForm(){
+      if(this.selected === 'c'){
+          this.$router.replace({name:'Certo', params:{id:'integraldefinite'}});
+      }else{
+          this.$router.replace({name:'Errado'});
+      }
+    }
+  }
 }
 </script>
 
 <style scoped>
-#b{
-    margin-left: 1.5%;
+.js-plotly-plot {
+  max-width: 100%;
 }
-#c{
-    margin-left: -0.9%;
+
+#a{
+  margin-left: 0.1%;
 }
 #d{
-    margin-left: 3.6%;
+    margin-left: -1.4%;
 }
+#t{
+    margin-top: 5%; 
+}
+#c{
+    margin-left: 1.5%;
+}
+
 #button{
     display: inline-block;
     margin-top: 3%;
@@ -83,4 +94,5 @@ export default {
     font-family: "Comic Sans MS", cursive, sans-serif;
     cursor: pointer;
 }
+
 </style>

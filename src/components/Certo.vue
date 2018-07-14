@@ -14,6 +14,7 @@ export default {
     // Count é a quantidade de segundos até redirecionar para outra página!
     this.count = 2;
     this.timeOver();
+    // Acrescenta +1 no contador de acertos.
     this.eventUpdate();
   },
   methods:{
@@ -38,6 +39,18 @@ export default {
           this.fourthLevelCompletedUpdate();
           this.$router.replace({name: 'Map'});          
         }
+        if(this.$route.params.id === 'identitytrigonometric'){
+          this.fifthLevelCompletedUpdate();
+          this.$router.replace({name: 'Map'});          
+        }
+        if(this.$route.params.id === 'integralundefined'){
+          this.sixthLevelCompletedUpdate();
+          this.$router.replace({name: 'Map'});          
+        }
+        if(this.$route.params.id === 'integraldefinite'){
+          this.seventhLevelCompletedUpdate();
+          this.$router.replace({name: 'Score'});          
+        }
       }
     },
     // Este método inicia um evento para acrescentar o somador para o Score Final.
@@ -59,6 +72,18 @@ export default {
 
     fourthLevelCompletedUpdate(){
       this.$emit('updateFourthLevel');
+    },
+    
+    fifthLevelCompletedUpdate(){
+      this.$emit('updateFifthLevel');
+    },
+    
+    sixthLevelCompletedUpdate(){
+      this.$emit('updateSixthLevel');
+    },
+
+    seventhLevelCompletedUpdate(){
+      this.$emit('updateSeventhLevel');
     }
 
   }
