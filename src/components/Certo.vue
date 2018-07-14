@@ -49,7 +49,7 @@ export default {
         }
         if(this.$route.params.id === 'integraldefinite'){
           this.seventhLevelCompletedUpdate();
-          this.$router.replace({name: 'Score'});          
+          this.$router.replace({name: 'Map2'});          
         }
       }
     },

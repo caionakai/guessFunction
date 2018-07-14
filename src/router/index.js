@@ -5,6 +5,7 @@ import Logos from '@/components/Logos'
 import Intro from '@/components/Intro'
 import HowToPlay from '@/components/HowToPlay'
 import Map from '@/components/Map'
+import Map2 from '@/components/Map2'
 import Certo from '@/components/Certo'
 import Errado from '@/components/Errado'
 import Score from '@/components/Score'
@@ -129,6 +130,11 @@ export default new Router({
       path: '/integraldefinite',
       name: 'IntegralDefinite',
       component: IntegralDefinite
+    },
+    {
+      path: '/map2',
+      name: 'Map2',
+      component: Map2
     }
   ]
 })
