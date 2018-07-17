@@ -17,13 +17,13 @@
       <area v-if="this.level.thirdLevelCompleted && !this.level.fourthLevelCompleted" href="#/integralsimpleradio" shape="poly" coords="361,459,379,464,395,474,402,485,404,496,405,510,401,523,393,537,379,543,366,547,351,547,339,543,326,534,322,525,319,512,319,497,322,484,329,474,342,463" />
       <area v-if="this.level.fourthLevelCompleted && !this.level.fifthLevelCompleted" href="#/identitytrigonometric" shape="poly" coords="528,348,546,354,554,366,560,378,559,393,551,404,534,411,517,411,504,398,498,383,503,363,513,352" />
       <area v-if="this.level.fifthLevelCompleted && !this.level.sixthLevelCompleted" href="#/integralundefined" shape="poly" coords="684,268,704,273,713,282,718,295,717,311,712,319,702,326,690,331,678,329,665,319,661,310,657,302,658,289,667,276" />
-      <area v-if="this.level.sixthLevelCompleted" href="#/integraldefinite" shape="poly" coords="887,186,909,192,919,201,926,214,931,227,929,244,921,258,911,265,895,267,882,267,868,263,857,253,852,240,851,220,864,197" />
+      <area v-if="this.level.sixthLevelCompleted && !this.level.seventhLevelCompleted" href="#/integraldefinite" shape="poly" coords="887,186,909,192,919,201,926,214,931,227,929,244,921,258,911,265,895,267,882,267,868,263,857,253,852,240,851,220,864,197" />
     </map>
 
     <div id="lifeDiv">
-      <img v-if="life === 3" id="lifeImage" src="../assets/3life.png" />
-      <img v-if="life === 2" id="lifeImage" src="../assets/2life.png" />
-      <img v-if="life === 1" id="lifeImage" src="../assets/1life.png" />
+      <img v-if="life === 3" id="lifeImage" src="../assets/kokoro3.png" />
+      <img v-if="life === 2" id="lifeImage" src="../assets/kokoro2.png" />
+      <img v-if="life === 1" id="lifeImage" src="../assets/kokoro1.png" />
     </div>
   </div>
 </template>
@@ -96,8 +96,8 @@ export default {
 }
 
 #lifeImage{
-  width: 200%;
-  height: 200%;
+  width: 100%;
+  height: 100%;
 }
 #lifeDiv{
   position: absolute;

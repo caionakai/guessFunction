@@ -8,6 +8,7 @@
     @restoreLife="restoreLife()" @updateThirdLevel="updateThirdLevel()"
     @updateFourthLevel="updateFourthLevel()" @updateFifthLevel="updateFifthLevel()"
     @updateSixthLevel="updateSixthLevel()" @updateSeventhLevel="updateSeventhLevel()"
+    @updateEighthLevel="updateEighthLevel()" @updateNinethLevel="updateNinethLevel()"
     
     />
   </div>
@@ -28,6 +29,8 @@ export default {
         fifthLevelCompleted:false,
         sixthLevelCompleted:false,
         seventhLevelCompleted:false,
+        eighthLevelCompleted:false,
+        ninethLevelCompleted:false,
 
       }]
     }
@@ -66,6 +69,12 @@ export default {
     },
     updateSeventhLevel(){
       this.level.seventhLevelCompleted = true
+    },    
+    updateEighthLevel(){
+      this.level.eighthLevelCompleted = true
+    },
+    updateNinethLevel(){
+      this.level.ninethLevelCompleted = true
     },
     
     // This method is called when the page Intro is loaded
@@ -77,6 +86,8 @@ export default {
       this.level.fifthLevelCompleted = false;
       this.level.sixthLevelCompleted = false;
       this.level.seventhLevelCompleted = false;
+      this.level.eighthLevelCompleted = false;
+      this.level.ninethLevelCompleted = false;
     },
   }
 }

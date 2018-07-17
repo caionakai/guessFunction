@@ -7,25 +7,25 @@
     </div>
 
     <map name="Map" id="Map">
-        <area v-if="!this.level.eighthLevelCompleted" href="#" shape="poly" coords="466,377,488,387,494,397,499,410,500,422,495,436,487,445,477,449,472,453,454,452,446,447,438,439,433,430,431,416,433,402,437,389,449,382" />
-        <area v-if="!this.level.ninethLevelCompleted" href="#" shape="poly" coords="463,482,486,492,497,505,501,520,501,532,495,545,486,556,475,563,466,568,455,566,443,560,431,545,428,529,427,515,433,500,444,491" />
+        <area v-if="!this.level.eighthLevelCompleted" href="#/derivativesimple" shape="poly" coords="462,448,483,454,497,469,500,485,497,500,489,510,480,519,466,522,446,515,437,505,430,494,430,479,432,466,444,452" />
+        <area v-if="!this.level.ninethLevelCompleted" href="#/derivativesimpleq2" shape="poly" coords="465,348,486,355,496,364,501,375,501,388,498,403,489,411,478,418,463,421,448,414,438,406,432,396,431,383,431,373,436,361,449,351" />
     </map>
 
 
     <div id="lifeDiv">
-      <img v-if="life === 3" id="lifeImage" src="../assets/3life.png" />
-      <img v-if="life === 2" id="lifeImage" src="../assets/2life.png" />
-      <img v-if="life === 1" id="lifeImage" src="../assets/1life.png" />
+      <img v-if="life === 3" id="lifeImage" src="../assets/kokoro3.png" />
+      <img v-if="life === 2" id="lifeImage" src="../assets/kokoro2.png" />
+      <img v-if="life === 1" id="lifeImage" src="../assets/kokoro1.png" />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Mapa',
+  name: 'Map2',
   props: ['life', 'level'],
-  mounted(){
-    this.windowonload();
+  mounted: function () {
+    window.addEventListener('resize', this.windowonload())
   },
   methods:{
     // this method is resposible for recalculate the map image when the screen is resized
@@ -76,8 +76,8 @@ export default {
 }
 
 #lifeImage{
-  width: 200%;
-  height: 200%;
+  width: 100%;
+  height: 100%;
 }
 #lifeDiv{
   position: absolute;

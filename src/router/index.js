@@ -14,6 +14,10 @@ import GameOver from '@/components/GameOver'
 import Seno from '@/components/Question/Trigonometry/Seno'
 import Cosseno from '@/components/Question/Trigonometry/Cosseno'
 import IdentityTrigonometric from '@/components/Question/Trigonometry/IdentityTrigonometric'
+
+import DerivativeSimple from '@/components/Question/Derivative/Question1'
+import DerivativeSimpleQ2 from '@/components/Question/Derivative/Question2'
+
 import IntegralSimple from '@/components/Question/Integral/Simple'
 import IntegralSimpleRadio from '@/components/Question/Integral/SimpleRadio'
 import IntegralUndefined from '@/components/Question/Integral/IntegralUndefined'
@@ -135,6 +139,17 @@ export default new Router({
       path: '/map2',
       name: 'Map2',
       component: Map2
+    },
+    {
+      path: '/derivativesimple',
+      name: 'DerivativeSimple',
+      component: DerivativeSimple
+    },
+    {
+      path: '/derivativesimpleq2',
+      name: 'DerivativeSimpleQ2',
+      component: DerivativeSimpleQ2
     }
+    
   ]
 })

@@ -50,6 +50,14 @@ export default {
         if(this.$route.params.id === 'integraldefinite'){
           this.seventhLevelCompletedUpdate();
           this.$router.replace({name: 'Map2'});          
+        }        
+        if(this.$route.params.id === 'derivativesimple'){
+          this.eighthLevelCompletedUpdate();
+          this.$router.replace({name: 'Map2'});          
+        }
+        if(this.$route.params.id === 'derivativesimpleq2'){
+          this.ninethLevelCompletedUpdate();
+          this.$router.replace({name: 'Map2'});          
         }
       }
     },
@@ -84,6 +92,14 @@ export default {
 
     seventhLevelCompletedUpdate(){
       this.$emit('updateSeventhLevel');
+    },
+    
+    eighthLevelCompletedUpdate(){
+      this.$emit('updateEighthLevel');
+    },
+       
+    ninethLevelCompletedUpdate(){
+      this.$emit('updateNinethLevel');
     }
 
   }
