@@ -7,33 +7,33 @@
       </div>
 
       <p id="t">
-            <label id="a" for="a">a)</label>
-            <input type="radio" name="quest" value="a" v-model="selected">
-            <label>
+            <label id="a" for="inputA">a)</label>
+            <input type="radio" id="inputA" name="quest" value="a" v-model="selected">
+            <label for="inputA">
                 <img src="../../../assets/Question/Integral/question2-ans.png"/>      
             </label>
         </p>
         <p>
-            <label id="b" for="b">b)</label>
-            <input type="radio" value="b" name="quest" v-model="selected">
-            <label>
+            <label id="b" for="inputB">b)</label>
+            <input type="radio" id="inputB" value="b" name="quest" v-model="selected">
+            <label for="inputB">
                 <img src="../../../assets/Question/Integral/question2-x.png"/>      
             </label>
         </p>
 
 
         <p>
-            <label id="c" for="c">c)</label>
-            <input type="radio" value="c" name="quest" v-model="selected">
-            <label>
+            <label id="c" for="inputC">c)</label>
+            <input type="radio" id="inputC" value="c" name="quest" v-model="selected">
+            <label for="inputC">
                 <img src="../../../assets/Question/Integral/question2-xx.png"/>      
             </label>
         </p>
 
         <p>
-            <label id="d" for="d">d)</label>
-            <input type="radio" value="d" name="quest" v-model="selected">
-            <label>
+            <label id="d" for="inputD">d)</label>
+            <input type="radio" id="inputD" value="d" name="quest" v-model="selected">
+            <label for="inputD">
                 <img src="../../../assets/Question/Integral/question2-xxx.png"/>      
             </label>
         </p>

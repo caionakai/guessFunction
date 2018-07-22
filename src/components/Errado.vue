@@ -29,8 +29,10 @@ export default {
         if(this.life === 0){
           this.$router.replace({name: 'GameOver'});
         }else{
-          if(this.$route.params.id === 'derivativesimple' || 'derivativesimpleq2'){
+          if(this.$route.params.id === 'derivativesimple'){
             this.$router.replace({name: 'Map2'});     
+          }else if(this.$route.params.id === 'derivativesimpleq2'){
+            this.$router.replace({name: 'Map2'});                 
           }
           else{
             this.$router.replace({name: 'Map'});

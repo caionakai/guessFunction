@@ -9,6 +9,9 @@
     @updateFourthLevel="updateFourthLevel()" @updateFifthLevel="updateFifthLevel()"
     @updateSixthLevel="updateSixthLevel()" @updateSeventhLevel="updateSeventhLevel()"
     @updateEighthLevel="updateEighthLevel()" @updateNinethLevel="updateNinethLevel()"
+    @updateTenthLevel="updateTenthLevel()" @updateEleventhLevel="updateEleventhLevel()"
+    @updateTwelfthLevel="updateTwelfthLevel()" @updateThirteenthLevel="updateThirteenthLevel()"
+    @updateFourteenthLevel="updateFourteenthLevel()" @updateFifteenthLevel="updateFifteenthLevel()"
     
     />
   </div>
@@ -31,6 +34,13 @@ export default {
         seventhLevelCompleted:false,
         eighthLevelCompleted:false,
         ninethLevelCompleted:false,
+        tenthLevelCompleted:false,
+        eleventhLevelCompleted:false,
+        twelfthLevelCompleted:false,
+        thirteenthLevelCompleted: false,
+        fourteenthLevelCompleted: false,
+        fifteenthLevelCompleted: false
+
 
       }]
     }
@@ -76,6 +86,24 @@ export default {
     updateNinethLevel(){
       this.level.ninethLevelCompleted = true
     },
+    updateTenthLevel(){
+      this.level.tenthLevelCompleted = true
+    },
+    updateEleventhLevel(){
+      this.level.eleventhLevelCompleted = true
+    },
+    updateTwelfthLevel(){
+      this.level.twelfthLevelCompleted = true
+    },
+    updateThirteenthLevel(){
+      this.level.thirteenthLevelCompleted = true
+    },
+    updateFourteenthLevel(){
+      this.level.fourteenthLevelCompleted = true
+    },
+    updateFifteenthLevel(){
+      this.level.fifteenthLevelCompleted = true
+    },
     
     // This method is called when the page Intro is loaded
     resetAllLevels(){
@@ -88,6 +116,12 @@ export default {
       this.level.seventhLevelCompleted = false;
       this.level.eighthLevelCompleted = false;
       this.level.ninethLevelCompleted = false;
+      this.level.tenthLevelCompleted =false;
+      this.level.eleventhLevelCompleted = false;
+      this.level.twelfthLevelCompleted = false;
+      this.level.thirteenthLevelCompleted = false;
+      this.level.fourteenthLevelCompleted = false;
+      this.level.fifteenthLevelCompleted = false;
     },
   }
 }

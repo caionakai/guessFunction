@@ -6,6 +6,7 @@ import Intro from '@/components/Intro'
 import HowToPlay from '@/components/HowToPlay'
 import Map from '@/components/Map'
 import Map2 from '@/components/Map2'
+import Map3 from '@/components/Map3'
 import Certo from '@/components/Certo'
 import Errado from '@/components/Errado'
 import Score from '@/components/Score'
@@ -74,6 +75,11 @@ export default new Router({
       path: '/map',
       name: 'Map',
       component: Map
+    },
+    {
+      path: '/map3',
+      name: 'Map3',
+      component: Map3
     },
     {
       path: '/topics',

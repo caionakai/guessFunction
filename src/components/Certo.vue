@@ -57,7 +57,7 @@ export default {
         }
         if(this.$route.params.id === 'derivativesimpleq2'){
           this.ninethLevelCompletedUpdate();
-          this.$router.replace({name: 'Map2'});          
+          this.$router.replace({name: 'Map3'});          
         }
       }
     },
