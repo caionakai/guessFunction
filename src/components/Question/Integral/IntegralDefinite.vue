@@ -1,9 +1,9 @@
 <template>
   <div id="origin">
       <div class="seno">
-        <h4 class="title">Qual a integral definida de  
+        <p class="title">Qual é a integral definida de &nbsp;
             <img id="prob" src="../../../assets/Question/Integral/question3-prob.png"/>
-        </h4>
+        </p>
       </div>
 
       <p id="t">
@@ -93,6 +93,9 @@ export default {
     color: #fff;
     font-family: "Comic Sans MS", cursive, sans-serif;
     cursor: pointer;
+}
+p{
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 </style>

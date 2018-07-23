@@ -1,9 +1,9 @@
 <template>
   <div id="origin">
       <div class="seno">
-        <h4 class="title">Qual é a derivada para   
+        <p class="title">Qual é a derivada para &nbsp;
             <img id="prob" src="../../../assets/Question/Derivative/DeriQ2-prob.png"/>
-        </h4>
+        </p>
       </div>
 
       <p id="t">
@@ -95,6 +95,9 @@ export default {
     color: #fff;
     font-family: "Comic Sans MS", cursive, sans-serif;
     cursor: pointer;
+}
+p{
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 </style>

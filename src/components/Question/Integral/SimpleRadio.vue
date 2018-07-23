@@ -83,4 +83,7 @@ export default {
     font-family: "Comic Sans MS", cursive, sans-serif;
     cursor: pointer;
 }
+p{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
 </style>

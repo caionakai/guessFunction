@@ -1,6 +1,11 @@
 <template>
     <div id="main">
-        <p>Calcule a integral seguinte utilizando o método de substituição</p>
+        <p>Calcule a integral seguinte utilizando o método de substituição.</p>
+        <p id="hint">
+            Dica: expressões como: sen(x) devem ser escritas utilizando parênteses, números elevados são representados com '^', <br/>
+            exemplo: x^2. Não se esqueça da constante.
+
+        </p>
         <img src="../../../assets/Question/Integral/integralsimple.gif" />
 
         <p>
@@ -75,5 +80,12 @@ export default {
     color: #fff;
     font-family: "Comic Sans MS", cursive, sans-serif;
     cursor: pointer;
+}
+p{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+#hint{
+    color:red;
+    font-size: 80%;
 }
 </style>

@@ -1,9 +1,9 @@
 <template>
   <div id="origin">
       <div class="seno">
-        <h4 class="title">Qual das alternativas seguintes é equivalente a 
+        <p class="title">Qual das alternativas seguintes é equivalente a&nbsp;
             <img id="prob" src="../../../assets/Question/Trigonometria/question1-prob.png"/>
-        </h4>
+        </p>
       </div>
 
       <p id="t">
@@ -91,6 +91,9 @@ export default {
     color: #fff;
     font-family: "Comic Sans MS", cursive, sans-serif;
     cursor: pointer;
+}
+p{
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 </style>
