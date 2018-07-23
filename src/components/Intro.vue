@@ -1,8 +1,9 @@
 <template>
   <div id="app">
+  
     <!-- this div is needed to define full screen background color -->
     <div id="content">
-      <h1 id="title">Suugaku Tanoshii</h1>
+      <h1 id="title">Math Fun</h1>
       <div id="panelButton">
         <a id="buttonJogar" href="#/map" class="button">
             <span>Jogar</span>
@@ -13,6 +14,14 @@
         <a href="#/howtoplay" class="button">
             <span>Como jogar</span>
         </a>
+      </div>
+      <div id="fb-root"></div>
+      <p>Compartilhe no facebook</p>
+      <div class="fb-share-button" 
+           data-href="https://caionakai.github.io" 
+           data-layout="button"
+           data-size="large"
+      >
       </div>
     </div>
   </div>
@@ -26,6 +35,9 @@ export default {
     this.resetAllLevels();
     this.restoreLife();
   },
+  mounted(){
+    this.face();
+  },
   methods:{ 
     eventUpdate(){
       this.$emit('resetSomador');
@@ -35,7 +47,14 @@ export default {
     },
     restoreLife(){
       this.$emit('restoreLife');
-    }
+    },
+    face: function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk')
   }
 }
 
