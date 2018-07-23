@@ -7,8 +7,8 @@
     </div>
 
     <map name="Map" id="Map">
-        <area v-if="!this.level.eighthLevelCompleted" href="#/derivativesimple" shape="poly" coords="462,448,483,454,497,469,500,485,497,500,489,510,480,519,466,522,446,515,437,505,430,494,430,479,432,466,444,452" />
-        <area v-if="!this.level.ninethLevelCompleted && this.level.eighthLevelCompleted" href="#/derivativesimpleq2" shape="poly" coords="465,348,486,355,496,364,501,375,501,388,498,403,489,411,478,418,463,421,448,414,438,406,432,396,431,383,431,373,436,361,449,351" />
+        <area v-if="!this.level.eighthLevelCompleted" href="#/derivativesimple" shape="poly" coords="623,537,666,553,677,579,671,607,625,623,584,605,573,573,595,546" />
+        <area v-if="!this.level.ninethLevelCompleted && this.level.eighthLevelCompleted" href="#/derivativesimpleq2" shape="poly" coords="627,419,662,430,679,451,674,484,638,503,593,493,575,463,584,435,605,423" />
     </map>
 
 
@@ -35,7 +35,7 @@ export default {
             areas = map.getElementsByTagName('area'),
             len = areas.length,
             coords = [],
-            previousWidth = 987;
+            previousWidth = 1380;
             for (n = 0; n < len; n++) {
                 coords[n] = areas[n].coords.split(',');
             }

@@ -11,13 +11,13 @@
       <img v-if="this.level.seventhLevelCompleted" src="../assets/done7.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
     </div>
     <map name="Map" id="Map">
-      <area v-if="!this.level.firstLevelCompleted" href="#/seno" shape="poly" coords="67,67,89,74,102,81,108,96,111,111,107,129,99,145,81,155,54,152,38,143,28,127,25,106,27,89,45,74" />
-      <area v-if="this.level.firstLevelCompleted && !this.level.secondLevelCompleted" href="#/cosseno" shape="poly" coords="231,149,244,152,252,158,260,165,266,173,269,186,267,197,264,207,257,221,250,225,241,227,229,227,216,223,206,212,200,204,196,194,199,182,201,171,207,158,216,153" />
-      <area v-if="this.level.secondLevelCompleted && !this.level.thirdLevelCompleted" href="#/integralsimple" shape="poly" coords="278,321,296,324,307,334,314,343,319,357,318,367,314,378,309,388,300,391,289,395,277,395,264,392,253,385,247,375,243,364,242,353,245,344,252,332,261,323" />
-      <area v-if="this.level.thirdLevelCompleted && !this.level.fourthLevelCompleted" href="#/integralsimpleradio" shape="poly" coords="361,459,379,464,395,474,402,485,404,496,405,510,401,523,393,537,379,543,366,547,351,547,339,543,326,534,322,525,319,512,319,497,322,484,329,474,342,463" />
-      <area v-if="this.level.fourthLevelCompleted && !this.level.fifthLevelCompleted" href="#/identitytrigonometric" shape="poly" coords="528,348,546,354,554,366,560,378,559,393,551,404,534,411,517,411,504,398,498,383,503,363,513,352" />
-      <area v-if="this.level.fifthLevelCompleted && !this.level.sixthLevelCompleted" href="#/integralundefined" shape="poly" coords="684,268,704,273,713,282,718,295,717,311,712,319,702,326,690,331,678,329,665,319,661,310,657,302,658,289,667,276" />
-      <area v-if="this.level.sixthLevelCompleted && !this.level.seventhLevelCompleted" href="#/integraldefinite" shape="poly" coords="887,186,909,192,919,201,926,214,931,227,929,244,921,258,911,265,895,267,882,267,868,263,857,253,852,240,851,220,864,197" />
+      <area v-if="!this.level.firstLevelCompleted" href="#/seno" shape="poly" coords="126,77,106,81,90,92,79,108,75,128,79,148,90,164,106,175,126,179,146,175,162,164,173,148,177,128,173,108,162,92,146,81" />
+      <area v-if="this.level.firstLevelCompleted && !this.level.secondLevelCompleted" href="#/cosseno" shape="poly" coords="349,174,343,172,385,189,397,223,383,248,354,263,320,253,304,234,299,210,311,192,329,177" />
+      <area v-if="this.level.secondLevelCompleted && !this.level.thirdLevelCompleted" href="#/integralsimple" shape="poly" coords="409,365,408,364,444,379,459,405,448,434,416,448,385,442,367,425,363,397,374,378,391,366" />
+      <area v-if="this.level.thirdLevelCompleted && !this.level.fourthLevelCompleted" href="#/integralsimpleradio" shape="poly" coords="521,520,521,519,560,537,576,568,569,595,542,614,513,617,485,607,465,586,469,558,480,539,499,526" />
+      <area v-if="this.level.fourthLevelCompleted && !this.level.fifthLevelCompleted" href="#/identitytrigonometric" shape="poly" coords="743,394,744,394,773,403,788,428,784,450,762,465,725,463,703,443,704,421,720,401" />
+      <area v-if="this.level.fifthLevelCompleted && !this.level.sixthLevelCompleted" href="#/integralundefined" shape="poly" coords="957,305,955,306,992,323,996,356,970,374,933,368,917,345,928,314" />
+      <area v-if="this.level.sixthLevelCompleted && !this.level.seventhLevelCompleted" href="#/integraldefinite" shape="poly" coords="1229,215,1229,214,1268,233,1280,270,1253,300,1210,302,1179,274,1183,239,1205,221" />
     </map>
 
     <div id="lifeDiv">
@@ -31,7 +31,7 @@
 <script>
 export default {
   name: 'Mapa',
-  props: ['firstLevelCompleted', 'secondLevelCompleted', 'life', 'level'],
+  props: ['life', 'level'],
   mounted(){
     this.windowonload();
   },
@@ -43,7 +43,7 @@ export default {
             areas = map.getElementsByTagName('area'),
             len = areas.length,
             coords = [],
-            previousWidth = 987;
+            previousWidth = 1365;
             for (n = 0; n < len; n++) {
                 coords[n] = areas[n].coords.split(',');
             }
