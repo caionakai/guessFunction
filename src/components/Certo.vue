@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="../assets/V.jpg" id="certo"/>
+    <img src="../assets/V.png" id="certo"/>
   </div>
 </template>
 
@@ -59,6 +59,14 @@ export default {
           this.ninethLevelCompletedUpdate();
           this.$router.replace({name: 'Map3'});          
         }
+        if(this.$route.params.id === 'question4'){
+          this.tenthLevelCompletedUpdate();
+          this.$router.replace({name: 'Map3'});          
+        }
+        if(this.$route.params.id === 'question5'){
+          this.eleventhLevelCompletedUpdate();
+          this.$router.replace({name: 'Map3'});          
+        }
       }
     },
     // Este método inicia um evento para acrescentar o somador para o Score Final.
@@ -100,6 +108,38 @@ export default {
        
     ninethLevelCompletedUpdate(){
       this.$emit('updateNinethLevel');
+    },
+    
+    tenthLevelCompletedUpdate(){
+      this.$emit('updateTenthLevel');
+    },
+    
+    eleventhLevelCompletedUpdate(){
+      this.$emit('updateEleventhLevel');
+    },
+        
+    twelfthLevelCompletedUpdate(){
+      this.$emit('updateTwelfthLevel');
+    },
+        
+    thirteenthLevelCompletedUpdate(){
+      this.$emit('updateThirteenthLevel');
+    },
+
+    fourteenthLevelCompletedUpdate(){
+      this.$emit('updateFourteenthLevel');
+    },
+    
+    fifteenthLevelCompletedUpdate(){
+      this.$emit('updateFifteenthLevel');
+    },
+    
+    sixteenthLevelCompletedUpdate(){
+      this.$emit('updateSixteenthLevel');
+    },
+      
+    seventeenthLevelCompletedUpdate(){
+      this.$emit('updateSeventeenthLevel');
     }
 
   }

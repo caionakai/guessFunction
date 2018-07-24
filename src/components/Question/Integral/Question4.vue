@@ -2,7 +2,7 @@
   <div id="origin">
     <div class="seno">
         <p class="title">Qual é a integral indefinida de  &nbsp;
-            <img id="prob" src="../../../assets/Question/Integral/question2-prob.png"/>
+            <img id="prob" src="../../../assets/Question/Integral/question4-prob.png"/>
         </p>
     </div>
 
@@ -10,7 +10,7 @@
         <label id="a" for="inputA">a)</label>
         <input type="radio" id="inputA" name="quest" value="a" v-model="selected">
         <label for="inputA">
-            <img src="../../../assets/Question/Integral/question2-ans.png"/>      
+            <img src="../../../assets/Question/Integral/question4-ans.png"/>      
         </label>
     </p>
 
@@ -18,7 +18,7 @@
         <label id="b" for="inputB">b)</label>
         <input type="radio" id="inputB" value="b" name="quest" v-model="selected">
         <label for="inputB">
-            <img src="../../../assets/Question/Integral/question2-x.png"/>      
+            <img src="../../../assets/Question/Integral/question4-x.png"/>      
         </label>
     </p>
 
@@ -26,7 +26,7 @@
         <label id="c" for="inputC">c)</label>
         <input type="radio" id="inputC" value="c" name="quest" v-model="selected">
         <label for="inputC">
-            <img src="../../../assets/Question/Integral/question2-xx.png"/>      
+            <img src="../../../assets/Question/Integral/question4-xx.png"/>      
         </label>
     </p>
 
@@ -34,7 +34,7 @@
         <label id="d" for="inputD">d)</label>
         <input type="radio" id="inputD" value="d" name="quest" v-model="selected">
         <label for="inputD">
-            <img src="../../../assets/Question/Integral/question2-xxx.png"/>      
+            <img src="../../../assets/Question/Integral/question4-xxx.png"/>      
         </label>
     </p>
         
@@ -44,9 +44,8 @@
 </template>
 
 <script>
-import Plotly from "plotly.js";
 export default {
-  name: "IntegralUndefined",
+  name: "Question4",
   data() {
     return {
       selected: null,
@@ -58,10 +57,10 @@ export default {
       if (this.selected === "a") {
         this.$router.replace({
           name: "Certo",
-          params: { id: "integralundefined" }
+          params: { id: "question4" }
         });
       } else {
-        this.$router.replace({ name: "Errado" });
+        this.$router.replace({ name: "Errado", params: { id: "question4" } });
       }
     }
   }

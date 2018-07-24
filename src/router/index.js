@@ -23,6 +23,8 @@ import IntegralSimple from '@/components/Question/Integral/Simple'
 import IntegralSimpleRadio from '@/components/Question/Integral/SimpleRadio'
 import IntegralUndefined from '@/components/Question/Integral/IntegralUndefined'
 import IntegralDefinite from '@/components/Question/Integral/IntegralDefinite'
+import Question4 from '@/components/Question/Integral/Question4'
+import Question5 from '@/components/Question/Integral/Question5'
 
 import Topics from '@/components/Learn/Topics'
 import Trigonometria from '@/components/Learn/Trigonometria'
@@ -155,6 +157,16 @@ export default new Router({
       path: '/derivativesimpleq2',
       name: 'DerivativeSimpleQ2',
       component: DerivativeSimpleQ2
+    },
+    {
+      path: '/question4',
+      name: 'Question4',
+      component: Question4
+    },
+    {
+      path: '/question5',
+      name: 'Question5',
+      component: Question5
     }
     
   ]

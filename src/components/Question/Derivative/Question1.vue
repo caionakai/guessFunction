@@ -64,22 +64,19 @@ export default {
 </script>
 
 <style scoped>
-.js-plotly-plot {
-  max-width: 100%;
-}
 
 #a{
-  margin-left: 2%;
+  margin-left: 1.5%;
   top: 20%;
 }
 #d{
-    margin-left: 5.5%;
+    margin-left: 2.5%;
 }
 #t{
     margin-top: 5%; 
 }
 #c{
-    margin-left: -0.0%;
+    margin-left: -1.0%;
 }
 #b{
     margin-left: -1.5%;

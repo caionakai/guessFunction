@@ -66,7 +66,7 @@ export default {
     margin-left: 1.5%;
 }
 #c{
-    margin-left: -0.9%;
+    margin-left: 0%;
 }
 #d{
     margin-left: 3.6%;

@@ -33,6 +33,10 @@ export default {
             this.$router.replace({name: 'Map2'});     
           }else if(this.$route.params.id === 'derivativesimpleq2'){
             this.$router.replace({name: 'Map2'});                 
+          }else if(this.$route.params.id === 'question4'){            
+            this.$router.replace({name: 'Map3'});                 
+          }else if(this.$route.params.id === 'question5'){            
+            this.$router.replace({name: 'Map3'});                 
           }
           else{
             this.$router.replace({name: 'Map'});

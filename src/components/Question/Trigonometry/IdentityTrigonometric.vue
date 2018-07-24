@@ -1,19 +1,20 @@
 <template>
   <div id="origin">
-      <div class="seno">
+    <div class="seno">
         <p class="title">Qual das alternativas seguintes é equivalente a&nbsp;
             <img id="prob" src="../../../assets/Question/Trigonometria/question1-prob.png"/>
         </p>
-      </div>
-
-      <p id="t">
+    </div>
+    
+    <div>
+        <p class="resp">
             <label id="a" for="inputA">a)</label>
             <input type="radio" id="inputA" name="quest" value="a" v-model="selected">
             <label for="inputA">
                 <img src="../../../assets/Question/Trigonometria/question1-x.png"/>      
             </label>
         </p>
-        <p>
+        <p class="resp">
             <label id="b" for="inputB" >b)</label>
             <input type="radio" id="inputB" value="b" name="quest" v-model="selected">
             <label for="inputB">
@@ -22,7 +23,7 @@
         </p>
 
 
-        <p>
+        <p class="resp">
             <label id="c" for="inputC">c)</label>
             <input type="radio" id="inputC" value="c" name="quest" v-model="selected">
             <label for="inputC">
@@ -30,13 +31,15 @@
             </label>
         </p>
 
-        <p>
+        <p class='resp'>
             <label id="d" for="inputD">d)</label>
             <input type="radio" id="inputD" value="d" name="quest" v-model="selected">
             <label for="inputD">
                 <img src="../../../assets/Question/Trigonometria/question1-xxx.png"/>      
             </label>
         </p>
+
+    </div>
         
         <button id="button" @click="checkForm()"> Confirmar</button>
 
@@ -65,16 +68,18 @@ export default {
 </script>
 
 <style scoped>
-.js-plotly-plot {
-  max-width: 100%;
+.resp{
+    display: block;
+    vertical-align: middle;
+    margin-left: 25% auto;
+    
 }
-
 #a{
-  margin-left: -8.5%;
+  margin-left: -6%;
   top: 20%;
 }
 #d{
-    margin-left: -10.4%;
+    margin-left: -7.4%;
 }
 #t{
     margin-top: 5%; 

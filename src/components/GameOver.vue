@@ -4,9 +4,9 @@
         <div id="imageDiv">
             <img id="image" src="../assets/gameover.png" />
         </div>
-        <h1>Sua pontuação foi {{pontuacao}}/7</h1>
+        <h1>Sua pontuação foi {{pontuacao}}/18</h1>
         <a href="#/Intro" id="button">
-            <span>Inicio</span>
+            <span>Início</span>
         </a>
     </div>
   </div>
