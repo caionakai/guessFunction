@@ -97,7 +97,7 @@ export default {
 }
 #panelButton{
   margin: auto;
-  width: 30%;
+  width: 20%;
   height: 50%;
   border: 3px solid blue;
   border-radius: 10%;
