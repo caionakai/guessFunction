@@ -1,7 +1,7 @@
 <template>
   <div id="mapa">
     <div style="width:100%;">
-      <img v-if="!this.level.firstLevelCompleted" src="../assets/teste2.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="!this.level.firstLevelCompleted" src="../assets/map1.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
       <img v-if="this.level.firstLevelCompleted && !this.level.secondLevelCompleted" src="../assets/done1.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
       <img v-if="this.level.secondLevelCompleted && !this.level.thirdLevelCompleted" src="../assets/done2.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
       <img v-if="this.level.thirdLevelCompleted && !this.level.fourthLevelCompleted" src="../assets/done3.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
