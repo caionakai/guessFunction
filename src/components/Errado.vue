@@ -37,6 +37,14 @@ export default {
             this.$router.replace({name: 'Map3'});                 
           }else if(this.$route.params.id === 'question5'){            
             this.$router.replace({name: 'Map3'});                 
+          }else if(this.$route.params.id === 'deriq3'){            
+            this.$router.replace({name: 'Map3'});                 
+          }else if(this.$route.params.id === 'deriq4'){            
+            this.$router.replace({name: 'Map3'});                 
+          }else if(this.$route.params.id === 'intQ6'){            
+            this.$router.replace({name: 'Map3'});                 
+          }else if(this.$route.params.id === 'intq7'){            
+            this.$router.replace({name: 'Map4'});                 
           }
           else{
             this.$router.replace({name: 'Map'});

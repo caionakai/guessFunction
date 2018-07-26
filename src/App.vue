@@ -13,6 +13,7 @@
     @updateTwelfthLevel="updateTwelfthLevel()" @updateThirteenthLevel="updateThirteenthLevel()"
     @updateFourteenthLevel="updateFourteenthLevel()" @updateFifteenthLevel="updateFifteenthLevel()"
     @updateSixteenthLevel="updateSixteenthLevel()" @updateSeventeenthLevel="updateSeventeenthLevel()"
+    @updateEighteenthLevel="updateEighteenthLevel()"
     
     />
   </div>
@@ -43,6 +44,7 @@ export default {
         fifteenthLevelCompleted: false,
         sixteenthLevelCompleted: false,
         seventeenthLevelCompleted: false,
+        eighteenthLevelCompleted: false,
 
 
       }]
@@ -112,6 +114,9 @@ export default {
     },
     updateSeventeenthLevel(){
       this.level.seventeenthLevelCompleted = true
+    },    
+    updateEighteenthLevel(){
+      this.level.eighteenthLevelCompleted = true
     },
     
     // This method is called when the page Intro is loaded
@@ -133,6 +138,7 @@ export default {
       this.level.fifteenthLevelCompleted = false;
       this.level.sixteenthLevelCompleted = false;
       this.level.seventeenthLevelCompleted = false;
+      this.level.eighteenthLevelCompleted = false;
     },
   }
 }

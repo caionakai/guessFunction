@@ -72,6 +72,9 @@ export default {
   margin-left: -1.5%;
   top: 20%;
 }
+#b{
+  margin-left: -1.7%;
+}
 #d {
   margin-left: -1.4%;
 }

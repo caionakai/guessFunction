@@ -67,6 +67,22 @@ export default {
           this.eleventhLevelCompletedUpdate();
           this.$router.replace({name: 'Map3'});          
         }
+        if(this.$route.params.id === 'deriq3'){
+          this.twelfthLevelCompletedUpdate();
+          this.$router.replace({name: 'Map3'});          
+        }
+        if(this.$route.params.id === 'deriq4'){
+          this.thirteenthLevelCompletedUpdate();
+          this.$router.replace({name: 'Map3'});          
+        }        
+        if(this.$route.params.id === 'intQ6'){
+          this.fourteenthLevelCompletedUpdate();
+          this.$router.replace({name: 'Map3'});          
+        }
+        if(this.$route.params.id === 'intq7'){
+          this.fifteenthLevelCompletedUpdate();
+          this.$router.replace({name: 'Map4'});          
+        }
       }
     },
     // Este método inicia um evento para acrescentar o somador para o Score Final.

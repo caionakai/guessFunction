@@ -85,7 +85,7 @@ p{
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
 #hint{
-    color:red;
+    color:rgb(0, 47, 255);
     font-size: 80%;
 }
 </style>

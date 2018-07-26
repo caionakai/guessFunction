@@ -36,7 +36,7 @@ export default {
     this.windowonload();
   },
   methods:{
-    // this method is resposible for recalculate the map image when the screen is resized
+    // this method is responsible for recalculate the map image when the screen is resized
     windowonload() {
     var ImageMap = function (map, img) {
             var n,

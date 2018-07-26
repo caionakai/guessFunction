@@ -7,6 +7,7 @@ import HowToPlay from '@/components/HowToPlay'
 import Map from '@/components/Map'
 import Map2 from '@/components/Map2'
 import Map3 from '@/components/Map3'
+import Map4 from '@/components/Map4'
 import Certo from '@/components/Certo'
 import Errado from '@/components/Errado'
 import Score from '@/components/Score'
@@ -18,6 +19,8 @@ import IdentityTrigonometric from '@/components/Question/Trigonometry/IdentityTr
 
 import DerivativeSimple from '@/components/Question/Derivative/Question1'
 import DerivativeSimpleQ2 from '@/components/Question/Derivative/Question2'
+import DeriQ3 from '@/components/Question/Derivative/Question3'
+import DeriQ4 from '@/components/Question/Derivative/Question4'
 
 import IntegralSimple from '@/components/Question/Integral/Simple'
 import IntegralSimpleRadio from '@/components/Question/Integral/SimpleRadio'
@@ -25,6 +28,8 @@ import IntegralUndefined from '@/components/Question/Integral/IntegralUndefined'
 import IntegralDefinite from '@/components/Question/Integral/IntegralDefinite'
 import Question4 from '@/components/Question/Integral/Question4'
 import Question5 from '@/components/Question/Integral/Question5'
+import IntQ6 from '@/components/Question/Integral/Question6'
+import IntQ7 from '@/components/Question/Integral/Question7'
 
 import Topics from '@/components/Learn/Topics'
 import Trigonometria from '@/components/Learn/Trigonometria'
@@ -82,6 +87,11 @@ export default new Router({
       path: '/map3',
       name: 'Map3',
       component: Map3
+    },
+    {
+      path: '/map4',
+      name: 'Map4',
+      component: Map4
     },
     {
       path: '/topics',
@@ -167,6 +177,26 @@ export default new Router({
       path: '/question5',
       name: 'Question5',
       component: Question5
+    },
+    {
+      path: '/deriq3',
+      name: 'DeriQ3',
+      component: DeriQ3
+    },
+    {
+      path: '/deriq4',
+      name: 'DeriQ4',
+      component: DeriQ4
+    },
+    {
+      path: '/intq6',
+      name: 'IntQ6',
+      component: IntQ6
+    },
+    {
+      path: '/intq7',
+      name: 'IntQ7',
+      component: IntQ7
     }
     
   ]
