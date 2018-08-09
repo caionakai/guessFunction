@@ -12,11 +12,6 @@
     </map>
 
 
-    <div id="lifeDiv">
-      <img v-if="life === 3" id="lifeImage" src="../assets/kokoro3.png" />
-      <img v-if="life === 2" id="lifeImage" src="../assets/kokoro2.png" />
-      <img v-if="life === 1" id="lifeImage" src="../assets/kokoro1.png" />
-    </div>
   </div>
 </template>
 

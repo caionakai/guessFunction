@@ -61,9 +61,6 @@ export default {
     resetAllLevels(){
       this.$emit('resetAllLevels');
     },
-    restoreLife(){
-      this.$emit('restoreLife');
-    },
     // face: function(d, s, id) {
     //   var js, fjs = d.getElementsByTagName(s)[0];
     //   if (d.getElementById(id)) return;

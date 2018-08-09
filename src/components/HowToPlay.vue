@@ -22,14 +22,6 @@
         <p>As fases só podem ser realizadas uma por vez, de forma sequencial, ou seja, não é possível pular fases
         clicando em círculos que ainda não foram desbloqueados. 
         </p>
-        <p>
-            As vidas são representadas através da imagem abaixo:
-        </p>
-        <img src="../assets/kokoro3.png"/>
-        <p>
-            Sendo que ao errar 3 questões você perde!
-        </p>
-        <img src="../assets/kokoro0.png"/>
         
         <h3>Obstáculos</h3>
         <p>Cada fase consiste em uma questão que deve ser respondida para avançar para próxima fase,

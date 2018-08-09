@@ -4,8 +4,8 @@
     <router-view :pontuacao="somador" :life="life" :level="level"
     @updateFirstLevel="updateFirstLevel()" @updateSomador="updateSomador()" 
     @resetSomador="zeraSomador()" @resetAllLevels="resetAllLevels()"
-    @updateSecondLevel="updateSecondLevel()" @decrementLife="decrementLife()"
-    @restoreLife="restoreLife()" @updateThirdLevel="updateThirdLevel()"
+    @updateSecondLevel="updateSecondLevel()"
+    @updateThirdLevel="updateThirdLevel()"
     @updateFourthLevel="updateFourthLevel()" @updateFifthLevel="updateFifthLevel()"
     @updateSixthLevel="updateSixthLevel()" @updateSeventhLevel="updateSeventhLevel()"
     @updateEighthLevel="updateEighthLevel()" @updateNinethLevel="updateNinethLevel()"
@@ -56,12 +56,6 @@ export default {
     },
     zeraSomador(){
       this.somador = 0
-    },
-    decrementLife(){
-      this.life -= 1 
-    },
-    restoreLife(){
-      this.life = 3;
     },
     // The Update level method is called when the page Certo with the right condition emit some event
     updateFirstLevel(){

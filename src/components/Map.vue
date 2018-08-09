@@ -19,12 +19,6 @@
       <area v-if="this.level.fifthLevelCompleted && !this.level.sixthLevelCompleted" href="#/integralundefined" shape="poly" coords="957,305,955,306,992,323,996,356,970,374,933,368,917,345,928,314" />
       <area v-if="this.level.sixthLevelCompleted && !this.level.seventhLevelCompleted" href="#/integraldefinite" shape="poly" coords="1229,215,1229,214,1268,233,1280,270,1253,300,1210,302,1179,274,1183,239,1205,221" />
     </map>
-
-    <div id="lifeDiv">
-      <img v-if="life === 3" id="lifeImage" src="../assets/kokoro3.png" />
-      <img v-if="life === 2" id="lifeImage" src="../assets/kokoro2.png" />
-      <img v-if="life === 1" id="lifeImage" src="../assets/kokoro1.png" />
-    </div>
   </div>
 </template>
 

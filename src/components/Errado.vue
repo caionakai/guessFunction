@@ -16,21 +16,12 @@ export default {
   },
   props:['life'],
   methods:{
-    decrementLife(){
-      this.$emit('decrementLife');
-    },
     timeOver(){
       this.count -= 1;
       if(this.count > 0){
         setTimeout(this.timeOver, 1000);
-      }else{
-        this.life -= 1;
-        this.decrementLife();
-        if(this.life === 0){
-          this.$router.replace({name: 'GameOver'});
-        }else{
-          if(this.$route.params.id === 'derivativesimple'){
-            this.$router.replace({name: 'Map2'});     
+      }else if(this.$route.params.id === 'derivativesimple'){
+          this.$router.replace({name: 'Map2'});     
           }else if(this.$route.params.id === 'derivativesimpleq2'){
             this.$router.replace({name: 'Map2'});                 
           }else if(this.$route.params.id === 'question4'){            
@@ -53,9 +44,7 @@ export default {
           }
         }
       }
-    }
   }
-}
 
 </script>
 

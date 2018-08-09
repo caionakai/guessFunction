@@ -1,5 +1,11 @@
 <template>
   <div id="origin">
+      <div>
+        <video width="320" height="240" controls>
+          <source src="../../../assets/Videos/video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
       <div class="seno">
         <h4 class="title">{{msg}}</h4>
         <div id="plot" ref="seno"></div>

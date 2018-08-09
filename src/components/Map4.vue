@@ -13,12 +13,6 @@
       <area v-if="this.level.seventeenthLevelCompleted && !this.level.eighteenthLevelCompleted" href="#" shape="poly" coords="725,498,772,521,779,558,753,585,726,591,693,578,679,556,681,528,702,506" />
     </map>
 
-
-    <div id="lifeDiv">
-      <img v-if="life === 3" id="lifeImage" src="../assets/kokoro3.png" />
-      <img v-if="life === 2" id="lifeImage" src="../assets/kokoro2.png" />
-      <img v-if="life === 1" id="lifeImage" src="../assets/kokoro1.png" />
-    </div>
   </div>
 </template>
 
