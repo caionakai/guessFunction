@@ -31,6 +31,8 @@ import Question5 from '@/components/Question/Integral/Question5'
 import IntQ6 from '@/components/Question/Integral/Question6'
 import IntQ7 from '@/components/Question/Integral/Question7'
 
+import LimQ1 from '@/components/Question/Limit/Question1'
+
 import Topics from '@/components/Learn/Topics'
 import Trigonometria from '@/components/Learn/Trigonometria'
 import Limite from '@/components/Learn/Limite'
@@ -197,6 +199,11 @@ export default new Router({
       path: '/intq7',
       name: 'IntQ7',
       component: IntQ7
+    },
+    {
+      path: '/limq1',
+      name: 'LimQ1',
+      component: LimQ1
     }
     
   ]

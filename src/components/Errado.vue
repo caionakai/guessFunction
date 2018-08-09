@@ -44,6 +44,8 @@ export default {
           }else if(this.$route.params.id === 'intQ6'){            
             this.$router.replace({name: 'Map3'});                 
           }else if(this.$route.params.id === 'intq7'){            
+            this.$router.replace({name: 'Map3'});                 
+          }else if(this.$route.params.id === 'limq1'){            
             this.$router.replace({name: 'Map4'});                 
           }
           else{

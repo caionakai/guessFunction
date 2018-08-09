@@ -8,9 +8,9 @@
     </div>
 
     <map name="Map" id="Map">
-      <area v-if="!this.level.sixteenthLevelCompleted" href="#" shape="poly" coords="106,515,141,531,156,563,139,593,93,603,60,581,59,540,77,524" />
-      <area v-if="this.level.sixteenthLevelCompleted && !this.level.seventeenthLevelCompleted" href="#" shape="poly" coords="309,519,348,532,361,561,346,593,296,606,264,582,260,550,276,530" />
-      <area v-if="this.level.seventeenthLevelCompleted && !this.level.eighteenthLevelCompleted" href="#" shape="poly" coords="548,519,585,534,598,569,579,599,549,608,514,599,498,576,501,547,521,527" />
+      <area v-if="!this.level.sixteenthLevelCompleted" href="#/limq1" shape="poly" coords="166,497,204,510,218,539,203,575,157,586,123,564,119,529,139,504" />
+      <area v-if="this.level.sixteenthLevelCompleted && !this.level.seventeenthLevelCompleted" href="#" shape="poly" coords="455,496,500,520,505,557,468,584,423,576,405,542,421,505" />
+      <area v-if="this.level.seventeenthLevelCompleted && !this.level.eighteenthLevelCompleted" href="#" shape="poly" coords="725,498,772,521,779,558,753,585,726,591,693,578,679,556,681,528,702,506" />
     </map>
 
 

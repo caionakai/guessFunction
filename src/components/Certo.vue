@@ -83,6 +83,10 @@ export default {
           this.fifteenthLevelCompletedUpdate();
           this.$router.replace({name: 'Map4'});          
         }
+          if(this.$route.params.id === 'limq1'){
+          this.sixteenthLevelCompletedUpdate();
+          this.$router.replace({name: 'Map4'});          
+        }
       }
     },
     // Este método inicia um evento para acrescentar o somador para o Score Final.
