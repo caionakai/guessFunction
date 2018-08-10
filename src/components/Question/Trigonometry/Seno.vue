@@ -6,6 +6,9 @@
           Your browser does not support the video tag.
         </video>
       </div>
+      <div id="graph"></div>
+        <button onclick="startAnimation();">Animate!</button>
+        <button @click="goBack()">Voltar!</button>
       <div class="seno">
         <h4 class="title">{{msg}}</h4>
         <div id="plot" ref="seno"></div>
@@ -49,46 +52,88 @@
 </template>
 
 <script>
-import Plotly from 'plotly.js'
+import Plotly from "plotly.js";
 export default {
-  name: 'Seno',
-  mounted () {
-    var frames = [
-        {name: 'sine', data: [{x: [], y: []}]}
-    ];
+  name: "firstLevel",
+  mounted() {
+    var frames = [{ name: "sine", data: [{ x: [], y: [] }] }];
     var n = 100;
     for (var i = 0; i < n; i++) {
-        var t = i / (n - 1) * 2 - 1;
-        // A sine wave:
-        frames[0].data[0].x[i] = t * Math.PI;
-        frames[0].data[0].y[i] = Math.sin(t * Math.PI)
+      var t = i / (n - 1) * 2 - 1;
+      // A sine wave:
+      frames[0].data[0].x[i] = t * Math.PI;
+      frames[0].data[0].y[i] = Math.sin(t * Math.PI);
     }
-    Plotly.plot(this.$refs.seno, [{
-        x: frames[0].data[0].x,
-        y: frames[0].data[0].y
-        }], 
+    Plotly.plot(
+      this.$refs.seno,
+      [
         {
-            margin: { t: 0 }
+          x: frames[0].data[0].x,
+          y: frames[0].data[0].y
         }
+      ],
+      {
+        margin: { t: 0 }
+      }
     );
-  },
-  data () {
-    return {
-      msg: 'Qual função representa o gráfico a seguir?',
-      selected: null,
+    // outra div
+    Plotly.plot(
+      "graph",
+      [
+        {
+          x: [-0.5, 0.8],
+          y: [-0.5, 0.8]
+        }
+      ],
+      {
+        xaxis: { range: [-Math.PI, Math.PI] },
+        yaxis: { range: [-1.3, 1.3] }
+      }
+    ).then(function() {
+      Plotly.addFrames("graph", [
+        {
+          data: [{ x: [1, -1], y: [0, 0] }],
+          name: "frame1"
+        },
+        {
+          data: [{ x: [0, 0], y: [-1, 1] }],
+          name: "frame2"
+        }
+      ]);
+    });
 
-    }
+
+  },
+  data() {
+    return {
+      msg: "Qual função representa o gráfico a seguir?",
+      selected: null,
+      teste_x: 0.8
+    };
   },
   methods: {
-    checkForm(){
-      if(this.selected === 'a'){
-          this.$router.replace({name:'Certo', params:{id:'seno'}});
-      }else{
-          this.$router.replace({name:'Errado'});
+    checkForm() {
+      if (this.selected === "a") {
+        this.$router.replace({ name: "Certo", params: { id: "firstLevel" } });
+      } else {
+        this.$router.replace({ name: "Errado" });
       }
+    },
+    startAnimation() {
+      Plotly.animate("graph", ["frame1", "frame2"], {
+        frame: [{ duration: 1500 }, { duration: 500 }],
+        transition: [
+          { duration: 800, easing: "elastic-in" },
+          { duration: 100, easing: "cubic-in" }
+        ],
+        mode: "afterall"
+      });
+    },
+    goBack(){
+      window.history.back();
     }
   }
-}
+};
 </script>
 
 <style scoped>
@@ -96,26 +141,25 @@ export default {
   max-width: 100%;
 }
 
-#a{
+#a {
   margin-left: -2.5%;
 }
 
-#plot{
+#plot {
   width: 100%;
   height: 25%;
 }
 
-#button{
-    display: inline-block;
-    margin-top: 3%;
-    background-color: #3aff47;
-    padding: 5px 20px;
-    border: none;
-    border-radius: 20px;
-    font-size: 20px;
-    color: #fff;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    cursor: pointer;
+#button {
+  display: inline-block;
+  margin-top: 3%;
+  background-color: #3aff47;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  color: #fff;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  cursor: pointer;
 }
-
 </style>

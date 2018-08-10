@@ -54,8 +54,8 @@ export default new Router({
       component: Intro
     },
     {
-      path: '/seno',
-      name: 'Seno',
+      path: '/firstLevel',
+      name: 'firstLevel',
       component: Seno
     },
     {

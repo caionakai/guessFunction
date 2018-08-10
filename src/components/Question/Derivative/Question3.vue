@@ -60,7 +60,7 @@ export default {
   methods: {
     checkForm(){
       if(this.selected === 'd'){
-          this.$router.replace({name:'Certo', params:{id:'deriq3'}});
+          this.$router.replace({name:'Certo', params:{id:'twelfthLevel'}});
       }else{
           this.$router.replace({name:'Errado', params:{id:'deriq3'}});
       }

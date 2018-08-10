@@ -54,11 +54,11 @@ export default {
   methods: {
     checkForm(){
       if(this.selected === 'b'){
-          this.$router.replace({name:'Certo', params:{id:'derivativesimple'}});
+          this.$router.replace({name:'Certo', params:{id:'eighthLevel'}});
       }else{
           this.$router.replace({name:'Errado', params:{id:'derivativesimple'}});
       }
-    }
+    },
   }
 }
 </script>

@@ -44,7 +44,7 @@
 <script>
 import Plotly from 'plotly.js'
 export default {
-  name: 'Cosseno',
+  name: 'secondLevel',
   mounted () {
     var frames = [
         {name: 'sine', data: [{x: [], y: []}]}
@@ -72,16 +72,9 @@ export default {
     }
   },
   methods: {
-    verify(dado){
-      if(dado == 'cosseno'){
-        this.$router.replace({ name: "Certo", params:{id: 'cosseno'} });
-      }else{
-        this.$router.replace({ name: "Errado",  params:{id: 'cosseno'} });
-      }
-    },
     checkForm(){
       if(this.selected === 'b'){
-          this.$router.replace({name:'Certo', params:{id:'cosseno'}});
+          this.$router.replace({name:'Certo', params:{id:'secondLevel'}});
       }else{
           this.$router.replace({name:'Errado'});
       }

@@ -51,7 +51,7 @@ export default {
     methods:{
         checkForm(){
             if(this.selected === 'd'){
-                this.$router.replace({name:'Certo', params:{id:'integralsimpleradio'}});
+                this.$router.replace({name:'Certo', params:{id:'fourthLevel'}});
 
             }else{
                 this.$router.replace({name:'Errado'});

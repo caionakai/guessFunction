@@ -57,7 +57,7 @@ export default {
       if (this.selected === "a") {
         this.$router.replace({
           name: "Certo",
-          params: { id: "question4" }
+          params: { id: "tenthLevel" }
         });
       } else {
         this.$router.replace({ name: "Errado", params: { id: "question4" } });

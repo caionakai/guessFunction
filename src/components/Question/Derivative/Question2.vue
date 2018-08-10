@@ -54,7 +54,7 @@ export default {
   methods: {
     checkForm(){
       if(this.selected === 'd'){
-          this.$router.replace({name:'Certo', params:{id:'derivativesimpleq2'}});
+          this.$router.replace({name:'Certo', params:{id:'ninethLevel'}});
       }else{
           this.$router.replace({name:'Errado', params:{id:'derivativesimpleq2'}});
       }

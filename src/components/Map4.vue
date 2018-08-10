@@ -1,17 +1,24 @@
 <template>
   <div id="mapa">
     <div style="width:100%;">
-      <img v-if="!this.level.sixteenthLevelCompleted" src="../assets/Map/map4.png" id="trilha" usemap="#Map" border="0" width="100%"/>
-      <img v-if="this.level.sixteenthLevelCompleted && !this.level.seventeenthLevelCompleted" src="../assets/Map/owariD1.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
-      <img v-if="this.level.seventeenthLevelCompleted && !this.level.eighteenthLevelCompleted" src="../assets/Map/owariD2.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
-      <img v-if="this.level.eighteenthLevelCompleted" src="../assets/Map/owariD3.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="!this.level.sixteenthLevel" src="../assets/Map/map4.png" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="this.level.sixteenthLevel && !this.level.seventeenthLevel" src="../assets/Map/owariD1.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="this.level.seventeenthLevel && !this.level.eighteenthLevel" src="../assets/Map/owariD2.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="this.level.eighteenthLevel" src="../assets/Map/owariD3.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
     </div>
 
     <map name="Map" id="Map">
-      <area v-if="!this.level.sixteenthLevelCompleted" href="#/limq1" shape="poly" coords="166,497,204,510,218,539,203,575,157,586,123,564,119,529,139,504" />
-      <area v-if="this.level.sixteenthLevelCompleted && !this.level.seventeenthLevelCompleted" href="#" shape="poly" coords="455,496,500,520,505,557,468,584,423,576,405,542,421,505" />
-      <area v-if="this.level.seventeenthLevelCompleted && !this.level.eighteenthLevelCompleted" href="#" shape="poly" coords="725,498,772,521,779,558,753,585,726,591,693,578,679,556,681,528,702,506" />
+      <area v-if="this.level.fifteenthLevel && !this.level.sixteenthLevel" href="#/limq1" shape="poly" coords="166,497,204,510,218,539,203,575,157,586,123,564,119,529,139,504" />
+      <area v-if="this.level.sixteenthLevel && !this.level.seventeenthLevel" href="#" shape="poly" coords="455,496,500,520,505,557,468,584,423,576,405,542,421,505" />
+      <area v-if="this.level.seventeenthLevel && !this.level.eighteenthLevel" href="#" shape="poly" coords="725,498,772,521,779,558,753,585,726,591,693,578,679,556,681,528,702,506" />
     </map>
+      
+    
+    <div id="flecha">
+      <a href="#/map3">
+        <img src="../assets/flecha.gif"/>
+      </a>
+    </div>
 
   </div>
 </template>
@@ -19,7 +26,7 @@
 <script>
 export default {
   name: 'Map4',
-  props: ['life', 'level'],
+  props: ['level'],
   mounted: function () {
     window.addEventListener('resize', this.windowonload())
   },
@@ -71,14 +78,11 @@ export default {
 
 }
 
-#lifeImage{
-  width: 100%;
-  height: 100%;
-}
-#lifeDiv{
+#flecha{
   position: absolute;
-  top: 0%;
-  left: 88.9%;
-
+  left: 2%;
+  top: 30%;
+  z-index: 1;
+  transform: rotate(90deg);
 }
 </style>

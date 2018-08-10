@@ -48,7 +48,7 @@ export default {
         checkForm(){
             if(this.u === this.respu && this.du === this.respdu && this.integral === this.respintegral){
                 // console.log('oi')
-                this.$router.replace({name:'Certo', params:{id:'integralsimple'}});
+                this.$router.replace({name:'Certo', params:{id:'thirdLevel'}});
                 this.errors = 'ok';
 
             }else{

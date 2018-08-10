@@ -22,11 +22,6 @@
         <p>As fases só podem ser realizadas uma por vez, de forma sequencial, ou seja, não é possível pular fases
         clicando em círculos que ainda não foram desbloqueados. 
         </p>
-        
-        <h3>Obstáculos</h3>
-        <p>Cada fase consiste em uma questão que deve ser respondida para avançar para próxima fase,
-           porém cuidado, pois você só possui 3 vidas, ou seja, ao errar 3 questões: GAME OVER!
-        </p>
         <a href="#/Intro" id="button">
             <span>Início</span>
         </a>

@@ -23,75 +23,16 @@ export default {
       if(this.count > 0){
         setTimeout(this.timeOver, 1000);
       }else{
-        if(this.$route.params.id === 'seno'){
-          this.firstLevelCompletedUpdate();
-          this.$router.replace({name: 'Map'});
-        }        
-        if(this.$route.params.id === 'cosseno'){
-          this.secondLevelCompletedUpdate();
-          this.$router.replace({name: 'Map'});
-        }
-        if(this.$route.params.id === 'integralsimple'){
-          this.thirdLevelCompletedUpdate();
-          this.$router.replace({name: 'Map'});          
-        }        
-        if(this.$route.params.id === 'integralsimpleradio'){
-          this.fourthLevelCompletedUpdate();
-          this.$router.replace({name: 'Map'});          
-        }
-        if(this.$route.params.id === 'identitytrigonometric'){
-          this.fifthLevelCompletedUpdate();
-          this.$router.replace({name: 'Map'});          
-        }
-        if(this.$route.params.id === 'integralundefined'){
-          this.sixthLevelCompletedUpdate();
-          this.$router.replace({name: 'Map'});          
-        }
-        if(this.$route.params.id === 'integraldefinite'){
-          this.seventhLevelCompletedUpdate();
-          this.$router.replace({name: 'Map2'});          
-        }        
-        if(this.$route.params.id === 'derivativesimple'){
-          this.eighthLevelCompletedUpdate();
-          this.$router.replace({name: 'Map2'});          
-        }
-        if(this.$route.params.id === 'derivativesimpleq2'){
-          this.ninethLevelCompletedUpdate();
-          this.$router.replace({name: 'Map3'});          
-        }
-        if(this.$route.params.id === 'question4'){
-          this.tenthLevelCompletedUpdate();
-          this.$router.replace({name: 'Map3'});          
-        }
-        if(this.$route.params.id === 'question5'){
-          this.eleventhLevelCompletedUpdate();
-          this.$router.replace({name: 'Map3'});          
-        }
-        if(this.$route.params.id === 'deriq3'){
-          this.twelfthLevelCompletedUpdate();
-          this.$router.replace({name: 'Map3'});          
-        }
-        if(this.$route.params.id === 'deriq4'){
-          this.thirteenthLevelCompletedUpdate();
-          this.$router.replace({name: 'Map3'});          
-        }        
-        if(this.$route.params.id === 'intQ6'){
-          this.fourteenthLevelCompletedUpdate();
-          this.$router.replace({name: 'Map3'});          
-        }
-        if(this.$route.params.id === 'intq7'){
-          this.fifteenthLevelCompletedUpdate();
-          this.$router.replace({name: 'Map4'});          
-        }
-          if(this.$route.params.id === 'limq1'){
-          this.sixteenthLevelCompletedUpdate();
-          this.$router.replace({name: 'Map4'});          
-        }
+        this.updateLevel(this.$route.params.id);
+          window.history.back();
       }
     },
     // Este método inicia um evento para acrescentar o somador para o Score Final.
     eventUpdate(){
       this.$emit('updateSomador');
+    },
+    updateLevel(levelName){
+      this.$emit('updateLevel', levelName);
     },
 
     firstLevelCompletedUpdate(){
