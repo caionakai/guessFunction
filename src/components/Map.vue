@@ -19,10 +19,15 @@
       <area v-if="this.level.fifthLevel && !this.level.sixthLevel" href="#/integralundefined" shape="poly" coords="957,305,955,306,992,323,996,356,970,374,933,368,917,345,928,314" />
       <area v-if="this.level.sixthLevel && !this.level.seventhLevel" href="#/integraldefinite" shape="poly" coords="1229,215,1229,214,1268,233,1280,270,1253,300,1210,302,1179,274,1183,239,1205,221" />
     </map>
-    <div id="flecha">
+    <div id="flecha" class="asd">
       <a href="#/map2">
         <img src="../assets/flecha.gif"/>
       </a>
+    </div>
+    <div id="flecha">
+      <button @click='oi()' >
+        Ola
+      </button>
     </div>
 
   </div>
@@ -30,66 +35,70 @@
 
 <script>
 export default {
-  name: 'Mapa',
-  props: ['level'],
-  mounted(){
+  name: "Mapa",
+  props: ["level"],
+  mounted() {
     this.windowonload();
   },
-  methods:{
+  methods: {
     // this method is responsible for recalculate the map image when the screen is resized
     windowonload() {
-    var ImageMap = function (map, img) {
-            var n,
-            areas = map.getElementsByTagName('area'),
+      var ImageMap = function(map, img) {
+          var n,
+            areas = map.getElementsByTagName("area"),
             len = areas.length,
             coords = [],
-            previousWidth = 1365;
+            previousWidth = 1380;
+          for (n = 0; n < len; n++) {
+            coords[n] = areas[n].coords.split(",");
+          }
+          this.resize = function() {
+            var n,
+              m,
+              clen,
+              x = img.offsetWidth / previousWidth;
             for (n = 0; n < len; n++) {
-                coords[n] = areas[n].coords.split(',');
+              clen = coords[n].length;
+              for (m = 0; m < clen; m++) {
+                coords[n][m] *= x;
+              }
+              areas[n].coords = coords[n].join(",");
             }
-            this.resize = function () {
-                var n, m, clen,
-                    x = img.offsetWidth / previousWidth;
-                for (n = 0; n < len; n++) {
-                    clen = coords[n].length;
-                    for (m = 0; m < clen; m++) {
-                        coords[n][m] *= x;
-                    }
-                    areas[n].coords = coords[n].join(',');
-                }
-                previousWidth = img.offsetWidth;
-                return true;
-            };
-            window.onresize = this.resize;
+            previousWidth = img.offsetWidth;
+            return true;
+          };
+          window.onresize = this.resize;
         },
-        imageMap = new ImageMap(document.getElementById('Map'), document.getElementById('trilha'));
-    imageMap.resize();
-    return;
-}
-  }
-}
+        imageMap = new ImageMap(
+          document.getElementById("Map"),
+          document.getElementById("trilha")
+        );
+      imageMap.resize();
+      return;
+    },
 
+    oi(ev){
+      console.log(this.$('.asd'))
+    }
+  }
+};
 </script>
 
 <style scoped>
-
-#trilha{
+#trilha {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0px;
   left: 0px;
   background-position: 50% 50%;
-
 }
 
-#flecha{
+#flecha {
   position: absolute;
   right: 5%;
   top: 1%;
   z-index: 1;
   transform: rotate(-90deg);
 }
-
-
 </style>

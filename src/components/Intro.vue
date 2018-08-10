@@ -8,11 +8,11 @@
         <a  href="#/map" class="button">
             <span>Jogar</span>
         </a>
-        <a href="#/topics" class="button">
-            <span>Aprender</span>
-        </a>
         <a href="#/howtoplay" class="button">
             <span>Como jogar</span>
+        </a>
+        <a href="#/topics" class="button">
+            <span>Aprender</span>
         </a>
       </div>
       <div id="fb-root"></div>
@@ -46,7 +46,6 @@ export default {
   created() {
     this.eventUpdate();
     this.resetAllLevels();
-    this.restoreLife();
     this.face(document, 'script', 'facebook-jssdk');
   },
   data(){
@@ -84,13 +83,13 @@ export default {
 
 <style scoped>
 #content {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-position: 50% 50%;
-    background-color: aquamarine;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  background: aquamarine; /* Just to visualize the extent */
 }
 #panelButton{
   margin: auto;
@@ -108,7 +107,7 @@ export default {
 }
 
 .button {
-  width: 200px;
+  width: 100%;
   margin: 0 auto;
   display: block;
   vertical-align: middle;
@@ -127,24 +126,11 @@ export default {
   font-size: 25px;
   color: #fff;
 }
-.shareBtn {
-  width: 50px;
-  font-size: 13px;
-  color: #fff;
-}
-.shareBtn span{
-  display: inline-block;
-  padding: 6px 12px;
-  border-radius: 3px;
-  background-color: #0c4baf;
-  font: bolder;
-
-}
 
 .button span {
-  width: 160px;
+  width: 100%;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 2.8% 0%;
   background-color: #4286f4;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -162,19 +148,19 @@ export default {
 }
 
 .button:hover span {
-  width: 160px;
+  width: 100%;
   background-color: #4286f4;
   text-shadow: 0 -1px 1px rgba(175, 49, 95, .9), 0 0 5px rgba(255, 255, 255, .8);
 }
 .button:active, #button:focus {
-  width: 200px;
+  width: 100%;
   -webkit-box-shadow:    0 8px 0 #4286f4, 0 12px 10px rgba(0, 0, 0, .3);
   -moz-box-shadow: 0 8px 0 #4286f4, 0 12px 10px rgba(0, 0, 0, .3);
   box-shadow:    0 8px 0 #4286f4, 0 12px 10px rgba(0, 0, 0, .3);
 }
 
 .button:active span {
-  width: 160px;
+  width: 100%;
   -webkit-transform: translate(0, 4px);
   -moz-transform: translate(0, 4px);
   -o-transform: translate(0, 4px);
@@ -182,6 +168,19 @@ export default {
 }
 p{
   font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.shareBtn {
+  width: 50px;
+  font-size: 13px;
+  color: #fff;
+}
+.shareBtn span{
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 3px;
+  background-color: #0c4baf;
+  font: bolder;
+
 }
 
 </style>
