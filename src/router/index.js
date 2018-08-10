@@ -9,6 +9,7 @@ import Map4 from '@/components/Maps/Map4'
 import Logos from '@/components/Main/Logos'
 import Intro from '@/components/Main/Intro'
 import HowToPlay from '@/components/Main/HowToPlay'
+import Info from '@/components/Main/Info'
 import Certo from '@/components/Main/Certo'
 import Errado from '@/components/Main/Errado'
 import Score from '@/components/Main/Score'
@@ -53,6 +54,11 @@ export default new Router({
       path: '/intro',
       name: 'Intro',
       component: Intro
+    },
+    {
+      path: '/info',
+      name: 'Info',
+      component: Info
     },
     {
       path: '/firstLevel',

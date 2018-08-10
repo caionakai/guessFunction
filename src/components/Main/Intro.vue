@@ -14,6 +14,9 @@
         <a href="#/topics" class="button">
             <span>Aprender</span>
         </a>
+        <a href="#/info" class="button">
+            <span>Informações</span>
+        </a>
       </div>
       <div id="fb-root"></div>
       <p>Compartilhe no facebook</p>
