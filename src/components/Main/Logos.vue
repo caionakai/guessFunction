@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="../assets/logo_pibiti.png" />
+    <img src="../../assets/logo_pibiti.png" />
   </div>
 </template>
 

@@ -1,10 +1,10 @@
 <template>
   <div id="mapa">
     <div style="width:100%;">
-      <img v-if="!this.level.sixteenthLevel" src="../assets/Map/map4.png" id="trilha" usemap="#Map" border="0" width="100%"/>
-      <img v-if="this.level.sixteenthLevel && !this.level.seventeenthLevel" src="../assets/Map/owariD1.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
-      <img v-if="this.level.seventeenthLevel && !this.level.eighteenthLevel" src="../assets/Map/owariD2.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
-      <img v-if="this.level.eighteenthLevel" src="../assets/Map/owariD3.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="!this.level.sixteenthLevel" src="../../assets/Map/map4.png" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="this.level.sixteenthLevel && !this.level.seventeenthLevel" src="../../assets/Map/owariD1.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="this.level.seventeenthLevel && !this.level.eighteenthLevel" src="../../assets/Map/owariD2.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="this.level.eighteenthLevel" src="../../assets/Map/owariD3.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
     </div>
 
     <map name="Map" id="Map">
@@ -16,7 +16,7 @@
     
     <div id="flecha">
       <a href="#/map3">
-        <img src="../assets/flecha.gif"/>
+        <img src="../../assets/flecha.gif"/>
       </a>
     </div>
 

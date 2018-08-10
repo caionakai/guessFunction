@@ -1,9 +1,9 @@
 <template>
   <div id="mapa">
     <div style="width:100%;">
-      <img v-if="!this.level.eighthLevel" src="../assets/Map/tower.png" id="trilha" usemap="#Map" border="0" width="100%"/>
-      <img v-if="this.level.eighthLevel && !this.level.ninethLevel" src="../assets/Map/towerDone1.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
-      <img v-if="this.level.ninethLevel" src="../assets/Map/towerDone2.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="!this.level.eighthLevel" src="../../assets/Map/tower.png" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="this.level.eighthLevel && !this.level.ninethLevel" src="../../assets/Map/towerDone1.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="this.level.ninethLevel" src="../../assets/Map/towerDone2.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
     </div>
 
     <map name="Map" id="Map">
@@ -13,13 +13,13 @@
 
     <div id="flecha">
       <a href="#/map">
-        <img src="../assets/flecha.gif"/>
+        <img src="../../assets/flecha.gif"/>
       </a>
     </div>
 
     <div id="flecha2">
       <a href="#/map3">
-        <img src="../assets/flecha.gif"/>
+        <img src="../../assets/flecha.gif"/>
       </a>
     </div>
 

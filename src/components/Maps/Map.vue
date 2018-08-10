@@ -1,14 +1,14 @@
 <template>
   <div id="mapa">
     <div style="width:100%;">
-      <img v-if="!this.level.firstLevel" src="../assets/map1.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
-      <img v-if="this.level.firstLevel && !this.level.secondLevel" src="../assets/done1.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
-      <img v-if="this.level.secondLevel && !this.level.thirdLevel" src="../assets/done2.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
-      <img v-if="this.level.thirdLevel && !this.level.fourthLevel" src="../assets/done3.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
-      <img v-if="this.level.fourthLevel && !this.level.fifthLevel" src="../assets/done4.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
-      <img v-if="this.level.fifthLevel && !this.level.sixthLevel" src="../assets/done5.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
-      <img v-if="this.level.sixthLevel && !this.level.seventhLevel" src="../assets/done6.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
-      <img v-if="this.level.seventhLevel" src="../assets/done7.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="!this.level.firstLevel" src="../../assets/map1.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="this.level.firstLevel && !this.level.secondLevel" src="../../assets/done1.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="this.level.secondLevel && !this.level.thirdLevel" src="../../assets/done2.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="this.level.thirdLevel && !this.level.fourthLevel" src="../../assets/done3.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="this.level.fourthLevel && !this.level.fifthLevel" src="../../assets/done4.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="this.level.fifthLevel && !this.level.sixthLevel" src="../../assets/done5.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="this.level.sixthLevel && !this.level.seventhLevel" src="../../assets/done6.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="this.level.seventhLevel" src="../../assets/done7.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
     </div>
     <map name="Map" id="Map">
       <area v-if="!this.level.firstLevel" href="#/firstLevel" shape="poly" coords="126,77,106,81,90,92,79,108,75,128,79,148,90,164,106,175,126,179,146,175,162,164,173,148,177,128,173,108,162,92,146,81" />
@@ -21,7 +21,7 @@
     </map>
     <div id="flecha" class="asd">
       <a href="#/map2">
-        <img src="../assets/flecha.gif"/>
+        <img src="../../assets/flecha.gif"/>
       </a>
     </div>
     <div id="flecha">
