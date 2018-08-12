@@ -19,6 +19,9 @@ import Seno from '@/components/Question/Trigonometry/Seno'
 import Cosseno from '@/components/Question/Trigonometry/Cosseno'
 import IdentityTrigonometric from '@/components/Question/Trigonometry/IdentityTrigonometric'
 
+import DerivQ1 from '@/components/Question/Derivada/questao1'
+import DerivQ1Ex from '@/components/Question/Derivada/questao1-exercicio'
+
 import DerivativeSimple from '@/components/Question/Derivative/Question1'
 import DerivativeSimpleQ2 from '@/components/Question/Derivative/Question2'
 import DeriQ3 from '@/components/Question/Derivative/Question3'
@@ -211,6 +214,16 @@ export default new Router({
       path: '/limq1',
       name: 'LimQ1',
       component: LimQ1
+    },
+    {
+      path: '/deriv-q1',
+      name: 'DerivQ1',
+      component: DerivQ1
+    },
+    {
+      path: '/deriv-q1-ex',
+      name: 'DerivQ1Ex',
+      component: DerivQ1Ex
     }
     
   ]

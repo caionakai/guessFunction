@@ -11,9 +11,9 @@
         <a href="#/howtoplay" class="button">
             <span>Como jogar</span>
         </a>
-        <a href="#/topics" class="button">
+        <!-- <a href="#/topics" class="button">
             <span>Aprender</span>
-        </a>
+        </a> -->
         <a href="#/info" class="button">
             <span>Informações</span>
         </a>

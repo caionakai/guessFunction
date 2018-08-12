@@ -11,7 +11,8 @@
       <img v-if="this.level.seventhLevel" src="../../assets/done7.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
     </div>
     <map name="Map" id="Map">
-      <area v-if="!this.level.firstLevel" href="#/firstLevel" shape="poly" coords="126,77,106,81,90,92,79,108,75,128,79,148,90,164,106,175,126,179,146,175,162,164,173,148,177,128,173,108,162,92,146,81" />
+      <!-- firstLevel -->
+      <area v-if="!this.level.firstLevel" href="#/deriv-q1" shape="poly" coords="126,77,106,81,90,92,79,108,75,128,79,148,90,164,106,175,126,179,146,175,162,164,173,148,177,128,173,108,162,92,146,81" />
       <area v-if="this.level.firstLevel && !this.level.secondLevel" href="#/cosseno" shape="poly" coords="349,174,343,172,385,189,397,223,383,248,354,263,320,253,304,234,299,210,311,192,329,177" />
       <area v-if="this.level.secondLevel && !this.level.thirdLevel" href="#/integralsimple" shape="poly" coords="409,365,408,364,444,379,459,405,448,434,416,448,385,442,367,425,363,397,374,378,391,366" />
       <area v-if="this.level.thirdLevel && !this.level.fourthLevel" href="#/integralsimpleradio" shape="poly" coords="521,520,521,519,560,537,576,568,569,595,542,614,513,617,485,607,465,586,469,558,480,539,499,526" />
@@ -23,11 +24,6 @@
       <a href="#/map2">
         <img src="../../assets/flecha.gif"/>
       </a>
-    </div>
-    <div id="flecha">
-      <button @click='oi()' >
-        Ola
-      </button>
     </div>
 
   </div>

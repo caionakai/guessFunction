@@ -30,7 +30,7 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
 h1, p, h2, h3, h4{
   font-family: "Comic Sans MS", cursive, sans-serif;
 }

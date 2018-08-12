@@ -4,6 +4,7 @@
         <div id="text">
 
         <h1>Informações</h1>
+        Se encontrou algum bug ou qualquer tipo de problema com os exercícios por favor entre em contato com o email abaixo.
         <h3>Contato: caionakai2015@gmail.com</h3>
 
         <a href="#/Intro" id="button">
@@ -95,6 +96,10 @@ p{
 }
 p, h1,h3{
     font-family: "Comic Sans MS", cursive, sans-serif;
+    
+}
+p{
+    text-align: justify;
 }
 body{
     background-color: #4286f4;

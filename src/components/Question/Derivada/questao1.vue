@@ -1,0 +1,82 @@
+<template>
+<div>
+  <div id="main">
+    <div id="body">
+        <h1>Derivadas</h1>
+        <h2>Taxa de Variação, Coeficiente Angular e Variação de uma função não linear.</h2>
+        <video width="320" height="240" controls>
+            <source src="../../../assets/Videos/video1.mp4" type="video/mp4">
+            Há algum problema com o vídeo, troque seu navegador!
+        </video>  
+
+        <br/>
+
+        <h2>Derivada como o coeficiente angular de uma reta tangente.</h2>
+        <video width="320" height="240" controls>
+          <source src="../../../assets/Videos/video1-2.mp4" type="video/mp4">
+          Há algum problema com o vídeo, troque seu navegador!
+        </video>
+
+        <br/>
+
+        <button id="button" @click="goToPage()"> Fazer exercício</button>
+    </div>
+  </div>
+</div>
+</template>
+
+<script>
+export default {
+  name: "DerivQ1",
+  mounted() {
+  },
+  data() {
+    return {
+    };
+  },
+  methods: {
+      goToPage(){
+        this.$router.replace({ name: "DerivQ1Ex" });
+      }
+  }
+};
+</script>
+
+<style scoped>
+#body{
+  margin: auto;
+  width: 83%;
+  height: 120%;
+  padding: 1.5%;
+  border-radius: 5%;
+  background-color: white;
+  margin-top: 2%;
+}
+button{
+    display: inline-block;
+    margin-top: 3%;
+    margin-left: 80%;
+    background-color: #1357c4;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    color: #fff;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    cursor: pointer;
+}
+h1, h2{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+
+}
+#main{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  background: rgb(37, 134, 224);
+}
+
+</style>
