@@ -223,6 +223,7 @@ export default new Router({
     {
       path: '/deriv-q1-ex',
       name: 'DerivQ1Ex',
+      props: {default: true},
       component: DerivQ1Ex
     }
     

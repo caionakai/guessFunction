@@ -34,11 +34,11 @@ export default {
 }
 p{
     text-align: justify;
-    margin-left: 20%;
+    margin-left: 25%;
 }
 #text{
     width: 50%;
-    margin-left: 20%;
+    margin-left: 25%;
     
 }
 #button {

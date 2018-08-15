@@ -35,73 +35,73 @@ export default {
       this.$emit('updateLevel', levelName);
     },
 
-    firstLevelCompletedUpdate(){
-      this.$emit('updateFirstLevel');
-    },
+    // firstLevelCompletedUpdate(){
+    //   this.$emit('updateFirstLevel');
+    // },
 
-    secondLevelCompletedUpdate(){
-      this.$emit('updateSecondLevel');
-    },
+    // secondLevelCompletedUpdate(){
+    //   this.$emit('updateSecondLevel');
+    // },
 
-    thirdLevelCompletedUpdate(){
-      this.$emit('updateThirdLevel');
-    },
+    // thirdLevelCompletedUpdate(){
+    //   this.$emit('updateThirdLevel');
+    // },
 
-    fourthLevelCompletedUpdate(){
-      this.$emit('updateFourthLevel');
-    },
+    // fourthLevelCompletedUpdate(){
+    //   this.$emit('updateFourthLevel');
+    // },
     
-    fifthLevelCompletedUpdate(){
-      this.$emit('updateFifthLevel');
-    },
+    // fifthLevelCompletedUpdate(){
+    //   this.$emit('updateFifthLevel');
+    // },
     
-    sixthLevelCompletedUpdate(){
-      this.$emit('updateSixthLevel');
-    },
+    // sixthLevelCompletedUpdate(){
+    //   this.$emit('updateSixthLevel');
+    // },
 
-    seventhLevelCompletedUpdate(){
-      this.$emit('updateSeventhLevel');
-    },
+    // seventhLevelCompletedUpdate(){
+    //   this.$emit('updateSeventhLevel');
+    // },
     
-    eighthLevelCompletedUpdate(){
-      this.$emit('updateEighthLevel');
-    },
+    // eighthLevelCompletedUpdate(){
+    //   this.$emit('updateEighthLevel');
+    // },
        
-    ninethLevelCompletedUpdate(){
-      this.$emit('updateNinethLevel');
-    },
+    // ninethLevelCompletedUpdate(){
+    //   this.$emit('updateNinethLevel');
+    // },
     
-    tenthLevelCompletedUpdate(){
-      this.$emit('updateTenthLevel');
-    },
+    // tenthLevelCompletedUpdate(){
+    //   this.$emit('updateTenthLevel');
+    // },
     
-    eleventhLevelCompletedUpdate(){
-      this.$emit('updateEleventhLevel');
-    },
+    // eleventhLevelCompletedUpdate(){
+    //   this.$emit('updateEleventhLevel');
+    // },
         
-    twelfthLevelCompletedUpdate(){
-      this.$emit('updateTwelfthLevel');
-    },
+    // twelfthLevelCompletedUpdate(){
+    //   this.$emit('updateTwelfthLevel');
+    // },
         
-    thirteenthLevelCompletedUpdate(){
-      this.$emit('updateThirteenthLevel');
-    },
+    // thirteenthLevelCompletedUpdate(){
+    //   this.$emit('updateThirteenthLevel');
+    // },
 
-    fourteenthLevelCompletedUpdate(){
-      this.$emit('updateFourteenthLevel');
-    },
+    // fourteenthLevelCompletedUpdate(){
+    //   this.$emit('updateFourteenthLevel');
+    // },
     
-    fifteenthLevelCompletedUpdate(){
-      this.$emit('updateFifteenthLevel');
-    },
+    // fifteenthLevelCompletedUpdate(){
+    //   this.$emit('updateFifteenthLevel');
+    // },
     
-    sixteenthLevelCompletedUpdate(){
-      this.$emit('updateSixteenthLevel');
-    },
+    // sixteenthLevelCompletedUpdate(){
+    //   this.$emit('updateSixteenthLevel');
+    // },
       
-    seventeenthLevelCompletedUpdate(){
-      this.$emit('updateSeventeenthLevel');
-    }
+    // seventeenthLevelCompletedUpdate(){
+    //   this.$emit('updateSeventeenthLevel');
+    // }
 
   }
 }

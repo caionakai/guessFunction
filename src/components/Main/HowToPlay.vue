@@ -13,14 +13,14 @@
         <p>
             As duas imagens abaixo 
             representam as fases, o círculo verde significa que a fase ainda não foi completada e o azul,
-            que a fase já foi completada, não é possível refazer as fases que já foram feitas.
+            que a fase já foi completada é possível refazer as fases que já foram feitas.
         </p>
 
         <img src="../../assets/undone.png"/>
         <img src="../../assets/done.png"/>
 
-        <p>As fases só podem ser realizadas uma por vez, de forma sequencial, ou seja, não é possível pular fases
-        clicando em círculos que ainda não foram desbloqueados. 
+        <p>O interessante é realizar as fases de forma sequencial, uma por vez, para que o aproveitamento seja maior, pois
+        elas estão organizadas de forma lógica.  
         </p>
         <a href="#/Intro" id="button">
             <span>Início</span>
@@ -49,11 +49,11 @@ export default {
 }
 p{
     text-align: justify;
-    margin-left: 20%;
+    margin-left: 22%;
 }
 #text{
     width: 50%;
-    margin-left: 20%;
+    margin-left: 22%;
     
 }
 #button {
