@@ -6,7 +6,7 @@
         <h2>Taxa de Variação, Coeficiente Angular e Variação de uma função não linear.</h2>
         <video width="30%" height="15%" controls>
             <source src="../../../assets/Videos/video1.mp4" type="video/mp4">
-            Há algum problema com o vídeo, troque seu navegador!
+            Há algum problema com o vídeo, utilize outro navegador!
         </video>  
 
         <br/>
@@ -14,10 +14,11 @@
         <h2>Derivada como o coeficiente angular de uma reta tangente.</h2>
         <video width="30%" height="15%" controls>
           <source src="../../../assets/Videos/video1-2.mp4" type="video/mp4">
-          Há algum problema com o vídeo, troque seu navegador!
+          Há algum problema com o vídeo, utilize outro navegador!
         </video>
 
         <br/>
+        <button id="buttonBack" @click="goMap()"> Voltar ao Mapa</button>
         <button id="button" @click="goToPage()"> Fazer exercício</button>
     </div>
   </div>
@@ -36,6 +37,9 @@ export default {
   methods: {
       goToPage(){
         this.$router.replace({ name: "DerivQ1Ex" });
+      },
+      goMap(){
+        this.$router.replace({ name: "Map" });        
       }
   }
 };
@@ -50,6 +54,16 @@ export default {
   border-radius: 5%;
   background-color: white;
   margin-top: 2%;
+}
+#buttonBack {
+  background-color: gray;
+  padding: 0.5%;
+  border: none;
+  border-radius: 5%;
+  font-size: 120%;
+  color: #fff;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  cursor: pointer;
 }
 button{
     /* float: right; */

@@ -19,7 +19,7 @@
       <area v-if="this.level.fourteenthLevel && !this.level.fifteenthLevel" href="#/intq7" shape="poly" coords="1265,513,1299,527,1314,552,1304,587,1264,604,1219,581,1211,547,1230,523" />
     </map>
 
-    <div id="flecha">
+    <!-- <div id="flecha">
       <a href="#/map2">
         <img src="../../assets/flecha.gif"/>
       </a>
@@ -29,7 +29,7 @@
       <a href="#/map4">
         <img src="../../assets/flecha.gif"/>
       </a>
-    </div>
+    </div> -->
 
   </div>
 </template>
@@ -82,7 +82,7 @@ export default {
 #trilha{
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     background-position: 50% 50%;

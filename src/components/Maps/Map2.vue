@@ -11,17 +11,17 @@
         <area v-if="!this.level.ninethLevel && this.level.eighthLevel" href="#/derivativesimpleq2" shape="poly" coords="627,419,662,430,679,451,674,484,638,503,593,493,575,463,584,435,605,423" />
     </map>
 
-    <div id="flecha">
+    <!-- <div id="flecha">
       <a href="#/map">
-        <img src="../../assets/flecha.gif"/>
+        <img src="../../assets/flech.gif"/>
       </a>
     </div>
 
     <div id="flecha2">
       <a href="#/map3">
-        <img src="../../assets/flecha.gif"/>
+        <img src="../../assets/flech.gif"/>
       </a>
-    </div>
+    </div> -->
 
 
   </div>
@@ -75,7 +75,7 @@ export default {
 #trilha{
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     background-position: 50% 50%;
@@ -84,16 +84,19 @@ export default {
 
 #flecha{
   position: absolute;
-  left: 2%;
+  left: 0%;
   top: 30%;
-  z-index: 1;
-  transform: rotate(90deg);
+  transform: scale(0.7);
+  width: 220px;
+  height: auto;
+  transform: rotate(180deg);
 }
 #flecha2{
   position: absolute;
-  right: 2%;
+  right: 0%;
   top: 30%;
+  transform: scale(0.7);
   z-index: 1;
-  transform: rotate(-90deg);
+  /* transform: rotate(-90deg); */
 }
 </style>

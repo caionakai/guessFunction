@@ -22,7 +22,7 @@
     </map>
     <div id="flecha" class="asd">
       <a href="#/map2">
-        <img src="../../assets/flecha.gif"/>
+        <img src="../../assets/flech.gif"/>
       </a>
     </div>
 
@@ -84,7 +84,7 @@ export default {
 #trilha {
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   background-position: 50% 50%;
@@ -92,9 +92,10 @@ export default {
 
 #flecha {
   position: absolute;
-  right: 5%;
-  top: 1%;
+  right: 2%;
+  top: 2%;
+  transform: scale(0.7);
   z-index: 1;
-  transform: rotate(-90deg);
+  /* transform: rotate(90deg); */
 }
 </style>

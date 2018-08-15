@@ -58,6 +58,8 @@
                     <p>Talvez seja melhor reassistir o conteúdo teórico..</p>
                     <p>Clique no botão abaixo para acessar o conteúdo novamente!</p>
                     <button id="teorico" @click="goBack()"> Conteúdo Teórico</button>
+                    <p>Você também pode pular essa questão e refazê-la mais tarde, clicando no botão abaixo!</p>
+                    <button id="btn-nextQuestion" @click="goMap()"> Pular questão</button>
                 </div>
                 <footer class="w3-container w3-teal">
                     <p></p>
@@ -184,6 +186,17 @@ label {
 #teorico {
   margin-bottom: 2%;
   background-color: yellowgreen;
+  padding: 0.5%;
+  border: none;
+  border-radius: 5%;
+  font-size: 120%;
+  color: #fff;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  cursor: pointer;
+}
+#btn-nextQuestion {
+  margin-bottom: 2%;
+  background-color: rgb(50, 200, 205);
   padding: 0.5%;
   border: none;
   border-radius: 5%;

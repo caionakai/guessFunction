@@ -14,11 +14,11 @@
     </map>
       
     
-    <div id="flecha">
+    <!-- <div id="flecha">
       <a href="#/map3">
         <img src="../../assets/flecha.gif"/>
       </a>
-    </div>
+    </div> -->
 
   </div>
 </template>
@@ -71,7 +71,7 @@ export default {
 #trilha{
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     background-position: 50% 50%;
