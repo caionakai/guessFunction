@@ -1,8 +1,8 @@
 <template>
   <div id="mapa">
     <div style="width:100%;">
-      <img v-if="!this.level.firstLevel" src="../../assets/map1.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
-      <img v-if="this.level.firstLevel && !this.level.secondLevel" src="../../assets/done1.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="!this.nivel.first" src="../../assets/map1.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="this.nivel.first && !this.level.secondLevel" src="../../assets/done1.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
       <img v-if="this.level.secondLevel && !this.level.thirdLevel" src="../../assets/done2.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
       <img v-if="this.level.thirdLevel && !this.level.fourthLevel" src="../../assets/done3.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
       <img v-if="this.level.fourthLevel && !this.level.fifthLevel" src="../../assets/done4.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
@@ -33,8 +33,19 @@
 export default {
   name: "Mapa",
   props: ["level"],
+  data(){
+    return {
+  
+    }
+  },
+  beforeCreate(){
+    // Coloca na variável nivel o dado que está no localStorage
+    this.nivel = JSON.parse(localStorage.getItem("level"));
+  },
   mounted() {
     this.windowonload();
+    // window.screen.lockOrientation("landscape");
+    screen.orientation.lock('landscape');
   },
   methods: {
     // this method is responsible for recalculate the map image when the screen is resized
@@ -72,10 +83,6 @@ export default {
       imageMap.resize();
       return;
     },
-
-    oi(ev){
-      console.log(this.$('.asd'))
-    }
   }
 };
 </script>

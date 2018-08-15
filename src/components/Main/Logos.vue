@@ -7,8 +7,21 @@
 <script>
 export default {
   name: 'Logos',
-  data:{
-    counter: 5
+  mounted(){
+    this.test = JSON.parse(localStorage.getItem("level"));
+    if(this.test == null){
+      localStorage.setItem('level', JSON.stringify(this.data));
+    }
+  },
+  data(){
+      return{
+        counter: 5,
+        data: {
+          first: false,
+          // ... others like third, fourth.. is defined directly 
+       },
+       test: 'temp'
+    }
   },
   created() {
     this.counter = 5;

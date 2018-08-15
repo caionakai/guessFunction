@@ -96,19 +96,26 @@ export default {
       rightAns: false,
       toggleDiv: false,
       counter: 0,
+      level: null,
       toggleModal: false
     };
+  },
+  mounted(){
+    this.level = JSON.parse(localStorage.getItem("level"));
   },
   methods: {
     checkForm() {
       if (this.selected === "a") {
         //   this.$router.replace({name:'Certo', params:{id:'firstLevel'}});
+        this.level.first = true; 
+        localStorage.setItem('level', JSON.stringify(this.level))
         this.toggleDiv = true;
         this.rightAns = true;
       } else {
         //   this.$router.replace({name:'Errado', params:{id:'limq1'}});
         this.toggleDiv = true;
         this.rightAns = false;
+
         if (this.counter == 1) {
           this.toggle();
         }
@@ -126,7 +133,7 @@ export default {
       this.$router.replace({ name: "DerivQ1" });
     },
     goMap() {
-      this.updateLevel("firstLevel");
+      // this.updateLevel("firstLevel");
       this.$router.replace({ name: "Map" });
     },
     updateLevel(nameLevel) {

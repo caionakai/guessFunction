@@ -51,9 +51,12 @@ export default {
     this.resetAllLevels();
     this.face(document, 'script', 'facebook-jssdk');
   },
+  mounted(){
+
+  },
   data(){
     return{
-      a: 'facebook-jssdk'
+      a: 'facebook-jssdk',
     }
   },
   methods:{ 
@@ -63,14 +66,6 @@ export default {
     resetAllLevels(){
       this.$emit('resetAllLevels');
     },
-    // face: function(d, s, id) {
-    //   var js, fjs = d.getElementsByTagName(s)[0];
-    //   if (d.getElementById(id)) return;
-    //   js = d.createElement(s); js.id = id;
-    //   js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-    //   fjs.parentNode.insertBefore(js, fjs);
-    //   // window.location.reload(false); 
-    // }(document, 'script', 'facebook-jssdk'),
     
     face(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
