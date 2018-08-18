@@ -10,6 +10,7 @@
         </video>  
 
         <br/>
+        <!-- <iframe width="796" height="448" src="https://www.youtube.com/embed/EKvHQc3QEow" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
 
         <h2>Derivada como o coeficiente angular de uma reta tangente.</h2>
         <video width="30%" height="15%" controls>
@@ -62,7 +63,7 @@ export default {
   border-radius: 5%;
   font-size: 120%;
   color: #fff;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   cursor: pointer;
 }
 button{
@@ -74,11 +75,12 @@ button{
     border-radius: 5%;
     font-size: 120%;
     color: #fff;
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     cursor: pointer;
 }
 h1, h2{
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    /* font-family: "Comic Sans MS", cursive, sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 
 }
 #main{

@@ -13,7 +13,7 @@
     <map name="Map" id="Map">
       <!-- v-if="!this.level.firstLevel" firstLevel -->
       <area  href="#/deriv-q1" shape="poly" coords="126,77,106,81,90,92,79,108,75,128,79,148,90,164,106,175,126,179,146,175,162,164,173,148,177,128,173,108,162,92,146,81" />
-      <area v-if="this.level.firstLevel" href="#/cosseno" shape="poly" coords="349,174,343,172,385,189,397,223,383,248,354,263,320,253,304,234,299,210,311,192,329,177" />
+      <area v-if="this.nivel.first" href="#/cosseno" shape="poly" coords="349,174,343,172,385,189,397,223,383,248,354,263,320,253,304,234,299,210,311,192,329,177" />
       <area v-if="this.level.secondLevel && !this.level.thirdLevel" href="#/integralsimple" shape="poly" coords="409,365,408,364,444,379,459,405,448,434,416,448,385,442,367,425,363,397,374,378,391,366" />
       <area v-if="this.level.thirdLevel && !this.level.fourthLevel" href="#/integralsimpleradio" shape="poly" coords="521,520,521,519,560,537,576,568,569,595,542,614,513,617,485,607,465,586,469,558,480,539,499,526" />
       <area v-if="this.level.fourthLevel && !this.level.fifthLevel" href="#/identitytrigonometric" shape="poly" coords="743,394,744,394,773,403,788,428,784,450,762,465,725,463,703,443,704,421,720,401" />

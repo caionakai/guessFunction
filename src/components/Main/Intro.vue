@@ -101,7 +101,7 @@ export default {
 
 
 #title{
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 .button {
@@ -142,7 +142,7 @@ export default {
   -moz-transition: background-color .2s ease-in-out, -moz-transform .1s ease-in-out;
   -o-transition: background-color .2s ease-in-out, -o-transform .1s ease-in-out;
   transition: background-color .2s ease-in-out, transform .1s ease-in-out;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 .button:hover span {
@@ -165,7 +165,7 @@ export default {
   transform: translate(0, 4px);
 }
 p{
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 .shareBtn {
   width: 50px;

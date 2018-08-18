@@ -68,14 +68,13 @@ p{
     -webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
     -moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
     box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
-    font-family: 'Pacifico', Arial, sans-serif;
     line-height: 1;
     text-shadow: 0 -1px 1px rgba(175, 49, 95, .7);
     -webkit-transition: background-color .2s ease-in-out, -webkit-transform .1s ease-in-out;
     -moz-transition: background-color .2s ease-in-out, -moz-transform .1s ease-in-out;
     -o-transition: background-color .2s ease-in-out, -o-transform .1s ease-in-out;
     transition: background-color .2s ease-in-out, transform .1s ease-in-out;
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 #button:hover span {
@@ -95,8 +94,7 @@ p{
     transform: translate(0, 4px);
 }
 p, h1,h3{
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 p{
     text-align: justify;

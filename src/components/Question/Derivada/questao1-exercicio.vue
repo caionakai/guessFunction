@@ -3,16 +3,18 @@
     <div id="body">
         <div class="seno">
             <p class="title"> Dada a função:  &nbsp;
-                <img id="prob" src="../../../assets/Question/Derivada/questao1-prob.png"/>. Encontre o
-                coeficiente angular de uma reta tangente no ponto P(1,-1).
+              <!-- <img src="http://latex.codecogs.com/gif.latex?f(x)&space;=&space;x^2&space;-&space;2x" title="f(x) = x^2 - 2x" /> -->
+              
+                <img id="prob" src="../../../assets/Question/Derivada/questao1-prob.png"/>. 
+                Encontre o coeficiente angular de uma reta tangente no ponto P(1,-1).
             </p>
+            
         </div>
         <hr>
         <p id="t">
             <label id="a" for="inputA">a)</label>
             <input type="radio" id="inputA" name="quest" value="a" v-model="selected">
             <label for="inputA">
-                <!-- <img id="prob" src="../../../assets/Question/Limit/LimQ1-ans.png"/> -->
                 f'(1) = 0
             </label>
         </p>
@@ -21,18 +23,17 @@
             <label id="b" for="inputB">b)</label>
             <input type="radio" id="inputB" value="b" name="quest" v-model="selected">
             <label for="inputB">
-                <!-- <img id="prob" src="../../../assets/Question/Limit/LimQ1-x.png"/> -->
                 f'(1) = 2
             </label>
         </p>
         <hr>
+        
 
 
         <p>
             <label id="c" for="inputC">c)</label>
             <input type="radio" id="inputC" value="c" name="quest" v-model="selected">
             <label for="inputC">
-                <!-- <img id="prob" src="../../../assets/Question/Limit/LimQ1-xx.png"/> -->
                 f'(1) = 4
             </label>
         </p>
@@ -42,7 +43,6 @@
             <label id="d" for="inputD">d)</label>
             <input type="radio" id="inputD" value="d" name="quest" v-model="selected">
             <label for="inputD">
-                <!-- <img id="prob" src="../../../assets/Question/Limit/LimQ1-xxx.png"/>                 -->
                 f'(1) = 6
             </label>
         </p>
@@ -66,6 +66,20 @@
                 </footer>
             </div>
         </div>
+
+        <div v-if="this.rightAns" class="w3-modal">
+          <div class="w3-modal-content w3-animate-zoom w3-card-4">
+            <header class="w3-container w3-teal">
+              <h2>Bom Trabalho</h2>
+            </header>
+            <div class="w3-container">
+              <img src="../../../assets/star.png" />
+            </div>
+            <footer class="w3-container w3-teal">
+              <button id="button" @click="goMap()"> Próxima Questão</button>
+            </footer>
+          </div>
+      </div>
 
 
         <div id="buttonDiv">
@@ -97,7 +111,7 @@ export default {
       toggleDiv: false,
       counter: 0,
       level: null,
-      toggleModal: false
+      toggleModal: false,
     };
   },
   mounted(){
@@ -169,7 +183,8 @@ label {
 }
 
 #button {
-  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-top: 1%;
   /* margin-left: 70%; */
   background-color: #3aff47;
   padding: 0.5%;
@@ -177,7 +192,7 @@ label {
   border-radius: 5%;
   font-size: 120%;
   color: #fff;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   cursor: pointer;
 }
 #buttonBack {
@@ -187,18 +202,18 @@ label {
   border-radius: 5%;
   font-size: 120%;
   color: #fff;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   cursor: pointer;
 }
 #teorico {
   margin-bottom: 2%;
-  background-color: yellowgreen;
+  background-color: rgb(251, 255, 0);
   padding: 0.5%;
   border: none;
   border-radius: 5%;
   font-size: 120%;
   color: #fff;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   cursor: pointer;
 }
 #btn-nextQuestion {
@@ -209,11 +224,11 @@ label {
   border-radius: 5%;
   font-size: 120%;
   color: #fff;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   cursor: pointer;
 }
-p {
-  font-family: "Comic Sans MS", cursive, sans-serif;
+p, button {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 label {
   font-style: italic;
@@ -273,7 +288,7 @@ label {
 }
 .w3-modal {
   z-index: 3;
-  padding-top: 100px;
+  padding-top: 3%;
   position: fixed;
   left: 0;
   top: 0;
@@ -286,17 +301,19 @@ label {
 .w3-modal-content {
   margin: auto;
   background-color: #fff;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   position: relative;
   padding: 0;
   outline: 0;
-  width: 600px;
+  width: 60%;
 }
 @media (max-width: 768px) {
   .w3-modal-content {
     width: 500px;
   }
   .w3-modal {
-    padding-top: 50px;
+    padding-top: 3%;
+    padding-bottom: 3%;
   }
 }
 @media (min-width: 993px) {
@@ -326,7 +343,7 @@ label {
 .w3-teal,
 .w3-hover-teal:hover {
   color: #fff !important;
-  background-color: #009688 !important;
+  background-color: #00a2ff !important;
 }
 
 .w3-white,
