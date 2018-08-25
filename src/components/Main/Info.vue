@@ -4,7 +4,15 @@
         <div id="text">
 
         <h1>Informações</h1>
-        Se encontrou algum bug ou qualquer tipo de problema com os exercícios por favor entre em contato com o email abaixo.
+        <h3>Materiais</h3>
+        <p>Alguns vídeos utilizados foram retirados do site <a href="www.khanacademy.org">www.khanacademy.org</a>,
+        onde todo o conteúdo do Khan Academy está disponível gratuitamente.
+        </p>
+        <h3>Observações</h3>
+        <p>
+        Se encontrou algum bug ou qualquer tipo de problema com os exercícios por favor entre em 
+            contato com o email abaixo.
+        </p>
         <h3>Contato: caionakai2015@gmail.com</h3>
 
         <a href="#/Intro" id="button">
@@ -31,10 +39,6 @@ export default {
   right: 0;
   overflow: auto;
   background: aquamarine; /* Just to visualize the extent */
-}
-p{
-    text-align: justify;
-    margin-left: 25%;
 }
 #text{
     width: 50%;
@@ -96,9 +100,7 @@ p{
 p, h1,h3{
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
-p{
-    text-align: justify;
-}
+
 body{
     background-color: #4286f4;
 }

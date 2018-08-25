@@ -51,8 +51,8 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="610.31429"
+     inkscape:zoom="0.7"
+     inkscape:cx="714.17192"
      inkscape:cy="340.99382"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -1338,5 +1338,23 @@
          id="path2676-97-10"
          style="fill:#aa4400;fill-opacity:1;stroke:none;stroke-width:0.09000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.84888886" />
     </g>
+    <path
+       style="fill:#ffcc00;fill-opacity:1;stroke:#604829;stroke-width:0.09758672px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 135.90838,215.31477 v -10.47603 h -5.09064 -4.36341 l -4.18888,-4.34007 4.18888,-3.51695 h 21.81705 l 4.36341,3.92851 -4.36341,3.92851 h -7.99958 v 10.47603 z"
+       id="path1617"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.48377943px;line-height:0;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';fill:#49494c;fill-opacity:0.91959797;stroke:#000000;stroke-width:0.02334157;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:3.70000005;stroke-dasharray:0.56019771, 0.02334157;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+       x="146.80531"
+       y="178.31778"
+       id="text1625"
+       transform="scale(0.88175546,1.1341013)"><tspan
+         sodipodi:role="line"
+         id="tspan1623"
+         x="146.80531"
+         y="178.31778"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.48377943px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';fill:#49494c;fill-opacity:0.91959797;stroke:#000000;stroke-width:0.02334157;stroke-opacity:1">Derivadas!!</tspan></text>
   </g>
 </svg>

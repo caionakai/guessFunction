@@ -19,8 +19,14 @@ import Seno from '@/components/Question/Trigonometry/Seno'
 import Cosseno from '@/components/Question/Trigonometry/Cosseno'
 import IdentityTrigonometric from '@/components/Question/Trigonometry/IdentityTrigonometric'
 
-import DerivQ1 from '@/components/Question/Derivada/questao1'
-import DerivQ1Ex from '@/components/Question/Derivada/questao1-exercicio'
+import DerivQ1 from '@/components/Question/Derivada/Q1/questao1'
+import DerivQ1Ex from '@/components/Question/Derivada/Q1/questao1-exercicio'
+import DerivQ1Ex2 from '@/components/Question/Derivada/Q1/questao1-exercicio2'
+import DerivQ1Ex3 from '@/components/Question/Derivada/Q1/questao1-exercicio3'
+
+import DerivQ2 from '@/components/Question/Derivada/Q2/questao-teoria'
+import DerivQ2Ex1 from '@/components/Question/Derivada/Q2/questao-exercicio1'
+import DerivQ2Ex2 from '@/components/Question/Derivada/Q2/questao-exercicio2'
 
 import DerivativeSimple from '@/components/Question/Derivative/Question1'
 import DerivativeSimpleQ2 from '@/components/Question/Derivative/Question2'
@@ -225,7 +231,34 @@ export default new Router({
       name: 'DerivQ1Ex',
       props: {default: true},
       component: DerivQ1Ex
-    }
+    },
+    {
+      path: '/deriv-q1-ex2',
+      name: 'DerivQ1Ex2',
+      props: {default: true},
+      component: DerivQ1Ex2
+    },
+    {
+      path: '/deriv-q1-ex3',
+      name: 'DerivQ1Ex3',
+      props: {default: true},
+      component: DerivQ1Ex3
+    },
+    {
+      path: '/deriv-q2',
+      name: 'DerivQ2',
+      component: DerivQ2
+    },
+    {
+      path: '/deriv-q2-ex1',
+      name: 'DerivQ2Ex1',
+      component: DerivQ2Ex1
+    },    
+    {
+      path: '/deriv-q2-ex2',
+      name: 'DerivQ2Ex2',
+      component: DerivQ2Ex2
+    },
     
   ]
 })

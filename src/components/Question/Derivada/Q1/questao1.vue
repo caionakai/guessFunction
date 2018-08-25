@@ -5,7 +5,7 @@
         <h1>Derivadas</h1>
         <h2>Taxa de Variação, Coeficiente Angular e Variação de uma função não linear.</h2>
         <video width="30%" height="15%" controls>
-            <source src="../../../assets/Videos/video1.mp4" type="video/mp4">
+            <source src="../../../../assets/Videos/video1.mp4" type="video/mp4">
             Há algum problema com o vídeo, utilize outro navegador!
         </video>  
 
@@ -14,7 +14,7 @@
 
         <h2>Derivada como o coeficiente angular de uma reta tangente.</h2>
         <video width="30%" height="15%" controls>
-          <source src="../../../assets/Videos/video1-2.mp4" type="video/mp4">
+          <source src="../../../../assets/Videos/video1-2.mp4" type="video/mp4">
           Há algum problema com o vídeo, utilize outro navegador!
         </video>
 
@@ -37,10 +37,10 @@ export default {
   },
   methods: {
       goToPage(){
-        this.$router.replace({ name: "DerivQ1Ex" });
+        this.$router.push({ name: "DerivQ1Ex" });
       },
       goMap(){
-        this.$router.replace({ name: "Map" });        
+        this.$router.push({ name: "Map" });        
       }
   }
 };

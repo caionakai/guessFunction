@@ -2,20 +2,18 @@
   <div id="origin">
     <div id="body">
         <div class="seno">
-            <p class="title"> Dada a função:  &nbsp;
-              <!-- <img src="http://latex.codecogs.com/gif.latex?f(x)&space;=&space;x^2&space;-&space;2x" title="f(x) = x^2 - 2x" /> -->
-              
-                <img id="prob" src="../../../assets/Question/Derivada/questao1-prob.png"/>. 
-                Encontre o coeficiente angular de uma reta tangente no ponto P(1,-1).
+            <p class="title"> 
+                Uma bola é atirada no ar com uma velocidade de 40 pés/s, e sua altura em pés após t segundos é
+                dada por y = 40t - 16t². Encontre a velocidade instantânea quando t = 2.
             </p>
-            
+
         </div>
         <hr>
         <p id="t">
             <label id="a" for="inputA">a)</label>
             <input type="radio" id="inputA" name="quest" value="a" v-model="selected">
             <label for="inputA">
-                f'(1) = 0
+                v = 24 pés/s
             </label>
         </p>
         <hr>
@@ -23,18 +21,16 @@
             <label id="b" for="inputB">b)</label>
             <input type="radio" id="inputB" value="b" name="quest" v-model="selected">
             <label for="inputB">
-                f'(1) = 2
+                v = 16 pés/s
             </label>
         </p>
         <hr>
         
-
-
         <p>
             <label id="c" for="inputC">c)</label>
             <input type="radio" id="inputC" value="c" name="quest" v-model="selected">
             <label for="inputC">
-                f'(1) = 4
+                v = -16 pés/s
             </label>
         </p>
         <hr>
@@ -43,7 +39,7 @@
             <label id="d" for="inputD">d)</label>
             <input type="radio" id="inputD" value="d" name="quest" v-model="selected">
             <label for="inputD">
-                f'(1) = 6
+                v = -24 pés/s
             </label>
         </p>
         <hr>
@@ -57,7 +53,7 @@
                 <div class="w3-container">
                     <p>Talvez seja melhor reassistir o conteúdo teórico..</p>
                     <p>Clique no botão abaixo para acessar o conteúdo novamente!</p>
-                    <button id="teorico" @click="goBack()"> Conteúdo Teórico</button>
+                    <button id="teorico" @click="goTeoria()"> Conteúdo Teórico</button>
                     <p>Você também pode pular essa questão e refazê-la mais tarde, clicando no botão abaixo!</p>
                     <button id="btn-nextQuestion" @click="goMap()"> Pular questão</button>
                 </div>
@@ -73,7 +69,7 @@
               <h2>Bom Trabalho</h2>
             </header>
             <div class="w3-container">
-              <img src="../../../assets/star.png" />
+              <img src="../../../../assets/star.png" />
             </div>
             <footer class="w3-container w3-teal">
               <button id="button" @click="goMap()"> Próxima Questão</button>
@@ -103,7 +99,7 @@
 
 <script>
 export default {
-  name: "DerivQ1Ex",
+  name: "DerivQ1Ex3",
   data() {
     return {
       selected: null,
@@ -119,14 +115,12 @@ export default {
   },
   methods: {
     checkForm() {
-      if (this.selected === "a") {
-        //   this.$router.replace({name:'Certo', params:{id:'firstLevel'}});
+      if (this.selected === "d") {
         this.level.first = true; 
         localStorage.setItem('level', JSON.stringify(this.level))
         this.toggleDiv = true;
         this.rightAns = true;
       } else {
-        //   this.$router.replace({name:'Errado', params:{id:'limq1'}});
         this.toggleDiv = true;
         this.rightAns = false;
 
@@ -143,8 +137,11 @@ export default {
     closeDiv() {
       this.toggleDiv = false;
     },
+    goTeoria(){
+      this.$router.push({ name: "DerivQ1" });
+    },
     goBack() {
-      this.$router.replace({ name: "DerivQ1" });
+        window.history.back();
     },
     goMap() {
       // this.updateLevel("firstLevel");
