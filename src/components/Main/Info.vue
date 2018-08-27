@@ -9,6 +9,9 @@
         onde todo o conteúdo do Khan Academy está disponível gratuitamente.
         </p>
         <h3>Observações</h3>
+        <p>Se algum vídeo não está funcionando corretamente, experimente utilizar outro navegador web, preferencialmente
+            o Chrome.
+        </p>
         <p>
         Se encontrou algum bug ou qualquer tipo de problema com os exercícios por favor entre em 
             contato com o email abaixo.

@@ -2,8 +2,8 @@
   <div id="mapa">
     <div style="width:100%;">
       <img v-if="!this.nivel.first" src="../../assets/map1.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
-      <img v-if="this.nivel.first && !this.level.secondLevel" src="../../assets/done1.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
-      <img v-if="this.level.secondLevel && !this.level.thirdLevel" src="../../assets/done2.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="this.nivel.first && !this.nivel.second" src="../../assets/done1.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
+      <img v-if="this.nivel.second && !this.level.thirdLevel" src="../../assets/done2.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
       <img v-if="this.level.thirdLevel && !this.level.fourthLevel" src="../../assets/done3.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
       <img v-if="this.level.fourthLevel && !this.level.fifthLevel" src="../../assets/done4.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>
       <img v-if="this.level.fifthLevel && !this.level.sixthLevel" src="../../assets/done5.png" alt="" id="trilha" usemap="#Map" border="0" width="100%"/>

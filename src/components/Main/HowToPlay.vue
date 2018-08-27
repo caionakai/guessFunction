@@ -6,21 +6,23 @@
         <h1>Como Jogar?</h1>
         <h3>Objetivo</h3>
         <p>
-            O objetivo do jogo é passar através de todas as fases para alcançar o final do mapa! 
+            O objetivo do jogo é passar através de todas as fases para alcançar o final do mapa!
+            Para isso será necessário aprender muitos conceitos de cálculo I. 
         </p>
 
         <h3>Elementos Visuais</h3>
         <p>
             As duas imagens abaixo 
-            representam as fases, o círculo verde significa que a fase ainda não foi completada e o azul,
-            que a fase já foi completada é possível refazer as fases que já foram feitas.
+            representam as fases, o círculo verde significa que a fase ainda não foi realizada, enquanto o 
+            símbolo azul significa que a fase já foi completada. Além disso, é possível refazer as fases que 
+            já foram feitas.
         </p>
 
         <img src="../../assets/undone.png"/>
         <img src="../../assets/done.png"/>
 
         <p>O interessante é realizar as fases de forma sequencial, uma por vez, para que o aproveitamento seja maior, pois
-        elas estão organizadas de forma lógica.  
+        elas estão organizadas de forma com que o nível de dificuldade aumente gradualmente.  
         </p>
         <a href="#/Intro" id="button">
             <span>Início</span>

@@ -3,7 +3,9 @@
     <div id="body">
         <div class="seno">
             <p class="title"> 
-                ここに何を書くべきかわからない
+                Suponha que uma bola foi abandonada do posto de observação de uma torre, 450 metros
+                acima do solo. Com qual velocidade a bola chega ao solo? Utilize a definição de derivada
+                para resolver o problema.
             </p>
             
         </div>
@@ -12,7 +14,7 @@
             <label id="a" for="inputA">a)</label>
             <input type="radio" id="inputA" name="quest" value="a" v-model="selected">
             <label for="inputA">
-                f'(x) = 2x² - 1
+                50 m/s
             </label>
         </p>
         <hr>
@@ -20,18 +22,16 @@
             <label id="b" for="inputB">b)</label>
             <input type="radio" id="inputB" value="b" name="quest" v-model="selected">
             <label for="inputB">
-                f'(x) = 3x³ - 1
+                32 m/s
             </label>
         </p>
         <hr>
-        
-
 
         <p>
             <label id="c" for="inputC">c)</label>
             <input type="radio" id="inputC" value="c" name="quest" v-model="selected">
             <label for="inputC">
-                f'(x) = 3x² - 1
+                130 m/s
             </label>
         </p>
         <hr>
@@ -40,7 +40,7 @@
             <label id="d" for="inputD">d)</label>
             <input type="radio" id="inputD" value="d" name="quest" v-model="selected">
             <label for="inputD">
-                f'(x) = 2x³ - 1 
+                94 m/s
             </label>
         </p>
         <hr>
@@ -116,9 +116,9 @@ export default {
   },
   methods: {
     checkForm() {
-      if (this.selected === "c") {
+      if (this.selected === "d") {
         //   this.$router.replace({name:'Certo', params:{id:'firstLevel'}});
-        this.level.first = true; 
+        this.level.second = true; 
         localStorage.setItem('level', JSON.stringify(this.level))
         this.toggleDiv = true;
         this.rightAns = true;
@@ -148,7 +148,7 @@ export default {
     },
     goMap() {
       // this.updateLevel("firstLevel");
-      this.$router.push({ name: "DerivQ2Ex2" });
+      this.$router.push({ name: "Map" });
     },
     updateLevel(nameLevel) {
       this.$emit("updateLevel", nameLevel);

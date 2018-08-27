@@ -5,18 +5,13 @@
         <h1>Derivadas</h1>
         <h2>Derivada pela definição.</h2>
         <video width="30%" height="15%" controls>
-            <source src="../../../../assets/Videos/video1.mp4" type="video/mp4">
+            <source src="../../../../assets/Videos/deriv-Q2.ogg" type="video/mp4">
             Há algum problema com o vídeo, utilize outro navegador!
         </video>  
 
-        <br/>
-        <!-- <iframe width="796" height="448" src="https://www.youtube.com/embed/EKvHQc3QEow" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
 
-        <!-- <h2>Derivada como o coeficiente angular de uma reta tangente.</h2>
-        <video width="30%" height="15%" controls>
-          <source src="../../../../assets/Videos/video1-2.mp4" type="video/mp4">
-          Há algum problema com o vídeo, utilize outro navegador!
-        </video> -->
+        <br/>
+
 
         <br/>
         <button id="buttonBack" @click="goMap()"> Voltar ao Mapa</button>

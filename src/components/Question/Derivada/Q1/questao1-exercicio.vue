@@ -118,8 +118,8 @@ export default {
     checkForm() {
       if (this.selected === "a") {
         //   this.$router.replace({name:'Certo', params:{id:'firstLevel'}});
-        this.level.first = true; 
-        localStorage.setItem('level', JSON.stringify(this.level))
+        // this.level.first = true; 
+        // localStorage.setItem('level', JSON.stringify(this.level))
         this.toggleDiv = true;
         this.rightAns = true;
       } else {
