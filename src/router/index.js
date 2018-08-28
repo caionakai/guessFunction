@@ -28,6 +28,9 @@ import DerivQ2 from '@/components/Question/Derivada/Q2/questao-teoria'
 import DerivQ2Ex1 from '@/components/Question/Derivada/Q2/questao-exercicio1'
 import DerivQ2Ex2 from '@/components/Question/Derivada/Q2/questao-exercicio2'
 
+import DerivQ3 from '@/components/Question/Derivada/Q3/questao-teoria'
+import DerivQ3Ex1 from '@/components/Question/Derivada/Q3/questao-exercicio1'
+
 import DerivativeSimple from '@/components/Question/Derivative/Question1'
 import DerivativeSimpleQ2 from '@/components/Question/Derivative/Question2'
 import DeriQ3 from '@/components/Question/Derivative/Question3'
@@ -258,6 +261,16 @@ export default new Router({
       path: '/deriv-q2-ex2',
       name: 'DerivQ2Ex2',
       component: DerivQ2Ex2
+    },
+    {
+      path: '/deriv-q3-ex1',
+      name: 'DerivQ3Ex1',
+      component: DerivQ3Ex1
+    },
+    {
+      path: '/deriv-q3',
+      name: 'DerivQ3',
+      component: DerivQ3
     },
     
   ]
