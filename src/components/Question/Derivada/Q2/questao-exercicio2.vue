@@ -4,8 +4,9 @@
         <div class="seno">
             <p class="title"> 
                 Suponha que uma bola foi abandonada do posto de observação de uma torre, 450 metros
-                acima do solo. Com qual velocidade a bola chega ao solo? Utilize a definição de derivada
-                para resolver o problema.
+                acima do solo. Qual a velocidade da bola após 5 segundos? Com qual velocidade a bola chega ao solo?
+                Utilize a definição de derivada para resolver o problema. Considere a equação de movimento da bola como
+                sendo s = f(t) = 4,9t².
             </p>
             
         </div>
@@ -14,7 +15,7 @@
             <label id="a" for="inputA">a)</label>
             <input type="radio" id="inputA" name="quest" value="a" v-model="selected">
             <label for="inputA">
-                50 m/s
+                49m/s e 50 m/s respectivamente
             </label>
         </p>
         <hr>
@@ -22,7 +23,7 @@
             <label id="b" for="inputB">b)</label>
             <input type="radio" id="inputB" value="b" name="quest" v-model="selected">
             <label for="inputB">
-                32 m/s
+                59m/s e 32 m/s respectivamente
             </label>
         </p>
         <hr>
@@ -31,7 +32,7 @@
             <label id="c" for="inputC">c)</label>
             <input type="radio" id="inputC" value="c" name="quest" v-model="selected">
             <label for="inputC">
-                130 m/s
+                5 m/s e 130 m/s respectivamente
             </label>
         </p>
         <hr>
@@ -40,7 +41,7 @@
             <label id="d" for="inputD">d)</label>
             <input type="radio" id="inputD" value="d" name="quest" v-model="selected">
             <label for="inputD">
-                94 m/s
+                49 m/s e 94 m/s respectivamente
             </label>
         </p>
         <hr>

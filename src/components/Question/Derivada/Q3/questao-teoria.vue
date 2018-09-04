@@ -5,13 +5,12 @@
         <h1>Derivadas</h1>
         <h2>Regra da Potência</h2>
         <video id="myvideo" width="30%" height="15%" controls>
-            <source src="../../../../assets/Videos/deriv-Q2.ogg" type="video/mp4">
+            <source src="../../../../assets/Videos/q3.mp4" type="video/mp4">
             Há algum problema com o vídeo, utilize outro navegador!
         </video>  
 
 
         <br/>
-
 
         <br/>
         <button id="buttonBack" @click="goMap()"> Voltar ao Mapa</button>
@@ -28,6 +27,7 @@ export default {
   },
   data() {
     return {
+      
     };
   },
   methods: {
@@ -37,7 +37,6 @@ export default {
       goMap(){
         this.$router.push({ name: "Map" });        
       },
-
 
   }
 };

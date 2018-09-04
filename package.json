@@ -14,8 +14,9 @@
   "dependencies": {
     "electron-builder": "^20.22.0",
     "plotly": "^1.0.6",
-    "plotly.js": "^1.39.0",
+    "plotly.js": "^1.40.1",
     "vue": "^2.5.2",
+    "vue-mathjax": "0.0.5",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
