@@ -34,6 +34,13 @@ import DerivQ3Ex1 from '@/components/Question/Derivada/Q3/questao-exercicio1'
 import DerivQ4 from '@/components/Question/Derivada/Q4/questao-teoria'
 import DerivQ4Ex1 from '@/components/Question/Derivada/Q4/questao-exercicio1'
 
+import DerivQ5 from '@/components/Question/Derivada/Q5/questao-teoria'
+import DerivQ5Ex1 from '@/components/Question/Derivada/Q5/questao-exercicio1'
+
+import DerivQ6 from '@/components/Question/Derivada/Q6/questao-teoria'
+import DerivQ6Ex1 from '@/components/Question/Derivada/Q6/questao-exercicio1'
+import DerivQ6Ex2 from '@/components/Question/Derivada/Q6/questao-exercicio2'
+
 import DerivativeSimple from '@/components/Question/Derivative/Question1'
 import DerivativeSimpleQ2 from '@/components/Question/Derivative/Question2'
 import DeriQ3 from '@/components/Question/Derivative/Question3'
@@ -284,7 +291,31 @@ export default new Router({
       path: '/deriv-q4-ex1',
       name: 'DerivQ4Ex1',
       component: DerivQ4Ex1
+    },    
+    {
+      path: '/deriv-q5',
+      name: 'DerivQ5',
+      component: DerivQ5
     },
-    
+    {
+      path: '/deriv-q5-ex1',
+      name: 'DerivQ5Ex1',
+      component: DerivQ5Ex1
+    },
+    {
+      path: '/deriv-q6',
+      name: 'DerivQ6',
+      component: DerivQ6
+    },
+    {
+      path: '/deriv-q6-ex1',
+      name: 'DerivQ6Ex1',
+      component: DerivQ6Ex1
+    },    
+    {
+      path: '/deriv-q6-ex2',
+      name: 'DerivQ6Ex2',
+      component: DerivQ6Ex2
+    },
   ]
 })

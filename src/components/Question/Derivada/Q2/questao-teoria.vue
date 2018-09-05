@@ -45,7 +45,7 @@ export default {
 #body{
   margin: auto;
   width: 83%;
-  min-height: 120%;
+  min-height: 85%;
   padding: 1.5%;
   border-radius: 5%;
   background-color: white;

@@ -3,8 +3,9 @@
     <div id="body">
         <div class="seno">
             <p class="title"> 
-              Determine a derivada da função: 
+              Determine a  reta tangente à curva da função 
                 <vue-mathjax style="display:inline-block" :formula="formula"></vue-mathjax>
+              para x = 3.
             </p>     
         </div>
                 <!-- x<sup>7</sup> -->
@@ -107,7 +108,7 @@ export default {
   components: {
     'vue-mathjax': VueMathjax
   },
-  name: "DerivQ4Ex1",
+  name: "DerivQ6Ex1",
 
   data() {
     return {
@@ -137,9 +138,8 @@ export default {
   },
   methods: {
     checkForm() {
-      if (this.selected === "b") {
+      if (this.selected === "d") {
         //   this.$router.replace({name:'Certo', params:{id:'firstLevel'}});
-        this.level.third = true; 
         localStorage.setItem('level', JSON.stringify(this.level))
         this.toggleDiv = true;
         this.rightAns = true;
@@ -157,11 +157,11 @@ export default {
     },
     updateFormula: function () {
       this.$nextTick(function () {
-        this.formula = '$$f(x) = {2\\over 3x^7}.$$'
-        this.formula2 = '$$-{14\\over 3x^8}.$$'
-        this.formula3 = '$$-{14\\over 3x^6}.$$'
-        this.formula4 = '$$-{2\\over 21x^8}.$$'
-        this.formula5 = '$$-{2\\over 21x^6}.$$'
+        this.formula = '$$y = {\\sqrt{3x^2+7}}$$'
+        this.formula2 = '$$y\' = {\\sqrt{6x}}.$$'
+        this.formula3 = '$$y\' = {3x\\over2}.$$'
+        this.formula4 = '$$y\' = {3x\\over2\\sqrt{3x^2+7}}.$$'
+        this.formula5 = '$$y\' = {3x\\over\\sqrt{3x^2+7}}.$$'
       })
     },
     toggle() {
@@ -175,11 +175,11 @@ export default {
         window.history.back();
     },
     goTeoria(){
-      this.$router.push({ name: "DerivQ4" });
+      this.$router.push({ name: "DerivQ6" });
     },
     goMap() {
       // this.updateLevel("firstLevel");
-      this.$router.push({ name: "Map" });
+      this.$router.push({ name: "DerivQ6Ex2" });
     },
     updateLevel(nameLevel) {
       this.$emit("updateLevel", nameLevel);
@@ -207,9 +207,11 @@ export default {
   margin-top: 0%;
 }
 #a {
-  margin-left: 0.1%;
+  margin-left: -3.9%;
 }
-
+#b{
+  margin-left: -3.5%;
+}
 #ggb-element{
   margin-left: 20%;
 }
@@ -220,11 +222,12 @@ label {
 }
 
 #d {
-  margin-left: -1.4%;
+  margin-left: -0.3%;
 }
 #c {
-  margin-left: -1%;
+  margin-left: 1%;
 }
+
 
 .seno {
   margin-bottom: 10%;

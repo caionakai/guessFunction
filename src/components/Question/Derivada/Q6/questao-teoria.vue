@@ -3,9 +3,9 @@
   <div id="main">
     <div id="body">
         <h1>Derivadas</h1>
-        <h2>Regra do Produto</h2>
+        <h2>Regra da Cadeia</h2>
         <video id="myvideo" width="30%" height="15%" controls>
-            <source src="../../../../assets/Videos/q5-1.mp4" type="video/mp4">
+            <source src="../../../../assets/Videos/q6-1.mp4" type="video/mp4">
             Há algum problema com o vídeo, utilize outro navegador!
         </video>  
 
@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: "DerivQ5",
+  name: "DerivQ6",
   mounted() {
   },
   data() {
@@ -32,7 +32,7 @@ export default {
   },
   methods: {
       goToPage(){
-        this.$router.push({ name: "DerivQ5Ex1" });
+        this.$router.push({ name: "DerivQ6Ex1" });
       },
       goMap(){
         this.$router.push({ name: "Map" });        

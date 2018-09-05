@@ -137,9 +137,9 @@ export default {
   },
   methods: {
     checkForm() {
-      if (this.selected === "b") {
+      if (this.selected === "c") {
         //   this.$router.replace({name:'Certo', params:{id:'firstLevel'}});
-        this.level.third = true; 
+        this.level.fifth = true; 
         localStorage.setItem('level', JSON.stringify(this.level))
         this.toggleDiv = true;
         this.rightAns = true;
@@ -157,11 +157,11 @@ export default {
     },
     updateFormula: function () {
       this.$nextTick(function () {
-        this.formula = '$$f(x) = {2\\over 3x^7}.$$'
-        this.formula2 = '$$-{14\\over 3x^8}.$$'
-        this.formula3 = '$$-{14\\over 3x^6}.$$'
-        this.formula4 = '$$-{2\\over 21x^8}.$$'
-        this.formula5 = '$$-{2\\over 21x^6}.$$'
+        this.formula = '$$f(x) = {3x.cos(x)}$$'
+        this.formula2 = '$${3(sen(x))}$$'
+        this.formula3 = '$${3x+sen(x)}$$'
+        this.formula4 = '$${3(cos(x)-xsen(x))}$$'
+        this.formula5 = '$${3cos(x)+sen(x)}$$'
       })
     },
     toggle() {
@@ -175,7 +175,7 @@ export default {
         window.history.back();
     },
     goTeoria(){
-      this.$router.push({ name: "DerivQ4" });
+      this.$router.push({ name: "DerivQ5" });
     },
     goMap() {
       // this.updateLevel("firstLevel");
@@ -207,11 +207,10 @@ export default {
   margin-top: 0%;
 }
 #a {
-  margin-left: 0.1%;
+  margin-left: -2%;
 }
-
-#ggb-element{
-  margin-left: 20%;
+#b{
+  margin-left: -4%;
 }
 
 input,
@@ -220,10 +219,10 @@ label {
 }
 
 #d {
-  margin-left: -1.4%;
+  margin-left: 1%;
 }
 #c {
-  margin-left: -1%;
+  margin-left: 3.5%;
 }
 
 .seno {

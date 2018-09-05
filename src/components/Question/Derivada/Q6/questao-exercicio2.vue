@@ -3,8 +3,11 @@
     <div id="body">
         <div class="seno">
             <p class="title"> 
-              Determine a derivada da função: 
+              Um investidor deposita R$ 2.000,00 em um determinado banco, a uma taxa anual de r de juros, capitalizados
+              mensalmente. Após 3 anos, o montante da conta é dado por:
                 <vue-mathjax style="display:inline-block" :formula="formula"></vue-mathjax>
+              Determine a taxa de variação de M em relação a r, quando r = 0,06.
+              
             </p>     
         </div>
                 <!-- x<sup>7</sup> -->
@@ -16,7 +19,7 @@
             <label id="a" for="inputA">a)</label>
             <input type="radio" id="inputA" name="quest" value="a" v-model="selected">
             <label for="inputA">
-                <vue-mathjax style="display:inline-block" :formula="formula3"></vue-mathjax>
+                7.144,36
             </label>
         </p>
         <hr>
@@ -24,7 +27,7 @@
             <label id="b" for="inputB">b)</label>
             <input type="radio" id="inputB" value="b" name="quest" v-model="selected">
             <label for="inputB">
-                <vue-mathjax style="display:inline-block" :formula="formula2"></vue-mathjax>
+                6.324,21
             </label>
         </p>
         <hr>
@@ -33,7 +36,7 @@
             <label id="c" for="inputC">c)</label>
             <input type="radio" id="inputC" value="c" name="quest" v-model="selected">
             <label for="inputC">
-                <vue-mathjax style="display:inline-block" :formula="formula4"></vue-mathjax>
+                9.951,42
             </label>
         </p>
         <hr>
@@ -42,7 +45,7 @@
             <label id="d" for="inputD">d)</label>
             <input type="radio" id="inputD" value="d" name="quest" v-model="selected">
             <label for="inputD">
-                <vue-mathjax style="display:inline-block" :formula="formula5"></vue-mathjax>
+                8.456,77
             </label>
         </p>
         <hr>
@@ -107,7 +110,7 @@ export default {
   components: {
     'vue-mathjax': VueMathjax
   },
-  name: "DerivQ4Ex1",
+  name: "DerivQ6Ex2",
 
   data() {
     return {
@@ -117,12 +120,7 @@ export default {
       counter: 0,
       level: null,
       toggleModal: false,
-      // formula: '$$x = {a\\over2}.$$',
       formula : '',
-      formula2 : '',
-      formula3 : '',
-      formula4 : '',
-      formula5 : '',
     };
   },
   beforeCreate(){
@@ -137,9 +135,9 @@ export default {
   },
   methods: {
     checkForm() {
-      if (this.selected === "b") {
+      if (this.selected === "a") {
         //   this.$router.replace({name:'Certo', params:{id:'firstLevel'}});
-        this.level.third = true; 
+        this.level.sixth = true; 
         localStorage.setItem('level', JSON.stringify(this.level))
         this.toggleDiv = true;
         this.rightAns = true;
@@ -157,11 +155,7 @@ export default {
     },
     updateFormula: function () {
       this.$nextTick(function () {
-        this.formula = '$$f(x) = {2\\over 3x^7}.$$'
-        this.formula2 = '$$-{14\\over 3x^8}.$$'
-        this.formula3 = '$$-{14\\over 3x^6}.$$'
-        this.formula4 = '$$-{2\\over 21x^8}.$$'
-        this.formula5 = '$$-{2\\over 21x^6}.$$'
+        this.formula = '$$M = {2000.{(1+{r\\over12})}^{36}}$$'
       })
     },
     toggle() {
@@ -175,7 +169,7 @@ export default {
         window.history.back();
     },
     goTeoria(){
-      this.$router.push({ name: "DerivQ4" });
+      this.$router.push({ name: "DerivQ6" });
     },
     goMap() {
       // this.updateLevel("firstLevel");
@@ -207,9 +201,11 @@ export default {
   margin-top: 0%;
 }
 #a {
-  margin-left: 0.1%;
+  margin-left: 0%;
 }
-
+#b{
+  margin-left: -0.3%;
+}
 #ggb-element{
   margin-left: 20%;
 }
@@ -220,11 +216,12 @@ label {
 }
 
 #d {
-  margin-left: -1.4%;
+  margin-left: -0.9%;
 }
 #c {
-  margin-left: -1%;
+  margin-left: -0.6%;
 }
+
 
 .seno {
   margin-bottom: 10%;
