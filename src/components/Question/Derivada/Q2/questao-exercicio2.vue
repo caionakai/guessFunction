@@ -6,7 +6,7 @@
                 Suponha que uma bola foi abandonada do posto de observação de uma torre, 450 metros
                 acima do solo. Qual a velocidade da bola após 5 segundos? Com qual velocidade a bola chega ao solo?
                 Utilize a definição de derivada para resolver o problema. Considere a equação de movimento da bola como
-                sendo s = f(t) = 4,9t².
+                sendo s = f(t) = 4,9t². (Stewart, Vol.1)
             </p>
             
         </div>

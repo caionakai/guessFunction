@@ -6,7 +6,7 @@
               Um investidor deposita R$ 2.000,00 em um determinado banco, a uma taxa anual de r de juros, capitalizados
               mensalmente. Após 3 anos, o montante da conta é dado por:
                 <vue-mathjax style="display:inline-block" :formula="formula"></vue-mathjax>
-              Determine a taxa de variação de M em relação a r, quando r = 0,06.
+              Determine a taxa de variação de M em relação a r, quando r = 0,06.(CDI, pág:551)
               
             </p>     
         </div>
