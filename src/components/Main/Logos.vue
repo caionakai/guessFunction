@@ -7,17 +7,27 @@
 <script>
 export default {
   name: 'Logos',
-  mounted(){
-    this.test = JSON.parse(localStorage.getItem("level"));
-    if(this.test == null){
+  mounted(){ 
+    console.log("kk")
+
+    try{
+      this.test = JSON.parse(localStorage.getItem("level"));
+    }catch(exception){
       localStorage.setItem('level', JSON.stringify(this.data));
     }
+    // if(this.test == null || this.test == "undefined"){
+
+    // }
   },
   data(){
       return{
         counter: 5,
         data: {
           first: false,
+          second: false,
+          third: false,
+          fourth: false,
+          fifth: false,
           // ... others like third, fourth.. is defined directly 
        },
        test: 'temp'

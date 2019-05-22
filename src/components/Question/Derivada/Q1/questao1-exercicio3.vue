@@ -112,6 +112,7 @@ export default {
   },
   mounted(){
     this.level = JSON.parse(localStorage.getItem("level"));
+    //console.log(this.level)
   },
   methods: {
     checkForm() {

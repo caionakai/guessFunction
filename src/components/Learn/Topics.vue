@@ -4,8 +4,8 @@
         <h1 id="title">Lista de Conteúdo</h1>
         <div id="listDiv">
             <ol id="listContent">
-                <li><a href="#/trigonometria">Trigonometria</a></li>
-                <li><a href="#/limite">Limite</a></li>
+                <li><a href="#/trigonometria">Semi Circunferência</a></li>
+                <li><a href="#/limite">Simulação Derivada</a></li>
                 <li><a href="#/derivada">Derivada</a></li>
                 <li><a href="#/integral">Integral</a></li>
             </ol>

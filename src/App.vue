@@ -26,8 +26,12 @@ export default {
   data: function(){
     return {
       somador: 0,
-      level: [{}]
+      level: [{}],
+      templevel: {}, 
     }
+  },
+  mounted(){
+    this.templevel = JSON.parse(localStorage.getItem("level"));
   },
   methods:{
     updateSomador(){
@@ -37,8 +41,11 @@ export default {
       this.somador = 0
     },
     updateLevel(levelName){
-      this.level[levelName] = true
-      console.log(this.level);
+      console.log(levelName)
+      this.templevel[levelName] = true; 
+      localStorage.setItem('level', JSON.stringify(this.templevel))
+      // this.level[levelName] = true
+      // console.log(this.level);
     },
     // The Update level method is called when the page Certo with the right condition emit some event
     // updateFirstLevel(){

@@ -19,17 +19,17 @@
       <area v-if="this.level.fourteenthLevel && !this.level.fifteenthLevel" href="#/intq7" shape="poly" coords="1265,513,1299,527,1314,552,1304,587,1264,604,1219,581,1211,547,1230,523" />
     </map>
 
-    <!-- <div id="flecha">
+    <div id="flecha">
       <a href="#/map2">
-        <img src="../../assets/flecha.gif"/>
+        <img src="../../assets/flech.gif"/>
       </a>
     </div>
 
     <div id="flecha2">
       <a href="#/map4">
-        <img src="../../assets/flecha.gif"/>
+        <img src="../../assets/flech.gif"/>
       </a>
-    </div> -->
+    </div>
 
   </div>
 </template>
@@ -39,6 +39,7 @@ export default {
   name: 'Map3',
   props: ['life', 'level'],
   mounted: function () {
+    this.level = JSON.parse(localStorage.getItem("level"));
     window.addEventListener('resize', this.windowonload())
   },
   methods:{
@@ -95,13 +96,13 @@ export default {
   left: 2%;
   top: 30%;
   z-index: 1;
-  transform: rotate(90deg);
+  transform: rotate(180deg);
 }
 #flecha2{
   position: absolute;
   right: 2%;
   top: 30%;
   z-index: 1;
-  transform: rotate(-90deg);
+  /* transform: rotate(-0deg); */
 }
 </style>

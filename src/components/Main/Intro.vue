@@ -12,7 +12,7 @@
             <span>Como jogar</span>
         </a>
         <!-- <a href="#/topics" class="button">
-            <span>Aprender</span>
+            <span>Simulações</span>
         </a> -->
         <a href="#/info" class="button">
             <span>Informações</span>

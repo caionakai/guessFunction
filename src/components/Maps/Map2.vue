@@ -7,11 +7,11 @@
     </div>
 
     <map name="Map" id="Map">
-        <area v-if="this.level.eighthLevel && !this.level.eighthLevel" href="#/derivativesimple" shape="poly" coords="623,537,666,553,677,579,671,607,625,623,584,605,573,573,595,546" />
+        <area v-if="this.level.seventh && !this.level.eighthLevel" href="#/derivativesimple" shape="poly" coords="623,537,666,553,677,579,671,607,625,623,584,605,573,573,595,546" />
         <area v-if="!this.level.ninethLevel && this.level.eighthLevel" href="#/derivativesimpleq2" shape="poly" coords="627,419,662,430,679,451,674,484,638,503,593,493,575,463,584,435,605,423" />
     </map>
 
-    <!-- <div id="flecha">
+    <div id="flecha">
       <a href="#/map">
         <img src="../../assets/flech.gif"/>
       </a>
@@ -21,7 +21,7 @@
       <a href="#/map3">
         <img src="../../assets/flech.gif"/>
       </a>
-    </div> -->
+    </div>
 
 
   </div>
@@ -32,6 +32,7 @@ export default {
   name: 'Map2',
   props: ['level'],
   mounted: function () {
+    this.level = JSON.parse(localStorage.getItem("level"));
     window.addEventListener('resize', this.windowonload())
   },
   methods:{

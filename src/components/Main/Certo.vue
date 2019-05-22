@@ -8,7 +8,7 @@
 export default {
   name: 'Certo',
   data:{
-    count: 0
+    count: 0,
   },
   created() {
     // Count é a quantidade de segundos até redirecionar para outra página!
@@ -27,11 +27,13 @@ export default {
           window.history.back();
       }
     },
+
     // Este método inicia um evento para acrescentar o somador para o Score Final.
     eventUpdate(){
       this.$emit('updateSomador');
     },
     updateLevel(levelName){
+
       this.$emit('updateLevel', levelName);
     },
 

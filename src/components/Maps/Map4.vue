@@ -14,11 +14,11 @@
     </map>
       
     
-    <!-- <div id="flecha">
+    <div id="flecha">
       <a href="#/map3">
-        <img src="../../assets/flecha.gif"/>
+        <img src="../../assets/flech.gif"/>
       </a>
-    </div> -->
+    </div>
 
   </div>
 </template>
@@ -28,6 +28,7 @@ export default {
   name: 'Map4',
   props: ['level'],
   mounted: function () {
+    this.level = JSON.parse(localStorage.getItem("level"));
     window.addEventListener('resize', this.windowonload())
   },
   methods:{
@@ -83,6 +84,6 @@ export default {
   left: 2%;
   top: 30%;
   z-index: 1;
-  transform: rotate(90deg);
+  transform: rotate(-180deg);
 }
 </style>

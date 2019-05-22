@@ -116,7 +116,7 @@ export default {
   methods: {
     checkForm() {
       if (this.selected === "b") {
-        this.level.first = true; 
+        //this.level.first = true; 
         // localStorage.setItem('level', JSON.stringify(this.level))
         this.toggleDiv = true;
         this.rightAns = true;
