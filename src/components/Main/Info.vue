@@ -16,6 +16,7 @@
         <p>Se algum vídeo não está funcionando corretamente, experimente utilizar outro navegador web, preferencialmente
             o Google Chrome.
         </p>
+        <p>Algumas fases podem não iniciar corretamente dependendo do tamanho da tela utilizada, recomendável: 1366x768 e outras resoluções proporcionais a esta.</p>
         <p>
         Se encontrou algum bug ou qualquer tipo de problema com os exercícios por favor entre em 
             contato através do email abaixo.
